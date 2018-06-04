@@ -1,0 +1,15 @@
+.pink-bg {
+  background-color: rgb(255, 182, 193);
+}
+.yellow-bg {
+  background-color: rgb(255, 255, 224);
+}
+.blue-bg {
+  background-color: rgb(205, 230, 238);
+}
+.green-bg {
+  background-color: rgb(192, 240, 192);
+}
+.w-5 {
+  width: 5%!important;
+}
