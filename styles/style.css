@@ -101,3 +101,30 @@ h5 { text-transform: uppercase; }
   bottom: 0;
 }
 .sectionIcon { opacity: .5; width:30px; text-align: center; display: block;}
+
+
+.imageGroup {
+     display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: flex;
+    flex-flow: row wrap;
+		text-align: center;
+    width:100%;
+    flex-wrap:wrap;
+		justify-content:space-between;
+		align-items:center;
+		align-content:space-between;
+}
+.imageItem {
+	display: inline-block;
+  justify-content:flex-start;	align-content:flex-start;
+  margin:0;
+}
+.primaryItem {
+		flex-grow: 1;
+		margin-bottom:10px;
+		width:100%;
+		justify-content:center;	align-content:center;
+}
+.primaryItem img { width:75vw;}
