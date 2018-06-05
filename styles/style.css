@@ -62,7 +62,7 @@ header { height:45%;  height:45vh; }
   top:2%; bottom:2%;
   left:2%; right:2%;
 }
-.sectionDetail.expand .textBlock.expanded { opacity:1;}
+.sectionDetail.expanded .textBlock { opacity:1;}
 
 .sectionDetail .pink-bg {background-color: rgba(255, 182, 193, .85); height: 100%;  }
 .sectionDetail .yellow-bg {background-color: rgba(255, 255, 224, .85); height: 100%; }
@@ -86,7 +86,7 @@ h5 { text-transform: uppercase; }
 .sectionCta .arrowIcon  {transform:rotate(-45deg);}
 .sectionCta:hover .arrowIcon { transform:rotate(0deg); }
 
-.sectionDetail .arrowIcon { transform:rotate(0deg); }
+.sectionDetail .arrowIcon { height:25px; transform:rotate(0deg); }
 .sectionDetail:hover .arrowIcon { transform:rotate(-45deg); }
 
 .sectionBg {
