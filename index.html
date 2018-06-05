@@ -10,21 +10,12 @@
   <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">-->
   <link rel="stylesheet" href="/styles/style.css">
   <script type="text/javascript">
-  var json = {
-    "1" : [
-      {path : 'Ammprofile.png',category : 'wireframes'},
-    ],
-    "2" : [
-      {path : 'Ammprofile.png',category : 'wireframes'},
-    ]
-  };
+  <!--PORTFOLIO_DATA-->
   </script>
 </head>
 
 <body>
   <div id="master" class="container-fluid p-0">
-    <pre></pre>
-    <input type="file" name="dirPrinter" />
     <header class="container-fluid mt-5">
       <div class="row">
         <div class="pl-5 col-6">
@@ -92,7 +83,9 @@
             <img src="images/angle-down.svg" class="arrowIcon" alt="angle-down" data-id="1" />
           </div>
         </div>
-        <div class="col-12 sectionImages"></div>
+        <div class="col-12 sectionImages">
+          <div id="gallery1" class="gallery"></div>
+      </div>
       </div>
     </section>
     <section data-id="2" class="sectionDetail p-1">
@@ -106,7 +99,9 @@
             <p class="lead">I approach design through three key elements, Typography, Color, and Space. I combine these elements to create a rich, attractive message in as little space as possible.</p>
             <img src="images/angle-down.svg" class="arrowIcon" alt="angle-down" data-id="2" />
           </div>
-          <div class="col-12 sectionImages"></div>
+          <div class="col-12 sectionImages">
+              <div id="gallery2" class="gallery"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -122,7 +117,9 @@
               audience in industry jargon, while also relating to the teeny bopper crowd, with the right emoticons, of course.</p>
             <img src="images/angle-down.svg" class="arrowIcon" alt="angle-down" data-id="3" />
           </div>
-          <div class="col-12 sectionImages"></div>
+          <div class="col-12 sectionImages">
+              <div id="gallery3" class="gallery"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -137,7 +134,9 @@
             <p class="lead">Like many things in life, It's not all about looks. Conversion rates and KPIs are much better measurements for effectiveness than aesthetic opinion.</p>
             <img src="images/angle-down.svg" class="arrowIcon" alt="angle-down" data-id="4" />
           </div>
-          <div class="col-12 sectionImages"></div>
+          <div class="col-12 sectionImages">
+              <div id="gallery4" class="gallery"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -178,59 +177,10 @@
       }, 500);
     });
 
-
-    var pre = document.querySelector("pre");
-
-    document.querySelector("input[type=file]").addEventListener("change", function(event) {
-        console.log(event.target.files)
-        var uploadFile = function(file, path) {
-          // handle file uploading
-          console.log(file, path);
-          var reader = new FileReader();
-          reader.addEventListener("load", function(e) {
-//            pre.innerHTML += "\n" + e.target.result;
-  //          console.log(e.target.result);
-          });
-          reader.readAsText(file)
-        };
-
-        var iterateFilesAndDirs = function(filesAndDirs, path) {
-          for (var i = 0; i < filesAndDirs.length; i++) {
-            if (typeof filesAndDirs[i].getFilesAndDirectories === 'function') {
-              var path = filesAndDirs[i].path;
-
-              // this recursion enables deep traversal of directories
-              filesAndDirs[i].getFilesAndDirectories().then(function(subFilesAndDirs) {
-                // iterate through files and directories in sub-directory
-                iterateFilesAndDirs(subFilesAndDirs, path);
-              });
-            } else {
-              uploadFile(filesAndDirs[i], path);
-            }
-          }
-        };
-        if ("getFilesAndDirectories" in event.target) {
-          event.target.getFilesAndDirectories()
-            .then(function(filesAndDirs) {
-              iterateFilesAndDirs(filesAndDirs, '/');
-            })
-        } else {
-          // do webkit stuff
-          var files = event.target.files;
-          for (var i = 0; i < files.length; i++) {
-            (function(file) {
-              uploadFile(file)
-            }(files[i]))
-          }
-        }
-
-
-
-
-      })
   });
 
   </script>
+  <script type="text/javascript" src="/wwwroot/build/js/app.bundle.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,6 @@
+gulpfile.js
+.eslintrc
+build/**/*.js
+node_modules
+bower_components
+images
