@@ -38,6 +38,7 @@ header { height:45%;  height:45vh; }
   font-family:'Occupied Italic', sans-serif;
   font-style: italic;
 }
+.ampersand { font-family:-webkit-pictograph; font-weight:100;}
 .sectionDetail {
   position: absolute; top:45%;
   width:0; height:0; visibility: hidden;
