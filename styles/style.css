@@ -1,3 +1,37 @@
+@font-face {
+  font-family: 'Occupied';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Occupied Italic'), local('OccupiedItalic'), url(../fonts/OccupiedItalic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Occupied';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Occupied Regular'), local('Occupied'), url(../fonts/Occupied.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Elephant';
+  src: local('Elephant'), local('Elephant'), url(../fonts/Elephant.TTF) format('ttf'), url(../fonts/Elephant.woff) format('woff');
+}
+
+
+body {
+  font-family:'Occupied', sans-serif;
+}
+header { height:45vh; }
+.lead {
+  font-family:'Occupied Italic', sans-serif;
+  font-style: italic;
+}
+.sectionDetail { display: none;}
+.sectionCta { height:45vh; text-align: center;}
+.sectionCta .container { height: 100%; text-align: center;}
+.sectionCta .row { position: relative; height:100%; }
+h1, .ampersand { font-family:'Elephant', serif; }
+h2 { margin:7px 0; display: block;}
+h5 { text-transform: uppercase; }
 .pink-bg {
   background-color: rgb(255, 182, 193);
 }
@@ -10,6 +44,23 @@
 .green-bg {
   background-color: rgb(192, 240, 192);
 }
-.w-5 {
-  width: 5%!important;
+.arrowIcon { height:15px; position: absolute; bottom:5px; right:5px;
+  -webkit-transition: transform 0.7s ease;
+	-moz-transition: transform 0.7s ease;
+	-ms-transition: transform 0.7s ease; /* IE10 is actually unprefixed */
+	-o-transition: transform 0.7s ease;
+	transition: transform 0.7s ease;
+  transform:rotate(-45deg);
+ }
+.sectionCta:hover .arrowIcon { transform:rotate(0deg); }
+.sectionBg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  opacity: .03;
+  top: 0;
+  bottom: 0;
 }
+.sectionIcon { opacity: .5; width:30px; text-align: center; display: block;}
