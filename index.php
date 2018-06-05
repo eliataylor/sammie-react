@@ -1,3 +1,111 @@
+<?php
+
+define('ENV_HTTP', 'localhost.sammietaylor.com');
+define('ROOT_CD', getcwd());
+
+function imageSize($c, $dim) {
+    if ( (strpos($c, 'http')===0 || strpos($c, '//')===0) && strpos($c, ENV_HTTP) == false) return $c; // external file, like youtube
+    else if (strpos($c, ENV_HTTP) > -1){
+      $c = substr($c, strlen(ENV_HTTP));
+    }
+
+    preg_match('/_(\d{1,4})x(\d{1,4})/i', $c, $match); // check if any ##x## suffix is in string.
+    if (!empty($match)) {
+      $img = preg_replace("/".$match[0]."/", '_' . $dim, $c); // just add it
+      if (file_exists(ROOT_CD . $img)) return $img; // check if exists
+    }
+
+    $ext = preg_replace('/^.*\./', '', $c);
+    $img = preg_replace("/\.".$ext."/", '_' . $dim . "." .$ext, $c);
+    if (file_exists(ROOT_CD . $img)) return $img;
+
+    $original = ROOT_CD . $c;
+    if (!file_exists($original)) $original = ROOT_CD . $c;
+    if (!file_exists($original)) {
+      die($original);
+      return $c; // this will 404!
+    }
+    return $c;
+}
+
+
+function dirToJson($dirname) {
+  $all_files = glob($dirname."/*.*");
+  $segment = substr($dirname, strripos($dirname, '/')+1);
+  $images = array();
+  $sizes = array('900', '600', '300', '70');
+  for ($i=0; $i<count($all_files); $i++){
+    $image_name = $all_files[$i];
+    $ext = strtolower(pathinfo($image_name, PATHINFO_EXTENSION));
+    if (!in_array($ext, array('gif','jpg','jpeg','png'))) {
+      continue;
+    }
+
+    $safename = preg_replace('/\s/', '', $image_name);
+    if( $safename != $image_name) {
+      die("illlegal filename");
+      rename($image_name, $safename);
+      $image_name = $safename;
+    }
+
+    preg_match('/_(\d{1,4})x(\d{1,4})/i', $image_name, $match); // check if any _##x## suffix is in string.
+    if (!empty($match)) {
+      continue;
+    }
+
+    $image = array('useForDemo'=>true,'srcset'=>array(),'alt'=> $segment,
+    'sizes'=>array(
+      '(max-width: 400px) 50vw',
+      '(max-width: 600px) 33.3vw',
+      '(max-width: 900px) 25vw',
+      '18vw'
+    ));
+    if ($i==0) $image['sizes']=array('90vw');
+
+    foreach($sizes as $index=>$size){
+      if($index==0) {
+        $image['src']= imageSize('/'.$image_name, $size.'x'.$size);
+        $data = getimagesize(ROOT_CD .$image['src']);
+        $image['width'] = $data[0];
+        $image['height'] = $data[1];
+      } elseif ($index == count($sizes) -1) {
+        $image['thumbnail'] = imageSize('/'.$image_name, $size.'x'.$size);
+      }
+      $image['srcset'][] = imageSize('/'.$image_name, $size.'x'.$size) . ' ' . $size . 'w';
+    }
+
+    if (stripos($image_name, 'IMG_20141028_180527') > -1 ||
+        stripos($image_name, 'mastersuite/31') > -1) {
+      array_unshift($images, $image);
+    } else {
+      $images[] = $image;
+    }
+
+  }
+  return json_encode($images);
+}
+/*
+{
+  src: '/wwwroot/photos/lanai/28.jpg',
+  srcset: [
+    '/wwwroot/photos/lanai/28_1024.jpg 1024w',
+    '/wwwroot/photos/lanai/28_800.jpg 800w',
+    '/wwwroot/photos/lanai/28_500.jpg 500w',
+    '/wwwroot/photos/lanai/28_320.jpg 320w'
+  ],
+  sizes: [
+    '(min-width: 480px) 50vw',
+    '(min-width: 1024px) 33.3vw',
+    '100vw'
+  ],
+  width: 600,
+  height: 600,
+  alt: 'image 2'
+}
+*/
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -10,22 +118,17 @@
   <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">-->
   <link rel="stylesheet" href="/styles/style.css">
   <script type="text/javascript">
-  var json = {
-    "1" : [
-      {path : 'Ammprofile.png',category : 'wireframes'},
-    ],
-    "2" : [
-      {path : 'Ammprofile.png',category : 'wireframes'},
-    ]
-  };
+  var json = {};
+  json['1'] = <?=dirToJson('images/wireframes');?>;
+  json['2'] = <?=dirToJson('images/branding');?>;
+  json['3'] = <?=dirToJson('images/contentcopy');?>;
+  json['4'] = <?=dirToJson('images/analytics');?>;
   </script>
 </head>
 
 <body>
   <div id="master" class="container-fluid p-0">
     <pre></pre>
-    <input type="file" name="dirPrinter" />
-    <header class="container-fluid mt-5">
       <div class="row">
         <div class="pl-5 col-6">
           <h5>Marketing <span class="ampersand">&amp;</span> Design</h5>
@@ -177,59 +280,7 @@
         $(".sectionDetail").removeClass('expand');
       }, 500);
     });
-
-
-    var pre = document.querySelector("pre");
-
-    document.querySelector("input[type=file]").addEventListener("change", function(event) {
-        console.log(event.target.files)
-        var uploadFile = function(file, path) {
-          // handle file uploading
-          console.log(file, path);
-          var reader = new FileReader();
-          reader.addEventListener("load", function(e) {
-//            pre.innerHTML += "\n" + e.target.result;
-  //          console.log(e.target.result);
-          });
-          reader.readAsText(file)
-        };
-
-        var iterateFilesAndDirs = function(filesAndDirs, path) {
-          for (var i = 0; i < filesAndDirs.length; i++) {
-            if (typeof filesAndDirs[i].getFilesAndDirectories === 'function') {
-              var path = filesAndDirs[i].path;
-
-              // this recursion enables deep traversal of directories
-              filesAndDirs[i].getFilesAndDirectories().then(function(subFilesAndDirs) {
-                // iterate through files and directories in sub-directory
-                iterateFilesAndDirs(subFilesAndDirs, path);
-              });
-            } else {
-              uploadFile(filesAndDirs[i], path);
-            }
-          }
-        };
-        if ("getFilesAndDirectories" in event.target) {
-          event.target.getFilesAndDirectories()
-            .then(function(filesAndDirs) {
-              iterateFilesAndDirs(filesAndDirs, '/');
-            })
-        } else {
-          // do webkit stuff
-          var files = event.target.files;
-          for (var i = 0; i < files.length; i++) {
-            (function(file) {
-              uploadFile(file)
-            }(files[i]))
-          }
-        }
-
-
-
-
-      })
-  });
-
+});
   </script>
 </body>
 

@@ -16,43 +16,80 @@
   src: local('Elephant'), local('Elephant'), url(../fonts/Elephant.TTF) format('ttf'), url(../fonts/Elephant.woff) format('woff');
 }
 
+.pink-bg {
+  background-color: rgba(255, 182, 193, 1);
+}
+.yellow-bg {
+  background-color: rgba(255, 255, 224, 1);
+}
+.blue-bg {
+  background-color: rgba(205, 230, 238, 1);
+}
+.green-bg {
+  background-color: rgba(192, 240, 192, 1);
+}
+
 
 body {
   font-family:'Occupied', sans-serif;
 }
-header { height:45vh; }
+header { height:45%;  height:45vh; }
 .lead {
   font-family:'Occupied Italic', sans-serif;
   font-style: italic;
 }
-.sectionDetail { display: none;}
-.sectionCta { height:45vh; text-align: center;}
+.sectionDetail {
+  position: absolute; top:45%;
+  width:0; height:0; visibility: hidden; t
+  -webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease; /* IE10 is actually unprefixed */
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.sectionDetail .textBlock { opacity: 0
+  -webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease; /* IE10 is actually unprefixed */
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+  transition-delay:0s;
+}
+.sectionDetail.expand {
+  display: block;
+  visibility: visible;
+  width:90%;
+  height:90%;
+  top:2%; bottom:2%;
+  left:2%; right:2%;
+}
+.sectionDetail.expanded .textBlock { opacity:1;}
+
+.sectionDetail .pink-bg {background-color: rgba(255, 182, 193, .85); height: 100%; }
+.sectionDetail .yellow-bg {background-color: rgba(255, 255, 224, .85); height: 100%; }
+.sectionDetail .blue-bg {background-color: rgba(205, 230, 238, .85); height: 100%; }
+.sectionDetail .green-bg {background-color: rgba(192, 240, 192, .85); height: 100%; }
+
+.sectionCta { height:45vh; text-align: center; }
 .sectionCta .container { height: 100%; text-align: center;}
 .sectionCta .row { position: relative; height:100%; }
-h1, .ampersand { font-family:'Elephant', serif; }
+h1 { font-family:'Elephant', serif; }
 h2 { margin:7px 0; display: block;}
 h5 { text-transform: uppercase; }
-.pink-bg {
-  background-color: rgb(255, 182, 193);
-}
-.yellow-bg {
-  background-color: rgb(255, 255, 224);
-}
-.blue-bg {
-  background-color: rgb(205, 230, 238);
-}
-.green-bg {
-  background-color: rgb(192, 240, 192);
-}
+
 .arrowIcon { height:15px; position: absolute; bottom:5px; right:5px;
   -webkit-transition: transform 0.7s ease;
 	-moz-transition: transform 0.7s ease;
 	-ms-transition: transform 0.7s ease; /* IE10 is actually unprefixed */
 	-o-transition: transform 0.7s ease;
 	transition: transform 0.7s ease;
-  transform:rotate(-45deg);
- }
+}
+.sectionCta .arrowIcon  {transform:rotate(-45deg);}
 .sectionCta:hover .arrowIcon { transform:rotate(0deg); }
+
+.sectionDetail .arrowIcon { transform:rotate(0deg); }
+.sectionDetail:hover .arrowIcon { transform:rotate(-45deg); }
+
 .sectionBg {
   position: absolute;
   left: 0;
