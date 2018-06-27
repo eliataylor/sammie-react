@@ -190,7 +190,11 @@ header { text-align: center; }
 .sectionDetail .arrowIcon { height:25px; transform:rotate(0deg); }
 .sectionDetail:hover .arrowIcon { transform:rotate(-45deg); }
 
-.sectionIcon { width:100%; text-align: center; display: block;}
+.sectionIcon { width: 100%;
+    text-align: center;
+    display: block;
+    max-width: 300px;
+    margin: auto; }
 
 .sectionBg {
   position: absolute;
