@@ -50,7 +50,7 @@ class Gallery extends Component {
     if (!key) key = 0;
     else key = parseInt(key);
 
-    //@TODO toggle expand class to sectionDetail
+    // @TODO toggle expand class to sectionDetail
 
     this.setState({
       currentImage: key,
@@ -264,7 +264,6 @@ class Gallery extends Component {
       <div>
         {this.renderCta() }
         {this.renderLightBox() }
-        {this.renderDetailPage() }
       </div>
       );
     }
