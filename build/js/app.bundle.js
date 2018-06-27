@@ -24080,10 +24080,12 @@ var Gallery = function (_Component) {
   }, {
     key: 'componentDidUpdate',
     value: function componentDidUpdate() {
-      if (this._gallery.clientWidth !== this.state.containerWidth) {
+      /*
+      if (this._gallery.clientWidth !== this.state.containerWidth){
         console.log(this._gallery.clientWidth + ' componentDidUpdate ' + this.state.containerWidth);
-        this.setState({ containerWidth: Math.floor(this._gallery.clientWidth) });
+        this.setState({containerWidth: Math.floor(this._gallery.clientWidth)});
       }
+      */
     }
   }, {
     key: 'componentWillUnmount',
@@ -24094,7 +24096,7 @@ var Gallery = function (_Component) {
     key: 'handleResize',
     value: function handleResize(e) {
       console.log(' handleResize ');
-      this.setState({ containerWidth: Math.floor(this._gallery.clientWidth) });
+      //this.setState({containerWidth: Math.floor(this._gallery.clientWidth)});
     }
   }, {
     key: 'openLightbox',
