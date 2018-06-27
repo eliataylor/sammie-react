@@ -10,15 +10,18 @@ for (let photo in window['portfolio']) {
   if (document.getElementById(photo)) {
     var el = document.getElementById(photo),
     obj = window['portfolio'][photo];
+
     ReactDOM.render(
-       <Gallery
-       photos = {obj.images}
-       roomName = {photo}
-       openLightbox = {true}
-       heading = {obj.heading}
-       showThumbnails = {false}
-       subheading = {obj.subheading}
-        />
+        <Gallery
+        photos = {obj.images}
+        roomName = {photo}
+        openLightbox = {true}
+        showThumbnails = {false}
+        heading = {obj.heading}
+        subheading = {obj.subheading}
+        cta = {obj.cta}
+        icon = {obj.icon}
+         />
     , el);
   }
 }

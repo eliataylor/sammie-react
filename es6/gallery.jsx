@@ -49,6 +49,9 @@ class Gallery extends Component {
     var key = e.target.getAttribute('data-key');
     if (!key) key = 0;
     else key = parseInt(key);
+
+    //@TODO toggle expand class to sectionDetail
+
     this.setState({
       currentImage: key,
       lightboxIsOpen: true,
@@ -90,7 +93,7 @@ class Gallery extends Component {
     }).split(' ')[0];
   }
   renderMasonry() {
-    console.log(this.props.roomName + " RENDERING: " + this.state.containerWidth);
+    // console.log(this.props.roomName + " RENDERING: " + this.state.containerWidth);
 
     let photoPreviewNodes = [], maxWidth = Math.floor(this.state.containerWidth * .75);
     let k=0, src = this.getClosetImg(this.props.photos[k].srcset, maxWidth);
@@ -182,18 +185,47 @@ class Gallery extends Component {
   renderGallery(gallery, cols) {
     return ( <div data-cols={cols} className = 'imageGroup' > {gallery} </div>);
   }
-  renderLightboxBtn () {
+  renderCta () {
     return (
-        <a href = "#" data-testing="asldjfaldfjl" onClick = {this.openLightbox} >
-          <img src = "/images/footer-arrow.png" />
-        </a>)
+        <a href = "#gallery" onClick = {this.openLightbox} >
+          <div>
+            <img src = {this.props.icon}
+            className="sectionIcon" />
+            <h3 className="align-self-center">
+            {this.props.cta}
+            <img src="/images/footer-arrow.png" className="arrowIcon" alt="angle-down" />
+            </h3>
+          </div>
+        </a>
+      );
   }
-  render() {
-      return ( <div className = "section" ref={(c) => this._gallery = c} >
-      {this.props.heading && < h2 > {this.props.heading} < /h2> }
-      {this.props.subheading && < p > {this.props.subheading} < /p> }
-      {this.renderLightboxBtn()}
+  renderDetailPage() {
+    return (
+      <section className="sectionDetail p-1">
+        <div className="container">
+          <div className="row textBlock">
+            <img src="images/angle-down.svg" className="arrowIcon" alt="angle-down" data-id="4" />
+            <div className="col align-self-center">
+              <img src="{this.props.icon}" className="sectionIcon" alt="{this.props.cta}" />
+            </div>
+            <div className="col align-self-center">
+              <h2>{this.props.heading}</h2>
+              <p className="lead">{this.props.subheading}</p>
+            </div>
+            <div className="col-12 sectionImages">
+                {this.renderMasonry()}
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+  renderLightBox () {
+    return (
       <Lightbox
+            heading = {this.props.heading}
+            subheading = {this.props.subheading}
+            icon = {this.props.icon}
             currentImage = {
               this.state.currentImage
             }
@@ -224,77 +256,89 @@ class Gallery extends Component {
             showThumbnails = {
               this.props.showThumbnails
             }
-            /> <
-            /div>
-          );
-        }
-      }
+            />
+    );
+  }
+  render() {
+      return (
+      <div>
+        {this.renderCta() }
+        {this.renderLightBox() }
+        {this.renderDetailPage() }
+      </div>
+      );
+    }
+  }
 
-      Gallery.displayName = 'Gallery';
-      Gallery.propTypes = {
-        photos: function(props, propName, componentName) {
-          return PropTypes.arrayOf(
-            PropTypes.shape({
-              src: PropTypes.string.isRequired,
-              width: PropTypes.number.isRequired,
-              height: PropTypes.number.isRequired,
-              alt: PropTypes.string,
-              srcset: PropTypes.array,
-              sizes: PropTypes.array
-            })
-          ).isRequired.apply(this, arguments);
-        },
-        openLightbox:PropTypes.func,
-        cols: PropTypes.number,
-        margin: PropTypes.number,
-        heading: PropTypes.string,
-        showThumbnails: PropTypes.bool,
-        subheading: PropTypes.string,
-        roomName:PropTypes.string
-      };
-      Gallery.defaultProps = {
-        cols: 1,
-        margin: 5,
-        heading:'My header',
-        subheading:'My subheading',
-        roomName:'test room',
-        openLightbox:function(e)  {
-          if(e) e.preventDefault();
-        }
-      }
-      Gallery.displayName = 'Gallery';
+Gallery.displayName = 'Gallery';
+Gallery.propTypes = {
+  photos: function(props, propName, componentName) {
+    return PropTypes.arrayOf(
+      PropTypes.shape({
+        src: PropTypes.string.isRequired,
+        width: PropTypes.number.isRequired,
+        height: PropTypes.number.isRequired,
+        alt: PropTypes.string,
+        srcset: PropTypes.array,
+        sizes: PropTypes.array
+      })
+    ).isRequired.apply(this, arguments);
+  },
+  openLightbox:PropTypes.func,
+  cols: PropTypes.number,
+  margin: PropTypes.number,
+  icon: PropTypes.string,
+  cta: PropTypes.string,
+  heading: PropTypes.string,
+  showThumbnails: PropTypes.bool,
+  subheading: PropTypes.string,
+  roomName:PropTypes.string
+};
+Gallery.defaultProps = {
+  cols: 1,
+  margin: 5,
+  cta:'My cta',
+  icon:'images/footer-wireframe.png',
+  heading:'My header',
+  subheading:'My subheading',
+  roomName:'test room',
+  openLightbox:function(e)  {
+    if(e) e.preventDefault();
+  }
+}
+Gallery.displayName = 'Gallery';
 
-      const gutter = {
-        small: 2,
-        large: 4,
-      };
-      const classes = StyleSheet.create({
-        gallery: {
-          width:'100%'
-        },
+const gutter = {
+  small: 2,
+  large: 4,
+};
+const classes = StyleSheet.create({
+  gallery: {
+    width:'100%'
+  },
 
-        // anchor
-        thumbnail: {
-          boxSizing: 'border-box',
-          display: 'inline-block',
-          lineHeight: 0,
-          marginRight: gutter.small,
-          marginBottom: gutter.small,
-          overflow: 'hidden',
+  // anchor
+  thumbnail: {
+    boxSizing: 'border-box',
+    display: 'inline-block',
+    lineHeight: 0,
+    marginRight: gutter.small,
+    marginBottom: gutter.small,
+    overflow: 'hidden',
 
-          '@media (min-width: 500px)': {
-            marginRight: gutter.large,
-            marginBottom: gutter.large,
-          },
-        },
+    '@media (min-width: 500px)': {
+      marginRight: gutter.large,
+      marginBottom: gutter.large,
+    },
+  },
 
-        // actual <img />
-        source: {
-          border: 0,
-          display: 'inline-block',
-          maxWidth: '100%'
-        }
+  // actual <img />
+  source: {
+    border: 0,
+    display: 'inline-block',
+    maxWidth: '100%'
+  }
 
-      });
+});
 
-      export default Gallery;
+export default Gallery;

@@ -103,20 +103,23 @@
 .blue-bg {background-color: rgba(205, 230, 238, 1);}
 .green-bg {background-color: rgba(192, 240, 192, 1);}
 
-.kissme { font-family:'KissMeorNot', cursive; }
+.kissme { font-family:'KissMeorNot', cursive; color:#EB795E; font-size:82px; line-height:82px; white-space:nowrap;  }
+.line2 { font-family:'Montserrat-SemiBold'; font-size:26px; line-height: 26px; }
+.line3 { font-size: 30px;font-family: 'Montserrat-Light';line-height: 30px; }
+
 body {font-family:'PetitaLight', sans-serif; }
 header { text-align: center; }
 .lead {
   font-family:'PetitaMedium', sans-serif;
 }
-
+.logo { width:250px; }
 #fullBG {
   position: fixed; top:0; left:0; overflow: visible; opacity:1;
   z-index: 1; width:100%; height:100%;
 }
 #fullBG img { height:100vh; }
 
-#fullBG {
+#fullBG, .lightBoxContainer {
 	background: linear-gradient(-45deg, rgba(255, 182, 193, 1), rgba(255, 255, 224, 1), rgba(205, 230, 238, 1), rgba(192, 240, 192, 1));
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
@@ -127,6 +130,10 @@ header { text-align: center; }
 #master {
   position:relative;
   z-index: 2;
+  min-height:100vw;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 .ampersand { font-family:'PetitaLight', sans-serif;; font-weight:100;}
 .sectionDetail {
@@ -170,7 +177,8 @@ header { text-align: center; }
 .sectionCta .container { text-align: center;}
 .sectionCta .row { position: relative; }
 .sectionCta .block { height: 100%; }
-.arrowIcon { height:30px; position: absolute; bottom:9px; right:6px;
+.sectionCta a {text-decoration: none; outline:0 none; color:inherit;}
+.arrowIcon { height:30px; display: inline-block;
   -webkit-transition: transform 0.7s ease;
 	-moz-transition: transform 0.7s ease;
 	-ms-transition: transform 0.7s ease; /* IE10 is actually unprefixed */

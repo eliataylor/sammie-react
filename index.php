@@ -25,6 +25,7 @@ function imageSize($c, $dim) {
       die($original);
       return $c; // this will 404!
     }
+    // @TODO // convert image to size
     return $c;
 }
 
@@ -105,27 +106,35 @@ function dirToJson($dirname) {
 */
 $pData = array(
   'gallery1'=> array(
-    'heading' => 'Ideation, Storyboards &amp; Wireframes',
+    'cta' => 'Ideation',
+    'heading' => 'Ideation, Storyboards & Wireframes',
     'subheading' => 'Before diving into the pretty stuff, I like to layout content components and CTA\'s to allow some structure for the upcoming design to rely on.',
     'tabindex' => 1,
+    'icon' => '/images/footer-wireframe.png',
     'images' => dirToJson('images/wireframes')
   ),
   'gallery2'=> array(
-    'heading' => 'Design &amp; Branding',
+    'cta' => 'Branding',
+    'heading' => 'Design & Branding',
     'subheading' => 'I approach design through three key elements, Typography, Color, and Space. I combine these elements to create a rich, attractive message in as little space as possible.',
     'tabindex' => 2,
+    'icon' => '/images/footer-branding.png',
     'images' => dirToJson('images/branding')
   ),
   'gallery3'=> array(
-    'heading' => 'Content Copy &amp; CTA\'s',
+    'cta' => 'Content',
+    'heading' => 'Content Copy, Imagery & CTA\'s',
     'subheading' => 'Playing with words is a hobby of mine. I believe that understanding which acronyms and industry jargons are popular among the target demographics is key to creating quality copy. In the english language alone, I can speak to an older mature audience in industry jargon, while also relating to the teeny bopper crowd, with the right emoticons, of course.',
     'tabindex' => 3,
+    'icon' => '/images/footer-copywriting.png',
     'images' => dirToJson('images/contentcopy')
   ),
   'gallery4'=> array(
-    'heading' => 'Targeting, Engagement Analytics &amp; KPIs',
+    'cta' => 'Targeting',
+    'heading' => 'Targeting, Engagement Analytics & KPIs',
     'subheading' => 'Like many things in life, It\'s not all about looks. Conversion rates and KPIs are much better measurements for effectiveness than aesthetic opinion.',
     'tabindex' => 3,
+    'icon' => '/images/footer-analytics.png',
     'images' => dirToJson('images/analytics')
   )
 );
