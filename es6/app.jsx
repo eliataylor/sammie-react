@@ -8,8 +8,17 @@ import VisibilitySensor from 'react-visibility-sensor';
 // without document.getElementById(photo) it throws: "_registerComponent(...): Target container is not a DOM element."
 for (let photo in window['portfolio']) {
   if (document.getElementById(photo)) {
+    var el = document.getElementById(photo),
+    obj = window['portfolio'][photo];
     ReactDOM.render(
-       <Gallery photos = {window['portfolio'][photo]} roomName = {photo}  showThumbnails />
-    , document.getElementById(photo));
+       <Gallery
+       photos = {obj.images}
+       roomName = {photo}
+       openLightbox = {true}
+       heading = {obj.heading}
+       showThumbnails = {false}
+       subheading = {obj.subheading}
+        />
+    , el);
   }
 }

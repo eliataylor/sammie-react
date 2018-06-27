@@ -16,7 +16,8 @@ module.exports = {
         filename: '[name].bundle.js'
     },
     module: {
-        rules: [{
+        rules: [
+          {
                 enforce: 'pre',
                 test: /\.jsx?$/,
                 loader: 'eslint-loader',
@@ -48,7 +49,8 @@ module.exports = {
             }, {
                 test: /\.html$/,
                 loader: 'html-loader'
-            }, {
+            },
+            {
                 test: /\.(scss|sass)$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
@@ -66,6 +68,27 @@ module.exports = {
                         }
                     }]
                 })
+            },            
+            {
+              test: /\.css$/,
+              exclude: path.join(__dirname, '/src/app'),
+              use: ExtractTextPlugin.extract({
+                use: 'raw-loader'
+              })
+            },
+            {
+              test: /\.(png|jpe?g|gif|ico)$/,
+              loader: 'file-loader?name=images/[name].[ext]'
+            },
+            {
+              test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+              use: [{
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: 'fonts/'
+                }
+              }]
             }
         ]
     },

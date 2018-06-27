@@ -9,7 +9,6 @@ import {
 import Lightbox from 'react-images';
 import LazyLoad from 'react-lazy-load';
 
-
 class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -107,7 +106,7 @@ class Gallery extends Component {
         alt = {this.props.photos[k].alt}
         />
 
-      </a> </div>
+      </a></div>
     );
 
     let thumbLength = this.props.photos.length - 1;
@@ -160,7 +159,7 @@ class Gallery extends Component {
                 key = {k}
                 width = {w}
                 height = {commonHeight}
-                offsetBottom={600}
+                offsetBottom = {600}
                 className = {`imageItem ${k}`} >
               <a data-key = {k} href = "#" onClick = {this.openLightbox} >
                 <img src = {src}
@@ -183,11 +182,17 @@ class Gallery extends Component {
   renderGallery(gallery, cols) {
     return ( <div data-cols={cols} className = 'imageGroup' > {gallery} </div>);
   }
+  renderLightboxBtn () {
+    return (
+        <a href = "#" data-testing="asldjfaldfjl" onClick = {this.openLightbox} >
+          <img src = "/images/footer-arrow.png" />
+        </a>)
+  }
   render() {
       return ( <div className = "section" ref={(c) => this._gallery = c} >
       {this.props.heading && < h2 > {this.props.heading} < /h2> }
       {this.props.subheading && < p > {this.props.subheading} < /p> }
-      {this.renderMasonry()}
+      {this.renderLightboxBtn()}
       <Lightbox
             currentImage = {
               this.state.currentImage
@@ -248,8 +253,11 @@ class Gallery extends Component {
         roomName:PropTypes.string
       };
       Gallery.defaultProps = {
-        cols: 3,
-        margin: 2,
+        cols: 1,
+        margin: 5,
+        heading:'My header',
+        subheading:'My subheading',
+        roomName:'test room',
         openLightbox:function(e)  {
           if(e) e.preventDefault();
         }

@@ -104,10 +104,30 @@ function dirToJson($dirname) {
 }
 */
 $pData = array(
-  'gallery1'=>dirToJson('images/wireframes'),
-  'gallery2'=>dirToJson('images/branding'),
-  'gallery3'=>dirToJson('images/contentcopy'),
-  'gallery4'=>dirToJson('images/analytics'),
+  'gallery1'=> array(
+    'heading' => 'Ideation, Storyboards &amp; Wireframes',
+    'subheading' => 'Before diving into the pretty stuff, I like to layout content components and CTA\'s to allow some structure for the upcoming design to rely on.',
+    'tabindex' => 1,
+    'images' => dirToJson('images/wireframes')
+  ),
+  'gallery2'=> array(
+    'heading' => 'Design &amp; Branding',
+    'subheading' => 'I approach design through three key elements, Typography, Color, and Space. I combine these elements to create a rich, attractive message in as little space as possible.',
+    'tabindex' => 2,
+    'images' => dirToJson('images/branding')
+  ),
+  'gallery3'=> array(
+    'heading' => 'Content Copy &amp; CTA\'s',
+    'subheading' => 'Playing with words is a hobby of mine. I believe that understanding which acronyms and industry jargons are popular among the target demographics is key to creating quality copy. In the english language alone, I can speak to an older mature audience in industry jargon, while also relating to the teeny bopper crowd, with the right emoticons, of course.',
+    'tabindex' => 3,
+    'images' => dirToJson('images/contentcopy')
+  ),
+  'gallery4'=> array(
+    'heading' => 'Targeting, Engagement Analytics &amp; KPIs',
+    'subheading' => 'Like many things in life, It\'s not all about looks. Conversion rates and KPIs are much better measurements for effectiveness than aesthetic opinion.',
+    'tabindex' => 3,
+    'images' => dirToJson('images/analytics')
+  )
 );
 $index = file_get_contents(ROOT_CD.'/index.html');
 $index = str_replace('<!--PORTFOLIO_DATA-->', ' portfolio = '.json_encode($pData), $index);
