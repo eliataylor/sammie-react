@@ -1,0 +1,1 @@
+- load (public/index.php)[/public/index.php] in order to dynamically create the `window['portfolio']` object used by app.js
