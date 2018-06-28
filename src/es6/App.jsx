@@ -5,10 +5,9 @@ import Cta from './components/cta';
 class App extends Component {
   constructor() {
     super();
-
     this.state = {
+      portfolio: window['portfolio'],
       showModal: false,
-      index: 0,
       sectionObj : {}
     };
   }
@@ -16,7 +15,7 @@ class App extends Component {
   openModal(idx) {
     this.setState({
       showModal: true,
-      index: idx
+      sectionObj:this.state.portfolio[idx]
     });
   }
 
@@ -26,21 +25,15 @@ class App extends Component {
     })
   }
 
-  onOpenModal(index) {
-    this.setState({
-      sectionObj:window['portfolio'][index]
-    });
-  }
-
   render() {
     let ctas = [];
-    for (let photo in window['portfolio']) {
-      let obj = window['portfolio'][photo];
+    for (let photo in this.state.portfolio) {
+      let obj = this.state.portfolio[photo];
       ctas.push(
-        <div className="sectionCta p-1 mt-1 mb-2 col-md-2 col-sm-6">
+        <div key={photo} className="sectionCta p-1 mt-1 mb-2 col-md-2 col-sm-6">
           <Cta
           {...obj}
-          onPress={() => this.onOpenModal(photo)}
+          onPress={() => this.openModal(photo)}
            />
         </div>
       );
@@ -51,7 +44,12 @@ class App extends Component {
         {ctas}
 
         <Modal
-          {...this.state.sectionObj}
+          icon = {this.state.sectionObj.icon}
+          cta = {this.state.sectionObj.cta}
+          heading = {this.state.sectionObj.heading}
+          subheading = {this.state.sectionObj.subheading}
+          images = {this.state.sectionObj.images}
+          tabindex = {this.state.sectionObj.tabindex}
           hide={!this.state.showModal}
           endModal={this.endModal.bind(this)}
         />

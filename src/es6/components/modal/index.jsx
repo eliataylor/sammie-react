@@ -11,27 +11,26 @@ class Modal extends Component {
     super(props);
 
     this.state = {
-      heading: '',
-      subheading: '',
-      icon: '',
-      images: [],
-      index: 0,
-    }
+      index:0,
+      images : this.props.images
+    };
   }
 
   render() {
-//    let { heading, subheading, index, icon, images } = this.state;
-
-    let className = 'custom-modal ' + (this.props.hide ? 'hidden' : 'visible');
+    let className = 'custom-modal ' + (this.props.hide ? 'hidden' : 'visible expand');
 
     return (
-      <div className={className} onMouseDown={this.props.endModal}>
+      <div className={className} onMouseDown={this.props.endModal} data-total-images={this.props.images.length}>
 
-        <div className='modal-view' onMouseDown={e => e.stopPropagation()}>
-          <div className='modal-text-container'>
-            <img src={this.state.icon} />
-            <h2 className='modal-heading-text'>{this.state.heading}</h2>
-            <h3 className='modal-text'>{this.state.subheading}</h3>
+        <div className='modal-view fullBG' onMouseDown={e => e.stopPropagation()}>
+          <div className='row'>
+            <div className="col-4">
+              <img className="img-fluid" src={this.props.icon} />
+            </div>
+            <div className="col-8">
+              <h2 className='modal-heading-text'>{this.props.heading}</h2>
+              <h3 className='modal-text'>{this.props.subheading}</h3>
+            </div>
           </div>
           <div className='portfolio-view'>
             <a className='arrow-left' onClick={() => {
@@ -44,13 +43,13 @@ class Modal extends Component {
 
             <div className='slider-container'>
               <Slider
-                images={this.state.images}
+                images={this.props.images}
                 index={this.state.index}
               />
             </div>
 
             <a className='arrow-right' onClick={() => {
-              if (this.state.index < this.state.images.length - 1) {
+              if (this.state.index < this.props.images.length - 1) {
                 this.setState({ index: this.state.index + 1 })
               }
             }}>
@@ -63,7 +62,6 @@ class Modal extends Component {
   }
 }
 
-
 Modal.displayName = 'Modal';
 Modal.propTypes = {
   onPress:PropTypes.func,
@@ -73,8 +71,9 @@ Modal.propTypes = {
   subheading: PropTypes.string,
   images: PropTypes.array,
   endModal : PropTypes.func,
-  hide : PropTypes.bool,
+  hide : PropTypes.bool
 };
+
 Modal.defaultProps = {
   onPress:function(e)  {
     if(e) e.preventDefault();
