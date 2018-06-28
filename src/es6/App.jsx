@@ -37,15 +37,17 @@ class App extends Component {
     for (let photo in window['portfolio']) {
       let obj = window['portfolio'][photo];
       ctas.push(
+        <div className="sectionCta p-1 mt-1 mb-2 col-md-2 col-sm-6">
           <Cta
           {...obj}
           onPress={() => this.onOpenModal(obj.tabindex)}
            />
+        </div>
       );
     }
 
     return (
-      <div>
+      <div className="row justify-content-between align-items-center">
         {ctas}
 
         <Modal
