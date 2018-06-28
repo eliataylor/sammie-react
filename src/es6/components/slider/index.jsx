@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './slider.css';
+//import './slider.css';
 
 class Slider extends Component {
   constructor(props) {

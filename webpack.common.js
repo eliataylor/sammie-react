@@ -12,7 +12,7 @@ module.exports = {
         app: path.join(__dirname, 'src/es6', 'index')
     },
     output: {
-        path: path.join(__dirname, targetDir, 'js'),
+        path: path.join(__dirname, targetDir),
         filename: '[name].bundle.js'
     },
     module: {
@@ -112,8 +112,8 @@ module.exports = {
           // allChunks: true
         ),
         new CopyWebpackPlugin([
-          {from:'./src/fonts/',to:'fonts'},
-          {from:'./src/images/',to:'images'}
+          {from:'./src/fonts/',to:'../fonts'},
+          {from:'./src/images/',to:'../images'}
         ]),
         new webpack.LoaderOptionsPlugin({
             test: /\.jsx?/,

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './modal.css';
+//import './modal.css';
 
 import Slider from '../slider';
 import PropTypes from 'prop-types';
