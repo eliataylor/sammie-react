@@ -40,7 +40,7 @@ class App extends Component {
         <div className="sectionCta p-1 mt-1 mb-2 col-md-2 col-sm-6">
           <Cta
           {...obj}
-          onPress={() => this.onOpenModal(obj.tabindex)}
+          onPress={() => this.onOpenModal(photo)}
            />
         </div>
       );

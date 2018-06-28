@@ -57,7 +57,7 @@ class Slider extends Component {
 Slider.displayName = 'Slider';
 Slider.propTypes = {
   index:PropTypes.number,
-  images: PropTypes.object,
+  images: PropTypes.array,
 };
 Slider.defaultProps = {
   index:1,

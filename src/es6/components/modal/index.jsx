@@ -71,8 +71,8 @@ Modal.propTypes = {
   cta: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  images: PropTypes.object,
-  endModal : PropTypes.bool,
+  images: PropTypes.array,
+  endModal : PropTypes.func,
   hide : PropTypes.bool,
 };
 Modal.defaultProps = {
@@ -84,7 +84,9 @@ Modal.defaultProps = {
   heading:'My header',
   subheading:'My subheading',
   images : [],
-  endModal : true,
+  endModal:function(e)  {
+    if(e) e.preventDefault();
+  },
   hide: false
 }
 
