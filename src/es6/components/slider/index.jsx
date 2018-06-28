@@ -6,40 +6,41 @@ class Slider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      images: this.props.images,
       translateValue: 0,
       index: 0
     }
   }
 
-  // @ERROR > 5:1  error  componentWillReceiveProps is deprecated since React 16.3.0, use UNSAFE_componentWillReceiveProps instead, see https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops  react/no-deprecated
-  unsafe_componentwillreceiveprops(nextProps) {
-    const { index } = this.state;
-    if (nextProps.images !== undefined) {
-      const translateValue = -this.slideWidth() * nextProps.index;
-      console.log('unsafe_componentwillreceiveprops', nextProps.index, translateValue);
-      this.setState({ images: nextProps.images, index: nextProps.index, translateValue })
+  componentDidMount() {
+//    this.setState({translateValue : - (this.slideWidth()});
+  }
+
+  componentDidUpdate(nextProps) {
+    if (nextProps.images.length > 0 && nextProps.index !== this.props.index) {
+      this.setState({
+        index:nextProps.index,
+        translateValue : -1 * (this.slideWidth() * (this.state.index + 1))
+      })
     }
   }
 
   slideWidth() {
-    return document.querySelector('.slide-view').clientWidth
+    return document.querySelector('.slide-view').clientWidth;
   }
 
   render() {
     return (
-      <div className='slide-view' data-total-images={this.state.images.length}>
+      <div className='slide-view' data-translateValue={this.state.translateValue} >
         <div className="slider-wrapper"
           style={{
             transform: `translateX(${this.state.translateValue}px)`,
             transition: 'transform ease-out 0.45s'
           }}>
           {
-            this.state.images.map((image, idx) => {
+            this.props.images.map((image, idx) => {
               return (
                 <div key={idx} className='image-container'>
-                  <div style={{ backgroundImage: (`url('`+image+`')`)}} className='portfolio' />
-                  {/* <img src={image} className='portfolio'/> */}
+                  <img src={image.src} srcSet={image.srcset} className='portfolio' />
                 </div>
               )
             })
@@ -57,7 +58,7 @@ Slider.propTypes = {
   translateValue : PropTypes.number
 };
 Slider.defaultProps = {
-  index:1,
+  index:0,
   images : [],
   translateValue : 0
 }

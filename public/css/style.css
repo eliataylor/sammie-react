@@ -103,22 +103,19 @@
 .blue-bg {background-color: rgba(205, 230, 238, 1);}
 .green-bg {background-color: rgba(192, 240, 192, 1);}
 
-.kissme { font-family:'KissMeorNot', cursive; color:#EB795E; font-size:82px; line-height:82px; white-space:nowrap;  }
+.kissme { font-family:'KissMeorNot', cursive; color:#EB795E; font-size:82px; line-height:82px;  }
 .line2 { font-family:'Montserrat-SemiBold'; font-size:26px; line-height: 26px; }
 .line3 { font-size: 30px;font-family: 'Montserrat-Light';line-height: 30px; }
+.siteDesc { text-align: center; }
 
 body {font-family:'PetitaLight', sans-serif; }
 header { text-align: center; }
-.lead {
-  font-family:'PetitaMedium', sans-serif;
-}
+.lead { font-family:'PetitaMedium', sans-serif; }
 .logo { width:250px; }
 #fullBG {
   position: fixed; top:0; left:0; overflow: visible; opacity:1;
   z-index: 1; width:100%; height:100%;
 }
-#fullBG img { height:100vh; }
-
 #fullBG, .fullBG {
 	background: linear-gradient(-45deg, rgba(255, 182, 193, 1), rgba(255, 255, 224, 1), rgba(205, 230, 238, 1), rgba(192, 240, 192, 1));
 	background-size: 400% 400%;
@@ -128,9 +125,8 @@ header { text-align: center; }
 }
 
 #master {
-  position:relative;
   z-index: 2;
-  min-height:100vw;
+  position:relative;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -230,49 +226,21 @@ header { text-align: center; }
 }
 .primaryItem img { width:100%;}
 
-
-/**** mannually copied from sammie-react/src/es6/components/slider/slider.css ***/
-.slide-view {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.slider-wrapper {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.image-container {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-
-.portfolio {
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
+footer { text-align: center;}
 
 /**** mannually copied from sammie-react/src/es6/components/modal/modal.css ***/
 .custom-modal {
   position: fixed;
-  width: 90%; height:90%;
-   margin: auto;
-   position: absolute;
-   top: 50%; left: 50%;
-   -webkit-transform: translate(-50%,-50%);
-       -ms-transform: translate(-50%,-50%);
-           transform: translate(-50%,-50%);
-
+  width: 90%;
+  height: 95%;
+  margin: auto;
+  top: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 3;
 }
 
 .visible {
@@ -288,34 +256,29 @@ header { text-align: center; }
 }
 
 .modal-view {
-   margin: auto;
-   position: relative;
-  background-color: white;
+  margin: auto;
+  position: relative;
   border: 1px solid black;
   display: flex;
   flex-flow: column;
 }
 
 .modal-heading-text {
-  font-family: 'PetitaMedium';
-  font-size: 32px;
-  line-height: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-size: 33px;
+  line-height: 30px;
 }
 
 .modal-text {
-  font-family: 'PetitalLight';
+  font-family: 'Montserrat-Light', sans-serif;
   font-size: 17px;
-  line-height: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 16px;
 }
 
+.modalIcon { max-height: 200px; max-width: 30%; }
 .portfolio-view {
   display: flex;
-  padding: 40px;
-  height: 100%;
+  text-align: center;
 }
 
 .arrow-button {
@@ -324,17 +287,42 @@ header { text-align: center; }
 }
 
 .arrow-left {
-  margin-right: 35px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .arrow-right {
-  margin-left: 35px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .slider-container {
   flex: 1 1 auto;
+}
+
+/**** mannually copied from sammie-react/src/es6/components/slider/slider.css ***/
+.slide-view {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.image-container {
+  display: inline-block;
+  width:100%;
+}
+
+.portfolio {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 36vw;
+  width: auto;
+  max-width: 100%;
+  margin:0 auto;
 }

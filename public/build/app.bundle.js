@@ -22632,7 +22632,7 @@ var App = function (_Component) {
         _loop(photo);
       }
 
-      return _react2.default.createElement('div', { className: 'row justify-content-between align-items-center' }, ctas, _react2.default.createElement(_modal2.default, {
+      return _react2.default.createElement('div', null, _react2.default.createElement('span', { id: 'fullBG' }), _react2.default.createElement(_modal2.default, {
         icon: this.state.sectionObj.icon,
         cta: this.state.sectionObj.cta,
         heading: this.state.sectionObj.heading,
@@ -22641,7 +22641,7 @@ var App = function (_Component) {
         tabindex: this.state.sectionObj.tabindex,
         hide: !this.state.showModal,
         endModal: this.endModal.bind(this)
-      }));
+      }), _react2.default.createElement('div', { id: 'master', className: 'd-flex flex-column align-items-center justify-content-space-around' }, _react2.default.createElement('header', { className: 'mt-3 mb-3' }, _react2.default.createElement('h1', null, _react2.default.createElement('span', { className: 'sr-only' }, 'Samanta Khalil Taylor'), _react2.default.createElement('img', { src: '/images/logo.png', className: 'logo' }))), _react2.default.createElement('div', { className: 'siteDesc container mt-4 mb-4 flex-grow-1' }, _react2.default.createElement('h2', null, _react2.default.createElement('span', { className: 'kissme' }, 'easy on the eyes '), _react2.default.createElement('span', { className: 'line2' }, 'is my design motto')), _react2.default.createElement('p', { className: 'line3' }, 'I enjoy building pretty, clean, easy to read, and user friendly designs + layouts.')), _react2.default.createElement('div', { className: 'container mt-4 mb-4 flex-grow-1' }, _react2.default.createElement('div', { className: 'row justify-content-between align-items-center' }, ctas)), _react2.default.createElement('footer', { className: 'mt-5 mb-5' }, _react2.default.createElement('p', null, '415-300-0834 \xBB get@sammietaylor.com'))));
     }
   }]);
 
@@ -22720,8 +22720,7 @@ var Modal = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Modal.__proto__ || Object.getPrototypeOf(Modal)).call(this, props));
 
     _this.state = {
-      index: 0,
-      images: _this.props.images
+      index: 0
     };
     return _this;
   }
@@ -22733,18 +22732,22 @@ var Modal = function (_Component) {
 
       var className = 'custom-modal ' + (this.props.hide ? 'hidden' : 'visible expand');
 
-      return _react2.default.createElement('div', { className: className, onMouseDown: this.props.endModal, 'data-total-images': this.props.images.length }, _react2.default.createElement('div', { className: 'modal-view fullBG', onMouseDown: function onMouseDown(e) {
+      return _react2.default.createElement('div', { className: className, onMouseDown: this.props.endModal }, _react2.default.createElement('div', { className: 'modal-view fullBG p-2', onMouseDown: function onMouseDown(e) {
           return e.stopPropagation();
-        } }, _react2.default.createElement('div', { className: 'row' }, _react2.default.createElement('div', { className: 'col-4' }, _react2.default.createElement('img', { className: 'img-fluid', src: this.props.icon })), _react2.default.createElement('div', { className: 'col-8' }, _react2.default.createElement('h2', { className: 'modal-heading-text' }, this.props.heading), _react2.default.createElement('h3', { className: 'modal-text' }, this.props.subheading))), _react2.default.createElement('div', { className: 'portfolio-view' }, _react2.default.createElement('a', { className: 'arrow-left', onClick: function onClick() {
+        } }, _react2.default.createElement('p', null, _react2.default.createElement('span', { className: 'float-right', onMouseDown: this.props.endModal }, _react2.default.createElement('img', { src: '/images/angle-down.png', height: '20' })), _react2.default.createElement('img', { className: 'modalIcon float-left', src: this.props.icon }), _react2.default.createElement('span', { className: 'modal-heading-text' }, this.props.heading), _react2.default.createElement('br', null), _react2.default.createElement('span', { className: 'modal-text' }, this.props.subheading)), _react2.default.createElement('div', { className: 'portfolio-view', 'data-index': this.state.index }, _react2.default.createElement('a', { className: 'arrow-left mr-1', onClick: function onClick() {
           if (_this2.state.index > 0) {
             _this2.setState({ index: _this2.state.index - 1 });
+          } else {
+            _this2.setState({ index: _this2.props.images.length - 1 });
           }
-        } }, _react2.default.createElement('img', { src: '/images/arrow_left.png', alt: 'left arrow', className: 'arrow-button' })), _react2.default.createElement('div', { className: 'slider-container' }, _react2.default.createElement(_slider2.default, {
+        } }, _react2.default.createElement('img', { src: '/images/arrow_left.png', alt: 'left arrow', className: 'arrow-button' })), _react2.default.createElement('div', { className: 'slider-container', 'data-index': this.state.index }, _react2.default.createElement(_slider2.default, {
         images: this.props.images,
         index: this.state.index
-      })), _react2.default.createElement('a', { className: 'arrow-right', onClick: function onClick() {
+      })), _react2.default.createElement('a', { className: 'arrow-right ml-1', onClick: function onClick() {
           if (_this2.state.index < _this2.props.images.length - 1) {
             _this2.setState({ index: _this2.state.index + 1 });
+          } else {
+            _this2.setState({ index: 0 });
           }
         } }, _react2.default.createElement('img', { src: '/images/arrow_right.png', alt: 'left arrow', className: 'arrow-button' })))));
     }
@@ -22770,9 +22773,9 @@ Modal.defaultProps = {
     if (e) e.preventDefault();
   },
   icon: 'images/footer-wireframe.png',
-  cta: 'My cta',
-  heading: 'My header',
-  subheading: 'My subheading',
+  cta: '',
+  heading: '',
+  subheading: '',
   images: [],
   endModal: function endModal(e) {
     if (e) e.preventDefault();
@@ -22846,25 +22849,25 @@ var Slider = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Slider.__proto__ || Object.getPrototypeOf(Slider)).call(this, props));
 
     _this.state = {
-      images: _this.props.images,
       translateValue: 0,
       index: 0
     };
     return _this;
   }
 
-  // @ERROR > 5:1  error  componentWillReceiveProps is deprecated since React 16.3.0, use UNSAFE_componentWillReceiveProps instead, see https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops  react/no-deprecated
-
-
   _createClass(Slider, [{
-    key: 'unsafe_componentwillreceiveprops',
-    value: function unsafe_componentwillreceiveprops(nextProps) {
-      var index = this.state.index;
-
-      if (nextProps.images !== undefined) {
-        var translateValue = -this.slideWidth() * nextProps.index;
-        console.log('unsafe_componentwillreceiveprops', nextProps.index, translateValue);
-        this.setState({ images: nextProps.images, index: nextProps.index, translateValue: translateValue });
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      //    this.setState({translateValue : - (this.slideWidth()});
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(nextProps) {
+      if (nextProps.images.length > 0 && nextProps.index !== this.props.index) {
+        this.setState({
+          index: nextProps.index,
+          translateValue: -1 * (this.slideWidth() * (this.state.index + 1))
+        });
       }
     }
   }, {
@@ -22875,12 +22878,12 @@ var Slider = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('div', { className: 'slide-view', 'data-total-images': this.state.images.length }, _react2.default.createElement('div', { className: 'slider-wrapper',
+      return _react2.default.createElement('div', { className: 'slide-view', 'data-translateValue': this.state.translateValue }, _react2.default.createElement('div', { className: 'slider-wrapper',
         style: {
           transform: 'translateX(' + this.state.translateValue + 'px)',
           transition: 'transform ease-out 0.45s'
-        } }, this.state.images.map(function (image, idx) {
-        return _react2.default.createElement('div', { key: idx, className: 'image-container' }, _react2.default.createElement('div', { style: { backgroundImage: 'url(\'' + image + '\')' }, className: 'portfolio' }));
+        } }, this.props.images.map(function (image, idx) {
+        return _react2.default.createElement('div', { key: idx, className: 'image-container' }, _react2.default.createElement('img', { src: image.src, srcSet: image.srcset, className: 'portfolio' }));
       })));
     }
   }]);
@@ -22895,7 +22898,7 @@ Slider.propTypes = {
   translateValue: _propTypes2.default.number
 };
 Slider.defaultProps = {
-  index: 1,
+  index: 0,
   images: [],
   translateValue: 0
 };
