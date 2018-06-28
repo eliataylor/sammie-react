@@ -1,7 +1,7 @@
 var path = require('path');
 var merge = require('webpack-merge');
 var common = require('./webpack.common.js');
-var publicPath = './build';
+var publicPath = 'public';
 
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -18,20 +18,5 @@ module.exports = merge(common, {
         noInfo: false,
         stats: 'minimal',
         publicPath: publicPath
-    },
-    plugins: [
-      new ExtractTextPlugin(
-        './css/[name].css'
-        // allChunks: true
-      ),
-/*      new ExtractTextPlugin({
-          filename: 'css/kpstyles.css',
-          disable: false,
-          allChunks: false
-      }),
-      */
-      new CopyWebpackPlugin([
-        {from:'./fonts/',to:'fonts'}
-      ]),
-    ]
+    }
 });

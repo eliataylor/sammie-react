@@ -32,19 +32,17 @@ class Gallery extends Component {
     window.addEventListener('resize', this.handleResize);
   }
   componentDidUpdate(){
-    /*
     if (this._gallery.clientWidth !== this.state.containerWidth){
       console.log(this._gallery.clientWidth + ' componentDidUpdate ' + this.state.containerWidth);
       this.setState({containerWidth: Math.floor(this._gallery.clientWidth)});
     }
-    */
   }
   componentWillUnmount(){
     window.removeEventListener('resize', this.handleResize, false);
   }
   handleResize(e){
     console.log(' handleResize ' );
-    //this.setState({containerWidth: Math.floor(this._gallery.clientWidth)});
+    this.setState({containerWidth: Math.floor(this._gallery.clientWidth)});
   }
   openLightbox(e) {
     e.preventDefault();
@@ -307,7 +305,6 @@ Gallery.defaultProps = {
     if(e) e.preventDefault();
   }
 }
-Gallery.displayName = 'Gallery';
 
 const gutter = {
   small: 2,

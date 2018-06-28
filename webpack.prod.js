@@ -44,11 +44,6 @@ module.exports = merge(common, {
                 screw_ie8: true
             },
             comments: false
-        }),
-        new ExtractTextPlugin({
-            filename: 'css/kpstyles.css',
-            disable: false,
-            allChunks: true
         })
     ]
 });

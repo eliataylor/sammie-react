@@ -138,6 +138,6 @@ $pData = array(
     'images' => dirToJson('images/analytics')
   )
 );
-$index = file_get_contents(ROOT_CD.'/index.html');
+$index = file_get_contents('../src/index.html');
 $index = str_replace('<!--PORTFOLIO_DATA-->', ' portfolio = '.json_encode($pData), $index);
 echo $index;

@@ -1,15 +1,15 @@
-var path = require('path');
-var webpack = require('webpack');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var targetDir = 'build';
+const path = require('path');
+const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const targetDir = 'public/build';
 
 module.exports = {
     entry: {
         polyfills: 'babel-polyfill',
-        app: path.join(__dirname, 'es6', 'app')
+        app: path.join(__dirname, 'src/es6', 'index')
     },
     output: {
         path: path.join(__dirname, targetDir, 'js'),
@@ -51,6 +51,18 @@ module.exports = {
                 loader: 'html-loader'
             },
             {
+              test: /\.css$/,
+              include: path.join(__dirname, '/src/components'),
+              loader: 'raw-loader'
+            },
+            {
+              test: /\.css$/,
+              exclude: path.join(__dirname, '../public/css'),
+              use: ExtractTextPlugin.extract({
+                use: 'raw-loader'
+              })
+            },
+            {
                 test: /\.(scss|sass)$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
@@ -68,13 +80,6 @@ module.exports = {
                         }
                     }]
                 })
-            },            
-            {
-              test: /\.css$/,
-              exclude: path.join(__dirname, '/src/app'),
-              use: ExtractTextPlugin.extract({
-                use: 'raw-loader'
-              })
             },
             {
               test: /\.(png|jpe?g|gif|ico)$/,
@@ -86,7 +91,7 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                   name: '[name].[ext]',
-                  outputPath: 'fonts/'
+                  outputPath: path.join(__dirname, 'build/fonts')
                 }
               }]
             }
@@ -97,6 +102,19 @@ module.exports = {
     },
     target: 'web',
     plugins: [
+/*        new HtmlWebPackPlugin({
+          template: "./src/index.html",
+          filename: "./index.html"
+        }),
+        */
+        new ExtractTextPlugin(
+          '[name].css'
+          // allChunks: true
+        ),
+        new CopyWebpackPlugin([
+          {from:'./src/fonts/',to:'fonts'},
+          {from:'./src/images/',to:'images'}
+        ]),
         new webpack.LoaderOptionsPlugin({
             test: /\.jsx?/,
             options: {
@@ -109,9 +127,9 @@ module.exports = {
                 },
             }
         }),
-        new webpack.EnvironmentPlugin({
-            NODE_ENV: 'dev'
-        }),
+//        new webpack.EnvironmentPlugin({
+//            NODE_ENV: 'dev'
+//        }),
         new webpack.NoEmitOnErrorsPlugin(),
         new CleanWebpackPlugin([targetDir])
     ]
