@@ -11,15 +11,11 @@ class Slider extends Component {
     }
   }
 
-  componentDidMount() {
-//    this.setState({translateValue : - (this.slideWidth()});
-  }
-
   componentDidUpdate(nextProps) {
     if (nextProps.images.length > 0 && nextProps.index !== this.props.index) {
       this.setState({
         index:nextProps.index,
-        translateValue : -1 * (this.slideWidth() * (this.state.index + 1))
+        translateValue : -1 * (this.slideWidth() * this.props.index)
       })
     }
   }
@@ -30,7 +26,7 @@ class Slider extends Component {
 
   render() {
     return (
-      <div className='slide-view' >
+      <div className='slide-view' data-prop-index={this.props.index} data-state-index={this.state.index} >
         <div className="slider-wrapper"
           style={{
             transform: `translateX(${this.state.translateValue}px)`,
