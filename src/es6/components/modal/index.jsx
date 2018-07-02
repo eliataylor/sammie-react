@@ -19,25 +19,25 @@ class Modal extends Component {
     let className = 'custom-modal ' + (this.props.hide ? 'hidden' : 'visible expand');
 
     return (
-      <div className={className} onMouseDown={this.props.endModal} >
+      <div className={className} onClick={this.props.endModal} >
 
-        <div className='modal-view fullBG p-2' onMouseDown={e => e.stopPropagation()}>
+        <div className='modal-view fullBG p-2' onClick={e => e.stopPropagation()}>
           <p>
-            <span className="float-right" onMouseDown={this.props.endModal}><img src="/images/angle-down.png" height="20" /></span>
+            <span className="float-right" onClick={this.props.endModal}><img src="/images/collapse-424953.png" height="20" className="arrow-button" /></span>
             <img className="modalIcon float-left" src={this.props.icon} />
             <span className='modal-heading-text'>{this.props.heading}</span><br />
             <span className='modal-text'>{this.props.subheading}</span>
           </p>
-          <div className='portfolio-view' data-index={this.state.index}>
+          <div className='portfolio-view flex-grow-1 align-items-center justify-content-space-around' data-index={this.state.index}>
 
-            <a className='arrow-left mr-1' onClick={() => {
+            <a onClick={() => {
               if (this.state.index > 0) {
-                this.setState({index: this.state.index - 1})
-              } else {
-                this.setState({index: this.props.images.length -1})
-              }
-            }}>
-              <img src='/images/arrow_left.png' alt='left arrow' className='arrow-button' />
+                  this.setState({index: this.state.index - 1})
+                } else {
+                  this.setState({index: this.props.images.length -1 })
+                }
+              }}>
+              <img src='/images/arrow-east-424953.png' alt='left arrow' className='mr-1 arrow-west arrow-button' />
             </a>
 
             <div className='slider-container' data-index={this.state.index} >
@@ -47,14 +47,14 @@ class Modal extends Component {
               />
             </div>
 
-            <a className='arrow-right ml-1' onClick={() => {
+            <a onClick={() => {
               if (this.state.index < this.props.images.length - 1) {
                 this.setState({ index: this.state.index + 1 })
               } else {
                 this.setState({ index: 0 })
               }
             }}>
-              <img src='/images/arrow_right.png' alt='left arrow' className='arrow-button' />
+              <img src='/images/arrow-east-424953.png' alt='right arrow' className='arrow-east arrow-button ml-1' />
             </a>
           </div>
         </div>

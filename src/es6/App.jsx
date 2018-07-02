@@ -64,7 +64,7 @@ class App extends Component {
               <span className="kissme" >easy on the eyes </span>
               <span className="line2">is my design motto</span>
             </h2>
-            <p className="line3">I enjoy building pretty, clean, easy to read, and user friendly designs + layouts.</p>
+            <p className="line3">I enjoy building pretty, clean, easy to read, and user friendly designs <span className="ampersand"> &amp; </span> layouts.</p>
           </div>
           <div className="container mt-4 mb-4 flex-grow-1">
             <div className="row justify-content-between align-items-center" >

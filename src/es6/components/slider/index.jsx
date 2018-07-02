@@ -30,7 +30,7 @@ class Slider extends Component {
 
   render() {
     return (
-      <div className='slide-view' data-translateValue={this.state.translateValue} >
+      <div className='slide-view' >
         <div className="slider-wrapper"
           style={{
             transform: `translateX(${this.state.translateValue}px)`,
@@ -40,7 +40,7 @@ class Slider extends Component {
             this.props.images.map((image, idx) => {
               return (
                 <div key={idx} className='image-container'>
-                  <img src={image.src} srcSet={image.srcset} className='portfolio' />
+                  <div className="slide-img"><img src={image.src} srcSet={image.srcset}  /></div>
                 </div>
               )
             })

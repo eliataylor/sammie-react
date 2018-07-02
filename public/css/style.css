@@ -108,7 +108,7 @@
 .line3 { font-size: 30px;font-family: 'Montserrat-Light';line-height: 30px; }
 .siteDesc { text-align: center; }
 
-body {font-family:'PetitaLight', sans-serif; }
+body {font-family:'PetitaLight', sans-serif; color:#424953; }
 header { text-align: center; }
 .lead { font-family:'PetitaMedium', sans-serif; }
 .logo { width:250px; }
@@ -117,6 +117,7 @@ header { text-align: center; }
   z-index: 1; width:100%; height:100%;
 }
 #fullBG, .fullBG {
+  overflow: visible; width:100%; height:100%;
 	background: linear-gradient(-45deg, rgba(255, 182, 193, 1), rgba(255, 255, 224, 1), rgba(205, 230, 238, 1), rgba(192, 240, 192, 1));
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
@@ -131,7 +132,8 @@ header { text-align: center; }
   justify-items: center;
   align-items: center;
 }
-.ampersand { font-family:'PetitaLight', sans-serif;; font-weight:100;}
+.ampersand { font-family:'KissMeorNot', serif;; font-weight:100;}
+
 .sectionDetail {
   position: absolute;
   width:0; height:0; visibility: hidden;
@@ -173,17 +175,25 @@ header { text-align: center; }
 .sectionCta .row { position: relative; }
 .sectionCta .block { height: 100%; }
 .sectionCta a {text-decoration: none; outline:0 none; color:inherit;}
-.arrowIcon { height:30px; display: inline-block;
-  -webkit-transition: transform 0.7s ease;
-	-moz-transition: transform 0.7s ease;
-	-ms-transition: transform 0.7s ease; /* IE10 is actually unprefixed */
-	-o-transition: transform 0.7s ease;
-	transition: transform 0.7s ease;
+.arrowIcon {
+  display: inline-block;
+  height:17px;
+  height: 17px;
+  border-radius: 17px;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  background: rgba(251,176,65,1);
+  padding: 4px;
+  margin: 5px;
 }
-.sectionCta:hover .arrowIcon  {transform:rotate(-45deg);}
 
-.sectionDetail .arrowIcon { height:25px; transform:rotate(0deg); }
-.sectionDetail:hover .arrowIcon { transform:rotate(-45deg); }
+.sectionCta:hover .arrowIcon  {
+  background: rgba(251,176,65.5);
+  transform:rotate(-45deg);
+}
 
 .sectionIcon { width: 100%;
     text-align: center;
@@ -228,7 +238,7 @@ header { text-align: center; }
 
 footer { text-align: center;}
 
-/**** mannually copied from sammie-react/src/es6/components/modal/modal.css ***/
+/**** modal.css ***/
 .custom-modal {
   position: fixed;
   width: 90%;
@@ -241,6 +251,14 @@ footer { text-align: center;}
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   z-index: 3;
+}
+
+.custom-modal .fullBG {
+  background: linear-gradient(-45deg, rgba(255, 182, 193, .95), rgba(255, 255, 224, .95), rgba(205, 230, 238, .95), rgba(192, 240, 192, .95));
+  background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
 
 .visible {
@@ -258,49 +276,63 @@ footer { text-align: center;}
 .modal-view {
   margin: auto;
   position: relative;
-  border: 1px solid black;
+  border: 1px solid #424953;
   display: flex;
   flex-flow: column;
 }
 
 .modal-heading-text {
   font-family: 'Montserrat-SemiBold', sans-serif;
-  font-size: 33px;
-  line-height: 30px;
+  font-size: 130%;
+  line-height: normal;
 }
 
 .modal-text {
   font-family: 'Montserrat-Light', sans-serif;
-  font-size: 17px;
-  line-height: 16px;
+  font-size: 100%;
+  line-height: normal;
 }
 
-.modalIcon { max-height: 200px; max-width: 30%; }
+.modalIcon {
+  max-height: 80px;
+  max-width: 30%;
+  margin-right: 20px;
+}
+
 .portfolio-view {
   display: flex;
   text-align: center;
 }
 
 .arrow-button {
-  width: 35px;
-  height: 35px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  background: rgba(251,176,65,1);
+  padding: 4px;
+  margin: 5px;
 }
 
-.arrow-left {
+.arrow-button.arrow-east, .arrow-button.arrow-west {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.arrow-right {
-  margin-top: auto;
-  margin-bottom: auto;
+.arrow-button.arrow-west {
+  transform:rotate(-180deg);
 }
 
+
+/**** slider.css ***/
 .slider-container {
   flex: 1 1 auto;
 }
-
-/**** mannually copied from sammie-react/src/es6/components/slider/slider.css ***/
 .slide-view {
   position: relative;
   margin: 0 auto;
@@ -313,16 +345,17 @@ footer { text-align: center;}
 }
 
 .image-container {
-  display: inline-block;
+  display:block;
   width:100%;
+  overflow: hidden;
 }
 
-.portfolio {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 36vw;
-  width: auto;
-  max-width: 100%;
-  margin:0 auto;
+.slide-img {
+  box-shadow:1px 1px 7px 1px #383d41;
+}
+
+.slide-img img {
+  display:inline-block;
+  max-height:60vh;
+  max-width:90vw;
 }

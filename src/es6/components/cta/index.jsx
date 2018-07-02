@@ -10,12 +10,12 @@ class Cta extends Component {
 
   render() {
     return (
-      <a href = "#gallery" onClick = {this.props.onPress} >
+      <a href = {"#"+this.props.cta.toLowerCase()} onClick = {this.props.onPress} >
         <div>
           <img src={this.props.icon} className="sectionIcon" />
           <h3 className="align-self-center">
           {this.props.cta}
-          <img src='/images/footer-arrow.png' className="arrowIcon" alt="angle-down" />
+          <img src='/images/arrow-tr-424953.png' className="arrowIcon" alt="angle-down" />
           </h3>
         </div>
       </a>
