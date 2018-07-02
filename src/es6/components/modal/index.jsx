@@ -28,7 +28,7 @@ class Modal extends Component {
             <span className='modal-heading-text'>{this.props.heading}</span><br />
             <span className='modal-text'>{this.props.subheading}</span>
           </p>
-          <div className='portfolio-view flex-grow-1 align-items-center justify-content-space-around' data-index={this.state.index}>
+          <div className='portfolio-view flex-grow-1' data-index={this.state.index}>
 
             <a onClick={() => {
               if (this.state.index > 0) {
@@ -37,7 +37,7 @@ class Modal extends Component {
                   this.setState({index: this.props.images.length -1 })
                 }
               }}>
-              <img src='/images/arrow-east-424953.png' alt='left arrow' className='mr-1 arrow-west arrow-button' />
+              <img src='/images/arrow-east-424953.png' alt='left arrow' className='arrow-west arrow-button' />
             </a>
 
             <div className='slider-container' data-index={this.state.index} >
@@ -54,7 +54,7 @@ class Modal extends Component {
                 this.setState({ index: 0 })
               }
             }}>
-              <img src='/images/arrow-east-424953.png' alt='right arrow' className='arrow-east arrow-button ml-1' />
+              <img src='/images/arrow-east-424953.png' alt='right arrow' className='arrow-east arrow-button' />
             </a>
           </div>
         </div>

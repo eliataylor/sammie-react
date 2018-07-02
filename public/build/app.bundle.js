@@ -22734,13 +22734,13 @@ var Modal = function (_Component) {
 
       return _react2.default.createElement('div', { className: className, onClick: this.props.endModal }, _react2.default.createElement('div', { className: 'modal-view fullBG p-2', onClick: function onClick(e) {
           return e.stopPropagation();
-        } }, _react2.default.createElement('p', null, _react2.default.createElement('span', { className: 'float-right', onClick: this.props.endModal }, _react2.default.createElement('img', { src: '/images/collapse-424953.png', height: '20', className: 'arrow-button' })), _react2.default.createElement('img', { className: 'modalIcon float-left', src: this.props.icon }), _react2.default.createElement('span', { className: 'modal-heading-text' }, this.props.heading), _react2.default.createElement('br', null), _react2.default.createElement('span', { className: 'modal-text' }, this.props.subheading)), _react2.default.createElement('div', { className: 'portfolio-view flex-grow-1 align-items-center justify-content-space-around', 'data-index': this.state.index }, _react2.default.createElement('a', { onClick: function onClick() {
+        } }, _react2.default.createElement('p', null, _react2.default.createElement('span', { className: 'float-right', onClick: this.props.endModal }, _react2.default.createElement('img', { src: '/images/collapse-424953.png', height: '20', className: 'arrow-button' })), _react2.default.createElement('img', { className: 'modalIcon float-left', src: this.props.icon }), _react2.default.createElement('span', { className: 'modal-heading-text' }, this.props.heading), _react2.default.createElement('br', null), _react2.default.createElement('span', { className: 'modal-text' }, this.props.subheading)), _react2.default.createElement('div', { className: 'portfolio-view flex-grow-1', 'data-index': this.state.index }, _react2.default.createElement('a', { onClick: function onClick() {
           if (_this2.state.index > 0) {
             _this2.setState({ index: _this2.state.index - 1 });
           } else {
             _this2.setState({ index: _this2.props.images.length - 1 });
           }
-        } }, _react2.default.createElement('img', { src: '/images/arrow-east-424953.png', alt: 'left arrow', className: 'mr-1 arrow-west arrow-button' })), _react2.default.createElement('div', { className: 'slider-container', 'data-index': this.state.index }, _react2.default.createElement(_slider2.default, {
+        } }, _react2.default.createElement('img', { src: '/images/arrow-east-424953.png', alt: 'left arrow', className: 'arrow-west arrow-button' })), _react2.default.createElement('div', { className: 'slider-container', 'data-index': this.state.index }, _react2.default.createElement(_slider2.default, {
         images: this.props.images,
         index: this.state.index
       })), _react2.default.createElement('a', { onClick: function onClick() {
@@ -22749,7 +22749,7 @@ var Modal = function (_Component) {
           } else {
             _this2.setState({ index: 0 });
           }
-        } }, _react2.default.createElement('img', { src: '/images/arrow-east-424953.png', alt: 'right arrow', className: 'arrow-east arrow-button ml-1' })))));
+        } }, _react2.default.createElement('img', { src: '/images/arrow-east-424953.png', alt: 'right arrow', className: 'arrow-east arrow-button' })))));
     }
   }]);
 
@@ -22883,7 +22883,7 @@ var Slider = function (_Component) {
           transform: 'translateX(' + this.state.translateValue + 'px)',
           transition: 'transform ease-out 0.45s'
         } }, this.props.images.map(function (image, idx) {
-        return _react2.default.createElement('div', { key: idx, className: 'image-container' }, _react2.default.createElement('div', { className: 'slide-img' }, _react2.default.createElement('img', { src: image.src, srcSet: image.srcset })));
+        return _react2.default.createElement('div', { key: idx, className: 'image-container' }, _react2.default.createElement('span', { style: { backgroundImage: 'url(\'' + image.src + '\')' }, className: 'slide-img' }, _react2.default.createElement('img', { src: image.src, srcSet: image.srcset })));
       })));
     }
   }]);

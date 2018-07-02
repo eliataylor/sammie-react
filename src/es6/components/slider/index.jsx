@@ -40,7 +40,9 @@ class Slider extends Component {
             this.props.images.map((image, idx) => {
               return (
                 <div key={idx} className='image-container'>
-                  <div className="slide-img"><img src={image.src} srcSet={image.srcset}  /></div>
+                  <span style={{ backgroundImage: (`url('`+image.src+`')`)}}  className="slide-img">
+                  <img src={image.src} srcSet={image.srcset}  />
+                  </span>
                 </div>
               )
             })
