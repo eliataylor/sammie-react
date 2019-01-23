@@ -132,6 +132,8 @@ header { text-align: center; }
   justify-items: center;
   align-items: center;
   min-height: 100vh;
+  background:transparent url(/images/fullbg_palm.jpg) bottom right no-repeat;
+  background-size:contain;
 }
 .ampersand { font-family:'KissMeorNot', serif;; font-weight:100;}
 
@@ -165,6 +167,8 @@ header { text-align: center; }
 .sectionDetail .yellow-bg {background-color: rgba(255, 255, 224, .90); height: 100%; }
 .sectionDetail .blue-bg {background-color: rgba(205, 230, 238, .90); height: 100%; }
 .sectionDetail .green-bg {background-color: rgba(192, 240, 192, .90); height: 100%; }
+
+.expertise { background-color: #eee0b6}
 
 .sectionCta .pink-bg {background-color: rgba(255, 182, 193, .5); }
 .sectionCta .yellow-bg {background-color: rgba(255, 255, 224, .5); }

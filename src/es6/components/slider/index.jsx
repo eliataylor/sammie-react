@@ -39,6 +39,7 @@ class Slider extends Component {
                   <span style={{ backgroundImage: (`url('`+image.src+`')`)}}  className="slide-img">
                   <img src={image.src} srcSet={image.srcset}  />
                   </span>
+                  { (typeof image.desc == 'string') ? <span className='slide-desc'>{image.desc}</span> : '' }
                 </div>
               )
             })

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from './components/modal';
 import Cta from './components/cta';
+import '../scss/master.scss';
 
 class App extends Component {
   constructor() {
@@ -10,6 +11,22 @@ class App extends Component {
       showModal: false,
       sectionObj : {}
     };
+  }
+
+  componentDidMount() {
+    if (!this.state.portfolio) {
+      fetch("/data/project-desc.json")
+//      .then(res => res.json())
+      .then(
+        (result) => {
+          console.log(result);
+          this.setState({portfolio:result.data});
+        },
+        (error) => {
+          console.log(error)
+        }
+      )
+    }
   }
 
   openModal(idx) {
@@ -52,28 +69,26 @@ class App extends Component {
           hide={!this.state.showModal}
           endModal={this.endModal.bind(this)}
         />
-        <div id="master" className="d-flex flex-column align-items-center justify-content-space-around">
-          <header className="mt-3 mb-3">
-                <h1>
-                  <span className="sr-only">Samanta Khalil Taylor</span>
-                  <img src="/images/logo.png" className="logo" />
-                </h1>
-          </header>
-          <div className="siteDesc container mt-4 mb-4 flex-grow-1">
-            <h2>
-              <span className="kissme" >easy on the eyes </span>
-              <span className="line2">is my design motto</span>
-            </h2>
-            <p className="line3">I enjoy building pretty, clean, easy to read, and user friendly designs <span className="ampersand"> &amp; </span> layouts.</p>
-          </div>
-          <div className="container mt-4 mb-4 flex-grow-1">
-            <div className="row justify-content-between align-items-center" >
-              {ctas}
+        <div id="master" >
+          <div className="container-fluid">
+            <div className='row'>
+              <div className='col-8'>
+                  <h1>SAM</h1>
+                  <h2 className='bgBrush'>designs</h2>
+
+                  <h3>Philosophy:</h3>
+                  <p>Create normalcy out of chaos by clearly communicating ideas through the organizing and manipulation of words and images.</p>
+
+                  <div><button className='expertise'>Designs</button></div>
+                  <div><button className='expertise'>UI/UX</button></div>
+
+              </div>
+              <div className='col-4'>
+                  <h4>Contact:</h4>
+                  <h5>get@sammietaylor.com</h5>
+              </div>
             </div>
           </div>
-          <footer className="mt-5 mb-5">
-            <p>415-300-0834 &raquo; get@sammietaylor.com</p>
-          </footer>
         </div>
       </div>
     );
