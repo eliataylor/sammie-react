@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const targetDir = 'public/build';
+const targetDir = 'public';
 
 module.exports = {
     entry: path.join(__dirname, 'src/es6', 'index'),
@@ -26,10 +26,25 @@ module.exports = {
                     loader: "css-loader" // translates CSS into CommonJS
                   },
                   {
-                    loader: "sass-loader" // compiles Sass to CSS
+                    loader: "sass-loader", // compiles Sass to CSS
+                    options: {
+                        includePaths: ["src/scss"]
+                    }
                   }
                 ]
-              }
+              },
+              {
+                 test: /\.(png|svg|jpg|gif)$/,
+                 use: [
+                   'file-loader'
+                 ]
+               },
+               {
+                 test: /\.json$/,
+                 use: [
+                   'json-loader'
+                 ]
+               }
         ]
     },
     resolve: {

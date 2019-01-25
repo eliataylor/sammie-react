@@ -42,7 +42,7 @@
 
 .siteDesc { text-align: center; }
 
-body { color:#424953; }
+body { color:#424953; font-family: europa, sans-serif;}
 header { text-align: center; }
 .logo { width:250px; }
 #fullBG {
@@ -68,9 +68,28 @@ header { text-align: center; }
   background:transparent url(/images/fullbg_palm.jpg) bottom right no-repeat;
   background-size:cover;
 }
-.bgBrush {
-  background:transparent url(/images/bg_brush.jpg) bottom right no-repeat;
-  background-size:contain;
+h1 {
+	font-size: 68px;
+	font-weight: 100;
+	line-height: 68px;
+}
+
+h2 { display: inline-block; font-weight: 200; position: relative; z-index: 2; margin-left: 14px;}
+h2:before {
+	content:'';
+	z-index:-1;
+	width:150%;
+	height:100%;
+	background: transparent url(/images/bg_brush.png) center center no-repeat;
+  background-size: contain;
+  overflow: visible;
+	@include centerer(true, true);
+}
+
+h4, h5 {
+	background: #E3E7DC;
+	padding:6px;
+	display:inline-block;
 }
 
 .sectionDetail {
@@ -104,7 +123,25 @@ header { text-align: center; }
 .sectionDetail .blue-bg {background-color: rgba(205, 230, 238, .90); height: 100%; }
 .sectionDetail .green-bg {background-color: rgba(192, 240, 192, .90); height: 100%; }
 
-.expertise { background-color: #eee0b6}
+.expertise {
+	color: #4D4D4D;
+	background-color: #eee0b6;
+	position: relative;
+	min-width: 100px;
+	font-size: 20px;
+	padding: 5px 10px;
+}
+.expertise:after {
+    content:'';
+    position: absolute;
+    top:0%;
+    right:0%;
+    width: 0;
+    height: 0;
+    border-top: solid 10px #4D4D4D;
+    border-left: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+}
 
 .sectionCta .pink-bg {background-color: rgba(255, 182, 193, .5); }
 .sectionCta .yellow-bg {background-color: rgba(255, 255, 224, .5); }
