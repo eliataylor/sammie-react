@@ -59,6 +59,7 @@ header { text-align: center; }
 }
 
 #master {
+	display:block;
   z-index: 2;
   position:relative;
   justify-content:start;
@@ -74,7 +75,7 @@ h1 {
 	line-height: 68px;
 }
 
-h2 { display: inline-block; font-weight: 200; position: relative; z-index: 2; margin-left: 14px;}
+h2 { display: inline-block; font-weight: 200; position: relative; z-index: 2; margin-left: 15px;}
 h2:before {
 	content:'';
 	z-index:-1;
@@ -87,9 +88,24 @@ h2:before {
 }
 
 h4, h5 {
-	background: #E3E7DC;
+	background:rgba(255,255,255,.8);
 	padding:6px;
 	display:inline-block;
+	font-weight: 100;
+}
+@media (max-width:756px) {
+	.philosophy {
+		background:rgba(255,255,255,.5);
+		display:inline-block;
+		padding:6px;
+		border-radius:0 5px 5px 0;
+	}
+	footer {
+		margin-top:50px;
+	}
+	h4 {
+		border-radius:5px 0 0 0;
+	}
 }
 
 .sectionDetail {

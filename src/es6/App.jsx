@@ -60,7 +60,6 @@ class App extends Component {
 
     return (
       <div>
-        <span id="fullBG" ></span>
         <Modal
           icon = {this.state.sectionObj.icon}
           cta = {this.state.sectionObj.cta}
@@ -74,22 +73,25 @@ class App extends Component {
         <div id="master" >
           <div className="container-fluid">
             <div className='pt-5 row'>
-              <div className='col-8 pl-5'>
+              <div className='col-md-8 col-sm-12 pl-5'>
                   <h1 className='mb-0'>SAM</h1>
                   <h2 className='bgBrush mt-0'>designs</h2>
+                  <br />
 
-                  <h3 className='mt-5'>Philosophy:</h3>
-                  <p className='mb-5' >Create normalcy out of chaos<br /> by clearly communicating<br /> ideas through the organizing<br /> and manipulation of words and images.</p>
+                  <div className='philosophy mt-5 mb-5'>
+                  <h3>Philosophy:</h3>
+                  <p>Create normalcy out of chaos<br /> by clearly communicating<br /> ideas through the organizing<br /> and manipulation of words and images.</p>
+                  </div>
 
                   <div className='mb-3'><button className='expertise'>Designs</button></div>
                   <div><button className='expertise'>UI/UX</button></div>
 
               </div>
-              <div className='col-4 text-right pr-5'>
+              <footer className='col-md-4 col-sm-12 text-right pr-5'>
                   <h4>Contact:</h4>
                   <br />
                   <h5>get@sammietaylor.com</h5>
-              </div>
+              </footer>
             </div>
           </div>
         </div>
