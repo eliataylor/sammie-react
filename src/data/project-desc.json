@@ -100,6 +100,144 @@
               "height": 1164,
               "thumbnail": "/images/design/b__design-goldmilk.png"
           }]
+        },{
+          "heading":"Food Package Design (Spout Pouch)",
+          "subheading":"I focused on a color palette consisting of three main colors: orange, white, and grey. In the limited space I had with this design (4.3in x 2.75in), the product design and copy is focused on educating consumers about how to use the product, its ingredients, and their origin in an easy to read format.",
+          "image":[{
+              "useForDemo": true,
+              "srcset": [
+                  "/images/design/c__design-goldsauce.png 900w",
+                  "/images/design/c__design-goldsauce.png 600w",
+                  "/images/design/c__design-goldsauce.png 300w",
+                  "/images/design/c__design-goldsauce.png 70w"
+              ],
+              "alt": "design",
+              "sizes": [
+                  "(max-width: 400px) 50vw",
+                  "(max-width: 600px) 33.3vw",
+                  "(max-width: 900px) 25vw",
+                  "18vw"
+              ],
+              "src": "/images/design/c__design-goldsauce.png",
+              "width": 1604,
+              "height": 1203,
+              "thumbnail": "/images/design/c__design-goldsauce.png"
+          }]
+        },{
+          "heading":"Banner Ad Designs (Corporate)",
+          "subheading":"Brass Animals is a service that connects people from all over the nation to a local brass band for their events. This ad series was designed to cater towards a corporate audience. I decided to focus on a holiday theme given the upcoming season. All ads are scaled to dimensions for the following ad types: Leaderboard (top), Skyscraper (left), Half Page (middle), In-line rectangle (right).",
+          "image":[{
+              "useForDemo": true,
+              "srcset": [
+                  "/images/design/d__design-brassholiday.png 900w",
+                  "/images/design/d__design-brassholiday.png 600w",
+                  "/images/design/d__design-brassholiday.png 300w",
+                  "/images/design/d__design-brassholiday.png 70w"
+              ],
+              "alt": "design",
+              "sizes": [
+                  "(max-width: 400px) 50vw",
+                  "(max-width: 600px) 33.3vw",
+                  "(max-width: 900px) 25vw",
+                  "18vw"
+              ],
+              "src": "/images/design/d__design-brassholiday.png",
+              "width": 1549,
+              "height": 1190,
+              "thumbnail": "/images/design/d__design-brassholiday.png"
+          }]
+        },{
+          "heading":"Banner Ad Designs (Wedding Clients)",
+          "subheading":"Brass Animals is a service that connects people from all over the nation to a local brass band for their events. This ad series was designed to cater towards wedding clientele. All ads are scaled to dimensions for the following ad types: Leaderboard (top), Skyscraper (left), Half Page (middle), In-line rectangle (right)",
+          "image":[{
+              "useForDemo": true,
+              "srcset": [
+                  "/images/design/e__design-brasswedding.png 900w",
+                  "/images/design/e__design-brasswedding.png 600w",
+                  "/images/design/e__design-brasswedding.png 300w",
+                  "/images/design/e__design-brasswedding.png 70w"
+              ],
+              "alt": "design",
+              "sizes": [
+                  "(max-width: 400px) 50vw",
+                  "(max-width: 600px) 33.3vw",
+                  "(max-width: 900px) 25vw",
+                  "18vw"
+              ],
+              "src": "/images/design/e__design-brasswedding.png",
+              "width": 1539,
+              "height": 1184,
+              "thumbnail": "/images/design/e__design-brasswedding.png"
+          }]
+        },{
+          "heading":"Banner Ad Designs (Creative Versions)",
+          "subheading":"This is an experimental ad series for the corporate audience. It acts as a variant in our A/B test to see if a ‘funner’ ad would perform better versus the standard one. All ads are scaled to dimensions for the following ad types: Leaderboard (top), Skyscraper (left), Half Page (middle), In-line rectangle (right)",
+          "image":[{
+              "useForDemo": true,
+              "srcset": [
+                  "/images/design/f__design-brasscreatives.png 900w",
+                  "/images/design/f__design-brasscreatives.png 600w",
+                  "/images/design/f__design-brasscreatives.png 300w",
+                  "/images/design/f__design-brasscreatives.png 70w"
+              ],
+              "alt": "design",
+              "sizes": [
+                  "(max-width: 400px) 50vw",
+                  "(max-width: 600px) 33.3vw",
+                  "(max-width: 900px) 25vw",
+                  "18vw"
+              ],
+              "src": "/images/design/f__design-brasscreatives.png",
+              "width": 1541,
+              "height": 1200,
+              "thumbnail": "/images/design/f__design-brasscreatives.png"
+          }]
+        },{
+          "heading":"Ad + Email Header Designs",
+          "subheading":"Plum Lending is a CRE lending firm, they were looking for a new set of banner ads along with a customized email header image. I switched over to their white logo and added pops of purple to represent the brand color.",
+          "image":[{
+              "useForDemo": true,
+              "srcset": [
+                  "/images/design/g__design-plumlending.png 900w",
+                  "/images/design/g__design-plumlending.png 600w",
+                  "/images/design/g__design-plumlending.png 300w",
+                  "/images/design/g__design-plumlending.png 70w"
+              ],
+              "alt": "design",
+              "sizes": [
+                  "(max-width: 400px) 50vw",
+                  "(max-width: 600px) 33.3vw",
+                  "(max-width: 900px) 25vw",
+                  "18vw"
+              ],
+              "src": "/images/design/g__design-plumlending.png",
+              "width": 1375,
+              "height": 1190,
+              "thumbnail": "/images/design/g__design-plumlending.png"
+          }]
+        },{
+          "heading":"Email Header Designs",
+          "subheading":"Headnote, a payment processing platform for attorneys needed to add some vibrance to their visually bland, text-only email templates. Here are a few of the concepts for their various email marketing funnels.",
+          "image":[{
+              "useForDemo": true,
+              "srcset": [
+                  "/images/design/h__design-headnote.png 900w",
+                  "/images/design/h__design-headnote.png 600w",
+                  "/images/design/h__design-headnote.png 300w",
+                  "/images/design/h__design-headnote.png 70w"
+              ],
+              "alt": "design",
+              "sizes": [
+                  "(max-width: 400px) 50vw",
+                  "(max-width: 600px) 33.3vw",
+                  "(max-width: 900px) 25vw",
+                  "18vw"
+              ],
+              "src": "/images/design/h__design-headnote.png",
+              "width": 1563,
+              "height": 1199,
+              "thumbnail": "/images/design/h__design-headnote.png"
+          }]
         }
       ]
     }

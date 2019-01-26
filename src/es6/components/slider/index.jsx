@@ -14,7 +14,6 @@ class Slider extends Component {
   }
 
   componentDidUpdate(props) {
-    console.log('slider props', props);
     if (props.heading != this.state.heading) {
       this.setState({
         heading: props.heading,
