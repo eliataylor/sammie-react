@@ -38,12 +38,6 @@ module.exports = {
                  use: [
                    'file-loader'
                  ]
-               },
-               {
-                 test: /\.json$/,
-                 use: [
-                   'json-loader'
-                 ]
                }
         ]
     },

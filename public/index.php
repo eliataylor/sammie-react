@@ -44,7 +44,7 @@ function dirToJson($dirname) {
 
     $safename = preg_replace('/\s/', '', $image_name);
     if( $safename != $image_name) {
-      die("illlegal filename");
+      die("illegal filename");
       rename($image_name, $safename);
       $image_name = $safename;
     }
@@ -105,6 +105,23 @@ function dirToJson($dirname) {
 }
 */
 $pData = array(
+  'Design'=> array(
+    'cta' => 'Design',
+    'heading' => 'Design',
+    'subheading' => '',
+    'tabindex' => -1,
+    'icon' => '/images/Design-Icon.png',
+    'images' => dirToJson('images/design')
+  ),
+  'UX'=> array(
+    'cta' => 'UX/UI',
+    'heading' => 'User Experience & Interface',
+    'subheading' => '',
+    'tabindex' => -2,
+    'icon' => '/images/Ux-Icon.png',
+    'images' => dirToJson('images/UI-UX')
+  ),
+
   'gallery1'=> array(
     'cta' => 'Ideation',
     'heading' => 'Ideation, Storyboards & Wireframes',
@@ -138,6 +155,10 @@ $pData = array(
     'images' => dirToJson('images/analytics')
   )
 );
-$index = file_get_contents('../src/index.html');
-$index = str_replace('<!--PORTFOLIO_DATA-->', ' portfolio = '.json_encode($pData), $index);
-echo $index;
+$json = json_encode($pData, JSON_NUMERIC_CHECK|JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
+file_put_contents('../src/data/imagesByDirectories.json', $json);
+
+//$index = str_replace('<!--PORTFOLIO_DATA-->', ' portfolio = '.json_encode($pData), $index);
+//echo $index;
+header('Content-Type: application/json');
+echo $json;

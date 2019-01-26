@@ -1,0 +1,1058 @@
+{
+    "Design": {
+        "cta": "Design",
+        "heading": "Design",
+        "subheading": "",
+        "tabindex": -1,
+        "icon": "/images/Design-Icon.png",
+        "images": [
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/design/a__design-vendingmachine.png 900w",
+                    "/images/design/a__design-vendingmachine.png 600w",
+                    "/images/design/a__design-vendingmachine.png 300w",
+                    "/images/design/a__design-vendingmachine.png 70w"
+                ],
+                "alt": "design",
+                "sizes": [
+                    "90vw"
+                ],
+                "src": "/images/design/a__design-vendingmachine.png",
+                "width": 1637,
+                "height": 1049,
+                "thumbnail": "/images/design/a__design-vendingmachine.png"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/design/b__design-goldmilk.png 900w",
+                    "/images/design/b__design-goldmilk.png 600w",
+                    "/images/design/b__design-goldmilk.png 300w",
+                    "/images/design/b__design-goldmilk.png 70w"
+                ],
+                "alt": "design",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/design/b__design-goldmilk.png",
+                "width": 1551,
+                "height": 1164,
+                "thumbnail": "/images/design/b__design-goldmilk.png"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/design/c__design-goldsauce.png 900w",
+                    "/images/design/c__design-goldsauce.png 600w",
+                    "/images/design/c__design-goldsauce.png 300w",
+                    "/images/design/c__design-goldsauce.png 70w"
+                ],
+                "alt": "design",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/design/c__design-goldsauce.png",
+                "width": 1604,
+                "height": 1203,
+                "thumbnail": "/images/design/c__design-goldsauce.png"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/design/d__design-brassholiday.png 900w",
+                    "/images/design/d__design-brassholiday.png 600w",
+                    "/images/design/d__design-brassholiday.png 300w",
+                    "/images/design/d__design-brassholiday.png 70w"
+                ],
+                "alt": "design",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/design/d__design-brassholiday.png",
+                "width": 1549,
+                "height": 1190,
+                "thumbnail": "/images/design/d__design-brassholiday.png"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/design/e__design-brasswedding.png 900w",
+                    "/images/design/e__design-brasswedding.png 600w",
+                    "/images/design/e__design-brasswedding.png 300w",
+                    "/images/design/e__design-brasswedding.png 70w"
+                ],
+                "alt": "design",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/design/e__design-brasswedding.png",
+                "width": 1539,
+                "height": 1184,
+                "thumbnail": "/images/design/e__design-brasswedding.png"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/design/f__design-brasscreatives.png 900w",
+                    "/images/design/f__design-brasscreatives.png 600w",
+                    "/images/design/f__design-brasscreatives.png 300w",
+                    "/images/design/f__design-brasscreatives.png 70w"
+                ],
+                "alt": "design",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/design/f__design-brasscreatives.png",
+                "width": 1541,
+                "height": 1200,
+                "thumbnail": "/images/design/f__design-brasscreatives.png"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/design/g__design-plumlending.png 900w",
+                    "/images/design/g__design-plumlending.png 600w",
+                    "/images/design/g__design-plumlending.png 300w",
+                    "/images/design/g__design-plumlending.png 70w"
+                ],
+                "alt": "design",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/design/g__design-plumlending.png",
+                "width": 1375,
+                "height": 1190,
+                "thumbnail": "/images/design/g__design-plumlending.png"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/design/h__design-headnote.png 900w",
+                    "/images/design/h__design-headnote.png 600w",
+                    "/images/design/h__design-headnote.png 300w",
+                    "/images/design/h__design-headnote.png 70w"
+                ],
+                "alt": "design",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/design/h__design-headnote.png",
+                "width": 1563,
+                "height": 1199,
+                "thumbnail": "/images/design/h__design-headnote.png"
+            }
+        ]
+    },
+    "UX": {
+        "cta": "UX/UI",
+        "heading": "User Experience & Interface",
+        "subheading": "",
+        "tabindex": -2,
+        "icon": "/images/Ux-Icon.png",
+        "images": [
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/UI-UX/j__UX-mike.png 900w",
+                    "/images/UI-UX/j__UX-mike.png 600w",
+                    "/images/UI-UX/j__UX-mike.png 300w",
+                    "/images/UI-UX/j__UX-mike.png 70w"
+                ],
+                "alt": "UI-UX",
+                "sizes": [
+                    "90vw"
+                ],
+                "src": "/images/UI-UX/j__UX-mike.png",
+                "width": 1662,
+                "height": 841,
+                "thumbnail": "/images/UI-UX/j__UX-mike.png"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/UI-UX/k__UX-headnoteref.png 900w",
+                    "/images/UI-UX/k__UX-headnoteref.png 600w",
+                    "/images/UI-UX/k__UX-headnoteref.png 300w",
+                    "/images/UI-UX/k__UX-headnoteref.png 70w"
+                ],
+                "alt": "UI-UX",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/UI-UX/k__UX-headnoteref.png",
+                "width": 1633,
+                "height": 684,
+                "thumbnail": "/images/UI-UX/k__UX-headnoteref.png"
+            }
+        ]
+    },
+    "gallery1": {
+        "cta": "Ideation",
+        "heading": "Ideation, Storyboards & Wireframes",
+        "subheading": "Before diving into the pretty stuff, I like to layout content components and CTA's to allow some structure for the upcoming design to rely on.",
+        "tabindex": 1,
+        "icon": "/images/footer-wireframe.png",
+        "images": [
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/wireframes/a__Sign-in-page-for-a-Fish-delivery-app.jpg 900w",
+                    "/images/wireframes/a__Sign-in-page-for-a-Fish-delivery-app.jpg 600w",
+                    "/images/wireframes/a__Sign-in-page-for-a-Fish-delivery-app.jpg 300w",
+                    "/images/wireframes/a__Sign-in-page-for-a-Fish-delivery-app.jpg 70w"
+                ],
+                "alt": "wireframes",
+                "sizes": [
+                    "90vw"
+                ],
+                "src": "/images/wireframes/a__Sign-in-page-for-a-Fish-delivery-app.jpg",
+                "width": 305,
+                "height": 498,
+                "thumbnail": "/images/wireframes/a__Sign-in-page-for-a-Fish-delivery-app.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/wireframes/b__menu-page-for-a-fish-delivery-app.jpg 900w",
+                    "/images/wireframes/b__menu-page-for-a-fish-delivery-app.jpg 600w",
+                    "/images/wireframes/b__menu-page-for-a-fish-delivery-app.jpg 300w",
+                    "/images/wireframes/b__menu-page-for-a-fish-delivery-app.jpg 70w"
+                ],
+                "alt": "wireframes",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/wireframes/b__menu-page-for-a-fish-delivery-app.jpg",
+                "width": 316,
+                "height": 492,
+                "thumbnail": "/images/wireframes/b__menu-page-for-a-fish-delivery-app.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/wireframes/c__order-page-for-fish-delivery-app.jpg 900w",
+                    "/images/wireframes/c__order-page-for-fish-delivery-app.jpg 600w",
+                    "/images/wireframes/c__order-page-for-fish-delivery-app.jpg 300w",
+                    "/images/wireframes/c__order-page-for-fish-delivery-app.jpg 70w"
+                ],
+                "alt": "wireframes",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/wireframes/c__order-page-for-fish-delivery-app.jpg",
+                "width": 311,
+                "height": 496,
+                "thumbnail": "/images/wireframes/c__order-page-for-fish-delivery-app.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/wireframes/d__wireframe-for-ammpprofile.jpg 900w",
+                    "/images/wireframes/d__wireframe-for-ammpprofile.jpg 600w",
+                    "/images/wireframes/d__wireframe-for-ammpprofile.jpg 300w",
+                    "/images/wireframes/d__wireframe-for-ammpprofile.jpg 70w"
+                ],
+                "alt": "wireframes",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/wireframes/d__wireframe-for-ammpprofile.jpg",
+                "width": 2911,
+                "height": 3791,
+                "thumbnail": "/images/wireframes/d__wireframe-for-ammpprofile.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/wireframes/e__Ammp-form-redesign.jpg 900w",
+                    "/images/wireframes/e__Ammp-form-redesign.jpg 600w",
+                    "/images/wireframes/e__Ammp-form-redesign.jpg 300w",
+                    "/images/wireframes/e__Ammp-form-redesign.jpg 70w"
+                ],
+                "alt": "wireframes",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/wireframes/e__Ammp-form-redesign.jpg",
+                "width": 3695,
+                "height": 3161,
+                "thumbnail": "/images/wireframes/e__Ammp-form-redesign.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/wireframes/g__Track-Authority-Music-log-in-page-design.jpg 900w",
+                    "/images/wireframes/g__Track-Authority-Music-log-in-page-design.jpg 600w",
+                    "/images/wireframes/g__Track-Authority-Music-log-in-page-design.jpg 300w",
+                    "/images/wireframes/g__Track-Authority-Music-log-in-page-design.jpg 70w"
+                ],
+                "alt": "wireframes",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/wireframes/g__Track-Authority-Music-log-in-page-design.jpg",
+                "width": 2965,
+                "height": 2892,
+                "thumbnail": "/images/wireframes/g__Track-Authority-Music-log-in-page-design.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/wireframes/h__Track-Authority-Music-Landing-Page.jpg 900w",
+                    "/images/wireframes/h__Track-Authority-Music-Landing-Page.jpg 600w",
+                    "/images/wireframes/h__Track-Authority-Music-Landing-Page.jpg 300w",
+                    "/images/wireframes/h__Track-Authority-Music-Landing-Page.jpg 70w"
+                ],
+                "alt": "wireframes",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/wireframes/h__Track-Authority-Music-Landing-Page.jpg",
+                "width": 7517,
+                "height": 4584,
+                "thumbnail": "/images/wireframes/h__Track-Authority-Music-Landing-Page.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/wireframes/i__Track-Authority-Music-Playlist-Page-Design.jpg 900w",
+                    "/images/wireframes/i__Track-Authority-Music-Playlist-Page-Design.jpg 600w",
+                    "/images/wireframes/i__Track-Authority-Music-Playlist-Page-Design.jpg 300w",
+                    "/images/wireframes/i__Track-Authority-Music-Playlist-Page-Design.jpg 70w"
+                ],
+                "alt": "wireframes",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/wireframes/i__Track-Authority-Music-Playlist-Page-Design.jpg",
+                "width": 2515,
+                "height": 6752,
+                "thumbnail": "/images/wireframes/i__Track-Authority-Music-Playlist-Page-Design.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/wireframes/j__brightly-coffee-landing-page-wireframe.jpg 900w",
+                    "/images/wireframes/j__brightly-coffee-landing-page-wireframe.jpg 600w",
+                    "/images/wireframes/j__brightly-coffee-landing-page-wireframe.jpg 300w",
+                    "/images/wireframes/j__brightly-coffee-landing-page-wireframe.jpg 70w"
+                ],
+                "alt": "wireframes",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/wireframes/j__brightly-coffee-landing-page-wireframe.jpg",
+                "width": 2890,
+                "height": 3812,
+                "thumbnail": "/images/wireframes/j__brightly-coffee-landing-page-wireframe.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/wireframes/k__Brightly-Coffee-Landing-Page.jpg 900w",
+                    "/images/wireframes/k__Brightly-Coffee-Landing-Page.jpg 600w",
+                    "/images/wireframes/k__Brightly-Coffee-Landing-Page.jpg 300w",
+                    "/images/wireframes/k__Brightly-Coffee-Landing-Page.jpg 70w"
+                ],
+                "alt": "wireframes",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/wireframes/k__Brightly-Coffee-Landing-Page.jpg",
+                "width": 3600,
+                "height": 8377,
+                "thumbnail": "/images/wireframes/k__Brightly-Coffee-Landing-Page.jpg"
+            }
+        ]
+    },
+    "gallery2": {
+        "cta": "Branding",
+        "heading": "Design & Branding",
+        "subheading": "I approach design through three key elements, Typography, Color, and Space. I combine these elements to create a rich, attractive message in as little space as possible.",
+        "tabindex": 2,
+        "icon": "/images/footer-branding.png",
+        "images": [
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/branding/a__Creative-Direction-for-Ruhral-Product-Shoot.jpg 900w",
+                    "/images/branding/a__Creative-Direction-for-Ruhral-Product-Shoot.jpg 600w",
+                    "/images/branding/a__Creative-Direction-for-Ruhral-Product-Shoot.jpg 300w",
+                    "/images/branding/a__Creative-Direction-for-Ruhral-Product-Shoot.jpg 70w"
+                ],
+                "alt": "branding",
+                "sizes": [
+                    "90vw"
+                ],
+                "src": "/images/branding/a__Creative-Direction-for-Ruhral-Product-Shoot.jpg",
+                "width": 2400,
+                "height": 3600,
+                "thumbnail": "/images/branding/a__Creative-Direction-for-Ruhral-Product-Shoot.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/branding/b__Creative-Direction-for-Ruhral-Product-Shoot.jpg 900w",
+                    "/images/branding/b__Creative-Direction-for-Ruhral-Product-Shoot.jpg 600w",
+                    "/images/branding/b__Creative-Direction-for-Ruhral-Product-Shoot.jpg 300w",
+                    "/images/branding/b__Creative-Direction-for-Ruhral-Product-Shoot.jpg 70w"
+                ],
+                "alt": "branding",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/branding/b__Creative-Direction-for-Ruhral-Product-Shoot.jpg",
+                "width": 2400,
+                "height": 3600,
+                "thumbnail": "/images/branding/b__Creative-Direction-for-Ruhral-Product-Shoot.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/branding/c__Flat-Lay-shoots-for-social-media.jpg 900w",
+                    "/images/branding/c__Flat-Lay-shoots-for-social-media.jpg 600w",
+                    "/images/branding/c__Flat-Lay-shoots-for-social-media.jpg 300w",
+                    "/images/branding/c__Flat-Lay-shoots-for-social-media.jpg 70w"
+                ],
+                "alt": "branding",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/branding/c__Flat-Lay-shoots-for-social-media.jpg",
+                "width": 3600,
+                "height": 2400,
+                "thumbnail": "/images/branding/c__Flat-Lay-shoots-for-social-media.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/branding/d__Content-and-Copy-for-Market.jpg 900w",
+                    "/images/branding/d__Content-and-Copy-for-Market.jpg 600w",
+                    "/images/branding/d__Content-and-Copy-for-Market.jpg 300w",
+                    "/images/branding/d__Content-and-Copy-for-Market.jpg 70w"
+                ],
+                "alt": "branding",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/branding/d__Content-and-Copy-for-Market.jpg",
+                "width": 3600,
+                "height": 2472,
+                "thumbnail": "/images/branding/d__Content-and-Copy-for-Market.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/branding/e__Creative-Direction-for-Market-Set.jpg 900w",
+                    "/images/branding/e__Creative-Direction-for-Market-Set.jpg 600w",
+                    "/images/branding/e__Creative-Direction-for-Market-Set.jpg 300w",
+                    "/images/branding/e__Creative-Direction-for-Market-Set.jpg 70w"
+                ],
+                "alt": "branding",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/branding/e__Creative-Direction-for-Market-Set.jpg",
+                "width": 3600,
+                "height": 2400,
+                "thumbnail": "/images/branding/e__Creative-Direction-for-Market-Set.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/branding/f__Mothers-Day-Market-Set-up.jpg 900w",
+                    "/images/branding/f__Mothers-Day-Market-Set-up.jpg 600w",
+                    "/images/branding/f__Mothers-Day-Market-Set-up.jpg 300w",
+                    "/images/branding/f__Mothers-Day-Market-Set-up.jpg 70w"
+                ],
+                "alt": "branding",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/branding/f__Mothers-Day-Market-Set-up.jpg",
+                "width": 2400,
+                "height": 3600,
+                "thumbnail": "/images/branding/f__Mothers-Day-Market-Set-up.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/branding/g__Product-Photo-shoot.jpg 900w",
+                    "/images/branding/g__Product-Photo-shoot.jpg 600w",
+                    "/images/branding/g__Product-Photo-shoot.jpg 300w",
+                    "/images/branding/g__Product-Photo-shoot.jpg 70w"
+                ],
+                "alt": "branding",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/branding/g__Product-Photo-shoot.jpg",
+                "width": 2400,
+                "height": 3600,
+                "thumbnail": "/images/branding/g__Product-Photo-shoot.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/branding/i__Product-set-up-at-markets.jpg 900w",
+                    "/images/branding/i__Product-set-up-at-markets.jpg 600w",
+                    "/images/branding/i__Product-set-up-at-markets.jpg 300w",
+                    "/images/branding/i__Product-set-up-at-markets.jpg 70w"
+                ],
+                "alt": "branding",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/branding/i__Product-set-up-at-markets.jpg",
+                "width": 2400,
+                "height": 3600,
+                "thumbnail": "/images/branding/i__Product-set-up-at-markets.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/branding/j__Creative-direction-for-branding.jpg 900w",
+                    "/images/branding/j__Creative-direction-for-branding.jpg 600w",
+                    "/images/branding/j__Creative-direction-for-branding.jpg 300w",
+                    "/images/branding/j__Creative-direction-for-branding.jpg 70w"
+                ],
+                "alt": "branding",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/branding/j__Creative-direction-for-branding.jpg",
+                "width": 3600,
+                "height": 2400,
+                "thumbnail": "/images/branding/j__Creative-direction-for-branding.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/branding/k__Logo-Design.jpg 900w",
+                    "/images/branding/k__Logo-Design.jpg 600w",
+                    "/images/branding/k__Logo-Design.jpg 300w",
+                    "/images/branding/k__Logo-Design.jpg 70w"
+                ],
+                "alt": "branding",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/branding/k__Logo-Design.jpg",
+                "width": 840,
+                "height": 334,
+                "thumbnail": "/images/branding/k__Logo-Design.jpg"
+            }
+        ]
+    },
+    "gallery3": {
+        "cta": "Content",
+        "heading": "Content Copy, Imagery & CTA's",
+        "subheading": "Playing with words is a hobby of mine. I believe that understanding which acronyms and industry jargons are popular among the target demographics is key to creating quality copy. In the english language alone, I can speak to an older mature audience in industry jargon, while also relating to the teeny bopper crowd, with the right emoticons, of course.",
+        "tabindex": 3,
+        "icon": "/images/footer-copywriting.png",
+        "images": [
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/a__Ruhral-Tamarind-Scrub-Label-Design.jpg 900w",
+                    "/images/contentcopy/a__Ruhral-Tamarind-Scrub-Label-Design.jpg 600w",
+                    "/images/contentcopy/a__Ruhral-Tamarind-Scrub-Label-Design.jpg 300w",
+                    "/images/contentcopy/a__Ruhral-Tamarind-Scrub-Label-Design.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "90vw"
+                ],
+                "src": "/images/contentcopy/a__Ruhral-Tamarind-Scrub-Label-Design.jpg",
+                "width": 1772,
+                "height": 885,
+                "thumbnail": "/images/contentcopy/a__Ruhral-Tamarind-Scrub-Label-Design.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/b__Ruhral-Turmeric-Scrub-Label-Design.jpg 900w",
+                    "/images/contentcopy/b__Ruhral-Turmeric-Scrub-Label-Design.jpg 600w",
+                    "/images/contentcopy/b__Ruhral-Turmeric-Scrub-Label-Design.jpg 300w",
+                    "/images/contentcopy/b__Ruhral-Turmeric-Scrub-Label-Design.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/b__Ruhral-Turmeric-Scrub-Label-Design.jpg",
+                "width": 1772,
+                "height": 885,
+                "thumbnail": "/images/contentcopy/b__Ruhral-Turmeric-Scrub-Label-Design.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/c__Landing-Page-Header.jpg 900w",
+                    "/images/contentcopy/c__Landing-Page-Header.jpg 600w",
+                    "/images/contentcopy/c__Landing-Page-Header.jpg 300w",
+                    "/images/contentcopy/c__Landing-Page-Header.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/c__Landing-Page-Header.jpg",
+                "width": 4341,
+                "height": 1670,
+                "thumbnail": "/images/contentcopy/c__Landing-Page-Header.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/d__Previous-Tamarind-Label-Design.jpg 900w",
+                    "/images/contentcopy/d__Previous-Tamarind-Label-Design.jpg 600w",
+                    "/images/contentcopy/d__Previous-Tamarind-Label-Design.jpg 300w",
+                    "/images/contentcopy/d__Previous-Tamarind-Label-Design.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/d__Previous-Tamarind-Label-Design.jpg",
+                "width": 1800,
+                "height": 1050,
+                "thumbnail": "/images/contentcopy/d__Previous-Tamarind-Label-Design.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/e__Popular-Ruhral-Social-Media-Post.jpg 900w",
+                    "/images/contentcopy/e__Popular-Ruhral-Social-Media-Post.jpg 600w",
+                    "/images/contentcopy/e__Popular-Ruhral-Social-Media-Post.jpg 300w",
+                    "/images/contentcopy/e__Popular-Ruhral-Social-Media-Post.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/e__Popular-Ruhral-Social-Media-Post.jpg",
+                "width": 930,
+                "height": 600,
+                "thumbnail": "/images/contentcopy/e__Popular-Ruhral-Social-Media-Post.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/f__Infographic-Design-for-social-media.jpg 900w",
+                    "/images/contentcopy/f__Infographic-Design-for-social-media.jpg 600w",
+                    "/images/contentcopy/f__Infographic-Design-for-social-media.jpg 300w",
+                    "/images/contentcopy/f__Infographic-Design-for-social-media.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/f__Infographic-Design-for-social-media.jpg",
+                "width": 935,
+                "height": 467,
+                "thumbnail": "/images/contentcopy/f__Infographic-Design-for-social-media.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/g__Social-Media-post.png 900w",
+                    "/images/contentcopy/g__Social-Media-post.png 600w",
+                    "/images/contentcopy/g__Social-Media-post.png 300w",
+                    "/images/contentcopy/g__Social-Media-post.png 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/g__Social-Media-post.png",
+                "width": 924,
+                "height": 452,
+                "thumbnail": "/images/contentcopy/g__Social-Media-post.png"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/h__Track-Authority-Music-International-campaign.jpg 900w",
+                    "/images/contentcopy/h__Track-Authority-Music-International-campaign.jpg 600w",
+                    "/images/contentcopy/h__Track-Authority-Music-International-campaign.jpg 300w",
+                    "/images/contentcopy/h__Track-Authority-Music-International-campaign.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/h__Track-Authority-Music-International-campaign.jpg",
+                "width": 750,
+                "height": 1005,
+                "thumbnail": "/images/contentcopy/h__Track-Authority-Music-International-campaign.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/i__Ruhral-Tamarind-Version-1.jpg 900w",
+                    "/images/contentcopy/i__Ruhral-Tamarind-Version-1.jpg 600w",
+                    "/images/contentcopy/i__Ruhral-Tamarind-Version-1.jpg 300w",
+                    "/images/contentcopy/i__Ruhral-Tamarind-Version-1.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/i__Ruhral-Tamarind-Version-1.jpg",
+                "width": 825,
+                "height": 825,
+                "thumbnail": "/images/contentcopy/i__Ruhral-Tamarind-Version-1.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/j__Ruhral-Tamarind-Version-1.jpg 900w",
+                    "/images/contentcopy/j__Ruhral-Tamarind-Version-1.jpg 600w",
+                    "/images/contentcopy/j__Ruhral-Tamarind-Version-1.jpg 300w",
+                    "/images/contentcopy/j__Ruhral-Tamarind-Version-1.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/j__Ruhral-Tamarind-Version-1.jpg",
+                "width": 825,
+                "height": 825,
+                "thumbnail": "/images/contentcopy/j__Ruhral-Tamarind-Version-1.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/k__Ruhral-Turmeric-Version-1.jpg 900w",
+                    "/images/contentcopy/k__Ruhral-Turmeric-Version-1.jpg 600w",
+                    "/images/contentcopy/k__Ruhral-Turmeric-Version-1.jpg 300w",
+                    "/images/contentcopy/k__Ruhral-Turmeric-Version-1.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/k__Ruhral-Turmeric-Version-1.jpg",
+                "width": 825,
+                "height": 825,
+                "thumbnail": "/images/contentcopy/k__Ruhral-Turmeric-Version-1.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/l__Ruhral-Turmeric-Version-1.jpg 900w",
+                    "/images/contentcopy/l__Ruhral-Turmeric-Version-1.jpg 600w",
+                    "/images/contentcopy/l__Ruhral-Turmeric-Version-1.jpg 300w",
+                    "/images/contentcopy/l__Ruhral-Turmeric-Version-1.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/l__Ruhral-Turmeric-Version-1.jpg",
+                "width": 825,
+                "height": 825,
+                "thumbnail": "/images/contentcopy/l__Ruhral-Turmeric-Version-1.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/contentcopy/m__Turmeric-Scrub-Version.jpg 900w",
+                    "/images/contentcopy/m__Turmeric-Scrub-Version.jpg 600w",
+                    "/images/contentcopy/m__Turmeric-Scrub-Version.jpg 300w",
+                    "/images/contentcopy/m__Turmeric-Scrub-Version.jpg 70w"
+                ],
+                "alt": "contentcopy",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/contentcopy/m__Turmeric-Scrub-Version.jpg",
+                "width": 1800,
+                "height": 1050,
+                "thumbnail": "/images/contentcopy/m__Turmeric-Scrub-Version.jpg"
+            }
+        ]
+    },
+    "gallery4": {
+        "cta": "Targeting",
+        "heading": "Targeting, Engagement Analytics & KPIs",
+        "subheading": "Like many things in life, It's not all about looks. Conversion rates and KPIs are much better measurements for effectiveness than aesthetic opinion.",
+        "tabindex": 3,
+        "icon": "/images/footer-analytics.png",
+        "images": [
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/analytics/a__ruhral-instagram-analytics.jpg 900w",
+                    "/images/analytics/a__ruhral-instagram-analytics.jpg 600w",
+                    "/images/analytics/a__ruhral-instagram-analytics.jpg 300w",
+                    "/images/analytics/a__ruhral-instagram-analytics.jpg 70w"
+                ],
+                "alt": "analytics",
+                "sizes": [
+                    "90vw"
+                ],
+                "src": "/images/analytics/a__ruhral-instagram-analytics.jpg",
+                "width": 748,
+                "height": 1287,
+                "thumbnail": "/images/analytics/a__ruhral-instagram-analytics.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/analytics/b__ruhral-instagram-analytics.jpg 900w",
+                    "/images/analytics/b__ruhral-instagram-analytics.jpg 600w",
+                    "/images/analytics/b__ruhral-instagram-analytics.jpg 300w",
+                    "/images/analytics/b__ruhral-instagram-analytics.jpg 70w"
+                ],
+                "alt": "analytics",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/analytics/b__ruhral-instagram-analytics.jpg",
+                "width": 745,
+                "height": 1292,
+                "thumbnail": "/images/analytics/b__ruhral-instagram-analytics.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/analytics/c__Track-Authority-Music-User-Flow.jpg 900w",
+                    "/images/analytics/c__Track-Authority-Music-User-Flow.jpg 600w",
+                    "/images/analytics/c__Track-Authority-Music-User-Flow.jpg 300w",
+                    "/images/analytics/c__Track-Authority-Music-User-Flow.jpg 70w"
+                ],
+                "alt": "analytics",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/analytics/c__Track-Authority-Music-User-Flow.jpg",
+                "width": 2479,
+                "height": 1313,
+                "thumbnail": "/images/analytics/c__Track-Authority-Music-User-Flow.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/analytics/d__Track-Authority-UserID-Flow.jpg 900w",
+                    "/images/analytics/d__Track-Authority-UserID-Flow.jpg 600w",
+                    "/images/analytics/d__Track-Authority-UserID-Flow.jpg 300w",
+                    "/images/analytics/d__Track-Authority-UserID-Flow.jpg 70w"
+                ],
+                "alt": "analytics",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/analytics/d__Track-Authority-UserID-Flow.jpg",
+                "width": 2483,
+                "height": 1316,
+                "thumbnail": "/images/analytics/d__Track-Authority-UserID-Flow.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/analytics/e__Track-Authority.png 900w",
+                    "/images/analytics/e__Track-Authority.png 600w",
+                    "/images/analytics/e__Track-Authority.png 300w",
+                    "/images/analytics/e__Track-Authority.png 70w"
+                ],
+                "alt": "analytics",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/analytics/e__Track-Authority.png",
+                "width": 1924,
+                "height": 1206,
+                "thumbnail": "/images/analytics/e__Track-Authority.png"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/analytics/f__Track-Authority.jpg 900w",
+                    "/images/analytics/f__Track-Authority.jpg 600w",
+                    "/images/analytics/f__Track-Authority.jpg 300w",
+                    "/images/analytics/f__Track-Authority.jpg 70w"
+                ],
+                "alt": "analytics",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/analytics/f__Track-Authority.jpg",
+                "width": 2479,
+                "height": 1474,
+                "thumbnail": "/images/analytics/f__Track-Authority.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/analytics/g__Shopify-Analytics.jpg 900w",
+                    "/images/analytics/g__Shopify-Analytics.jpg 600w",
+                    "/images/analytics/g__Shopify-Analytics.jpg 300w",
+                    "/images/analytics/g__Shopify-Analytics.jpg 70w"
+                ],
+                "alt": "analytics",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/analytics/g__Shopify-Analytics.jpg",
+                "width": 2483,
+                "height": 1397,
+                "thumbnail": "/images/analytics/g__Shopify-Analytics.jpg"
+            },
+            {
+                "useForDemo": true,
+                "srcset": [
+                    "/images/analytics/h__Shopify-Analytics.jpg 900w",
+                    "/images/analytics/h__Shopify-Analytics.jpg 600w",
+                    "/images/analytics/h__Shopify-Analytics.jpg 300w",
+                    "/images/analytics/h__Shopify-Analytics.jpg 70w"
+                ],
+                "alt": "analytics",
+                "sizes": [
+                    "(max-width: 400px) 50vw",
+                    "(max-width: 600px) 33.3vw",
+                    "(max-width: 900px) 25vw",
+                    "18vw"
+                ],
+                "src": "/images/analytics/h__Shopify-Analytics.jpg",
+                "width": 2483,
+                "height": 1397,
+                "thumbnail": "/images/analytics/h__Shopify-Analytics.jpg"
+            }
+        ]
+    }
+}

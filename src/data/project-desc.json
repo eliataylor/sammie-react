@@ -1,35 +1,105 @@
 {
   "expertise":{
     "ux" : {
-      "title":"User Experience",
-      "desc":"",
+      "heading":"User Experience",
+      "subheading":"",
       "icon":"/images/icon_design.png",
-      "projects": [
+      "images": [
         {
-          "title":"Fitness Professional Branding + Design",
-          "desc":"Branding & UI/UX for a fitness professional. Mike wanted to stick to the colors Turquoise, Orange, and Black. I used those as highlights and kept the background white to maintain an overall fresh and clean aesthetic. Aside from the design I built out the UI/UX of the website, featuring an easy-to-read layout and collapsible menus with an emphasis on grabbing a users attention with large, bright CTA's.",
-          "images":["/images/design"]
+          "heading":"Fitness Professional Branding + Design",
+          "subheading":"Branding & UI/UX for a fitness professional. Mike wanted to stick to the colors Turquoise, Orange, and Black. I used those as highlights and kept the background white to maintain an overall fresh and clean aesthetic. Aside from the design I built out the UI/UX of the website, featuring an easy-to-read layout and collapsible menus with an emphasis on grabbing a users attention with large, bright CTA's.",
+          "image":[{
+              "useForDemo": true,
+              "srcset": [
+                  "/images/UI-UX/j__UX-mike.png 900w",
+                  "/images/UI-UX/j__UX-mike.png 600w",
+                  "/images/UI-UX/j__UX-mike.png 300w",
+                  "/images/UI-UX/j__UX-mike.png 70w"
+              ],
+              "alt": "UI-UX",
+              "sizes": [
+                  "90vw"
+              ],
+              "src": "/images/UI-UX/j__UX-mike.png",
+              "width": 1662,
+              "height": 841,
+              "thumbnail": "/images/UI-UX/j__UX-mike.png"
+          }]
         },
         {
-          "title":"UX for Referral Program",
-          "desc":"Headnote, a payment processing platform for attorneys needed to build out the UI/UX elements for a referral program they were launching. A circular button marked with a ’$’ was added in the navbar to represent the referral program incentives. Once clicked, the user is led to a page featuring a simple, clear, and easy to navigate user experience. The second image showcases the confirmation message once the referrals are sent. The design also featured a system of tracking referrals and credits earned from the program. Tools used: Adobe Illustrator, Sketch.",
-          "images":["/images/ux"]
+          "heading":"UX for Referral Program",
+          "subheading":"Headnote, a payment processing platform for attorneys needed to build out the UI/UX elements for a referral program they were launching. A circular button marked with a ’$’ was added in the navbar to represent the referral program incentives. Once clicked, the user is led to a page featuring a simple, clear, and easy to navigate user experience. The second image showcases the confirmation message once the referrals are sent. The design also featured a system of tracking referrals and credits earned from the program. Tools used: Adobe Illustrator, Sketch.",
+          "image":[{
+              "useForDemo": true,
+              "srcset": [
+                  "/images/UI-UX/k__UX-headnoteref.png 900w",
+                  "/images/UI-UX/k__UX-headnoteref.png 600w",
+                  "/images/UI-UX/k__UX-headnoteref.png 300w",
+                  "/images/UI-UX/k__UX-headnoteref.png 70w"
+              ],
+              "alt": "UI-UX",
+              "sizes": [
+                  "(max-width: 400px) 50vw",
+                  "(max-width: 600px) 33.3vw",
+                  "(max-width: 900px) 25vw",
+                  "18vw"
+              ],
+              "src": "/images/UI-UX/k__UX-headnoteref.png",
+              "width": 1633,
+              "height": 684,
+              "thumbnail": "/images/UI-UX/k__UX-headnoteref.png"
+          }]
         }
       ]
     },
     "design" : {
-      "title":"Design",
-      "desc":"",
+      "heading":"Design",
+      "subheading":"",
       "icon":"/images/",
-      "projects": [
+      "images": [
         {
-          "title":"Vending Machine",
-          "desc":"This was one of my favorite projects. The client wanted a clean, crisp, fresh look. The main requests for the aesthetic was the specific shade of green for the background and a handwritten font style. I decided to feature two different varieties of the products on each side of the machine and highlight the main ingredients.",
-          "images":[]
+          "heading":"Vending Machine",
+          "subheading":"This was one of my favorite projects. The client wanted a clean, crisp, fresh look. The main requests for the aesthetic was the specific shade of green for the background and a handwritten font style. I decided to feature two different varieties of the products on each side of the machine and highlight the main ingredients.",
+          "image":[{
+              "useForDemo": true,
+              "srcset": [
+                  "/images/design/a__design-vendingmachine.png 900w",
+                  "/images/design/a__design-vendingmachine.png 600w",
+                  "/images/design/a__design-vendingmachine.png 300w",
+                  "/images/design/a__design-vendingmachine.png 70w"
+              ],
+              "alt": "design",
+              "sizes": [
+                  "90vw"
+              ],
+              "src": "/images/design/a__design-vendingmachine.png",
+              "width": 1637,
+              "height": 1049,
+              "thumbnail": "/images/design/a__design-vendingmachine.png"
+          }]
         },{
-          "title":"Food Package Design (Spout Pouch)",
-          "desc":"I focused on a color palette consisting of three main colors: yellow, white, and grey. In the limited space I had with this design (4.3in x 2.75in), the product design and copy is focused on educating consumers about how to use the product, its ingredients, and their origin in an easy to read format.",
-          "images":[]
+          "heading":"Food Package Design (Spout Pouch)",
+          "subheading":"I focused on a color palette consisting of three main colors: yellow, white, and grey. In the limited space I had with this design (4.3in x 2.75in), the product design and copy is focused on educating consumers about how to use the product, its ingredients, and their origin in an easy to read format.",
+          "image":[{
+              "useForDemo": true,
+              "srcset": [
+                  "/images/design/b__design-goldmilk.png 900w",
+                  "/images/design/b__design-goldmilk.png 600w",
+                  "/images/design/b__design-goldmilk.png 300w",
+                  "/images/design/b__design-goldmilk.png 70w"
+              ],
+              "alt": "design",
+              "sizes": [
+                  "(max-width: 400px) 50vw",
+                  "(max-width: 600px) 33.3vw",
+                  "(max-width: 900px) 25vw",
+                  "18vw"
+              ],
+              "src": "/images/design/b__design-goldmilk.png",
+              "width": 1551,
+              "height": 1164,
+              "thumbnail": "/images/design/b__design-goldmilk.png"
+          }]
         }
       ]
     }

@@ -9,67 +9,38 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      portfolio: window['portfolio'],
       showModal: false,
-      sectionObj : {}
+      section : ''
     };
+    this.endModal = this.endModal.bind(this);
   }
 
-  componentDidMount() {
-    if (!this.state.portfolio) {
-      fetch("/data/project-desc.json")
-//      .then(res => res.json())
-      .then(
-        (result) => {
-          console.log(result);
-          this.setState({portfolio:result.data});
-        },
-        (error) => {
-          console.log(error)
-        }
-      )
-    }
-  }
-
-  openModal(idx) {
+  handleExpertise(e) {
+    let type = e.currentTarget.value;
     this.setState({
-      showModal: true,
-      sectionObj:this.state.portfolio[idx]
+      section:type
+    });
+    this.setState({
+      showModal: true
     });
   }
 
   endModal() {
-    this.setState({
-      showModal: false,
-    })
+    this.setState({showModal: false})
   }
 
   render() {
-    let ctas = [];
-    for (let photo in this.state.portfolio) {
-      let obj = this.state.portfolio[photo];
-      ctas.push(
-        <div key={photo} className="sectionCta p-1 mt-1 mb-2 col-md-2 col-sm-6">
-          <Cta
-          {...obj}
-          onPress={() => this.openModal(photo)}
-           />
-        </div>
-      );
-    }
-
     return (
       <div>
-        <Modal
-          icon = {this.state.sectionObj.icon}
-          cta = {this.state.sectionObj.cta}
-          heading = {this.state.sectionObj.heading}
-          subheading = {this.state.sectionObj.subheading}
-          images = {this.state.sectionObj.images}
-          tabindex = {this.state.sectionObj.tabindex}
+      {
+        this.state.showModal ? <Modal
+          heading = {Data['expertise'][this.state.section].heading}
+          subheading = {Data['expertise'][this.state.section].subheading}
+          images = {Data['expertise'][this.state.section].images}
           hide={!this.state.showModal}
-          endModal={this.endModal.bind(this)}
-        />
+          endModal={this.endModal}
+        /> : ''
+      }
         <div id="master" >
           <div className="container-fluid">
             <div className='pt-5 row'>
@@ -83,8 +54,8 @@ class App extends Component {
                   <p>Create normalcy out of chaos<br /> by clearly communicating<br /> ideas through the organizing<br /> and manipulation of words and images.</p>
                   </div>
 
-                  <div className='mb-3'><button className='expertise'>Designs</button></div>
-                  <div><button className='expertise'>UI/UX</button></div>
+                  <div className='mb-3'><button onClick={(e) => this.handleExpertise(e)} value='design' className='expertise'>Designs</button></div>
+                  <div><button onClick={(e) => this.handleExpertise(e)} value='ux' className='expertise'>UI/UX</button></div>
 
               </div>
               <footer className='col-md-4 col-sm-12 text-right pr-5'>

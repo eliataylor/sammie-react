@@ -340,6 +340,7 @@ footer { text-align: center;}
 
 .slider-wrapper {
   position: relative;
+	transition:transform ease-out 0.45s;
 }
 
 .image-container {
@@ -358,7 +359,7 @@ footer { text-align: center;}
   width: 75vw;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
   text-align: center;
   margin: auto;
 }
@@ -369,4 +370,9 @@ footer { text-align: center;}
   display: inline-block;
   height: 100%;
   width: 100%;
+}
+
+.slide-desc {
+	text-align:left;
+  white-space: normal;
 }
