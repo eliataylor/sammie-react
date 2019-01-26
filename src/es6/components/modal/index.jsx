@@ -32,11 +32,9 @@ class Modal extends Component {
     return (
       <div className={className} onClick={this.props.endModal} >
         <div className='modal-view fullBG p-2' onClick={e => e.stopPropagation()}>
-          <p>
+          <p className='m-0'>
             <span className="float-right" onClick={this.props.endModal}><img src="/images/collapse-424953.png" height="20" className="arrow-button" /></span>
-
-            <span className='modal-heading-text'>{this.state.heading}</span><br />
-            <span className='modal-text'>{this.state.subheading}</span>
+            <span className='modal-heading-text'>{this.state.heading}</span>
           </p>
           <Slider heading ={this.state.heading}
                   subheading = {this.state.subheading}

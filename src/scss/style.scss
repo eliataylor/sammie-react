@@ -346,17 +346,17 @@ footer { text-align: center;}
 .image-container {
   display: inline-block;
   width: 100%;
+	max-height:50vw;
   margin: auto;
   position: relative;
-  overflow-y: hidden;
+  overflow-y:visible;
   white-space: nowrap;
 }
 
 .slide-img {
   display: block;
-  height: calc(100% - 150px);
-  height: 75vh;
-  width: 75vw;
+  max-height: 50vh;
+  max-width: 75vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -372,6 +372,9 @@ footer { text-align: center;}
   width: 100%;
 }
 
+.slide-title {
+		margin-bottom:5px;
+}
 .slide-desc {
 	text-align:left;
   white-space: normal;
