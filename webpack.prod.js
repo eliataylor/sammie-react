@@ -3,13 +3,16 @@ var webpack = require('webpack');
 var merge = require('webpack-merge');
 var common = require('./webpack.common.js');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = merge(common, {
     mode:'production',
     optimization: {
-      minimize: true
+//      minimize: true,
+      minimizer: [
+        new OptimizeCSSAssetsPlugin({})
+      ]
     },
-    /*
     module: {
         rules: [
           {
@@ -25,7 +28,6 @@ module.exports = merge(common, {
 
       ]
     },
-    */
     plugins: [
 /*        new webpack.LoaderOptionsPlugin({
             minimize: true,
@@ -35,11 +37,10 @@ module.exports = merge(common, {
         */
         new webpack.EnvironmentPlugin({
             NODE_ENV: 'prod'
-        })
-        /* ,
+        }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
-        }) */
+        })
     ]
 });

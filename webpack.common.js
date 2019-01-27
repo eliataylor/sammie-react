@@ -26,11 +26,8 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                   {
-                    loader: "style-loader" // creates style nodes from JS strings
-                  },
-/*                  {
                     loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-                  }, */
+                  },
                   {
                     loader: "css-loader?url=false" // translates CSS into CommonJS
                   },
@@ -48,7 +45,14 @@ module.exports = {
               },
               {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader?url=false'],
+                use: [
+                  {
+                    loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                  },
+                  {
+                    loader: "css-loader?url=false" // translates CSS into CommonJS
+                  }
+                ],
               },
               {
                  test: /\.(png|svg|jpg|gif)$/,
@@ -66,7 +70,17 @@ module.exports = {
                        }
                    }
                  ]
-               }
+               },
+               {
+              test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+                  use: [{
+                      loader: 'file-loader',
+                      options: {
+                          name: '[name].[ext]',
+                          outputPath: 'fonts/'
+                      }
+                  }]
+              }
         ]
     },
     resolve: {
