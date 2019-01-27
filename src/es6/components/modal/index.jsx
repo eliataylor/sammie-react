@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import Slider from '../slider';
 import PropTypes from 'prop-types';
-//import arrow_left from '../../../images/arrow_left.png';
-//import arrow_right from '../../../images/arrow_right.png';
+import collapseIcon from '../../../images/collapse-424953.png';
 
 class Modal extends Component {
   constructor(props) {
@@ -33,7 +32,7 @@ class Modal extends Component {
       <div className={className} onClick={this.props.endModal} >
         <div className='modal-view fullBG p-2' onClick={e => e.stopPropagation()}>
           <p className='m-0'>
-            <span className="float-right" onClick={this.props.endModal}><img src="/images/collapse-424953.png" height="20" className="arrow-button" /></span>
+            <span className="float-right" onClick={this.props.endModal}><img src={collapseIcon} height="20" className="arrow-button" /></span>
             <span className='modal-heading-text'>{this.state.heading}</span>
           </p>
           <Slider heading ={this.state.heading}

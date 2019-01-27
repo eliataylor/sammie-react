@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     devtool: 'cheap-module-source-map',
@@ -10,7 +11,11 @@ module.exports = {
         historyApiFallback: true,
         contentBase: [path.join(__dirname, 'public'), path.join(__dirname, 'src')],
         noInfo: false,
-        stats: 'minimal',
         publicPath: 'http://localhost:8888/'
-    }
+    },
+    plugins: [
+      new webpack.EnvironmentPlugin({
+          NODE_ENV: 'dev'
+      })
+    ]
 };

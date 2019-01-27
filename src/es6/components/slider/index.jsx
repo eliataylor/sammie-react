@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-//import './slider.css';
+
+import arrowLeft from '../../../images/arrow-east-424953.png';
+import arrowRight from '../../../images/arrow-east-424953.png';
 
 class Slider extends Component {
   constructor(props) {
@@ -41,7 +43,7 @@ class Slider extends Component {
               this.setState({index: this.state.images.length -1 })
             }
           }}>
-          <img src='/images/arrow-east-424953.png' alt='left arrow' className='arrow-west arrow-button' />
+          <img src={arrowLeft} alt='left arrow' className='arrow-west arrow-button' />
         </a>
 
         <div className='slider-container' data-index={this.state.index} >
@@ -82,7 +84,7 @@ class Slider extends Component {
             this.setState({ index: 0 })
           }
         }}>
-          <img src='/images/arrow-east-424953.png' alt='right arrow' className='arrow-east arrow-button' />
+          <img src={arrowRight} alt='right arrow' className='arrow-east arrow-button' />
         </a>
 
       </div>

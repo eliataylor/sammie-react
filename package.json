@@ -4,21 +4,24 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
     "react-hot-loader": "^4.6.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
   },
   "scripts": {
-    "build:dev": "node ./node_modules/webpack/bin/webpack --progress --profile --colors",
-    "build:watch": "node ./node_modules/webpack/bin/webpack --watch --progress --profile --colors",
-    "build:prod": "set NODE_ENV=prod && node ./node_modules/webpack/bin/webpack -p --progress --profile --colors",
-    "build:serve": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --progress --profile --colors",
-    "start": "webpack-dev-server --config ./webpack.config.js  --mode development",
-    "pretest": "node ./node_modules/eslint/bin/eslint --fix es6/** -o eslint.html -f html",
-    "test": "node ./node_modules/mocha/bin/mocha --require babel-polyfill ./test --recursive --compilers js:babel-register --reporter spec",
-    "prestart": "node ./node_modules/webpack/bin/webpack -p --progress --profile --colors"
+    "build": "NODE_ENV=prod webpack --mode production",
+    "start": "webpack-dev-server --config ./webpack.config.js  --mode development"
   },
   "babel": {
     "presets": [
@@ -39,13 +42,9 @@
   "license": "MIT",
   "dependencies": {
     "all": "0.0.0",
-    "css-loader": "^2.1.0",
     "module": "^1.2.5",
-    "node-sass": "^4.11.0",
     "npm": "^6.1.0",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1"
+    "react-dom": "^16.7.0"
   }
 }

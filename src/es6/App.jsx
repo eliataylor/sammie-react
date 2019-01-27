@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from './components/modal';
 import Cta from './components/cta';
+
 import '../scss/master.scss';
 
 import Data from '../data/project-desc.json';

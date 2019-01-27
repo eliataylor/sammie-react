@@ -1,7 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
 const targetDir = 'public';
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const devMode = process.env.NODE_ENV !== 'prod';
+console.log('DevMode: ' + devMode);
 module.exports = {
     entry: path.join(__dirname, 'src/es6', 'index'),
     output: {
@@ -9,6 +14,7 @@ module.exports = {
         publicPath : '/',
         filename: 'bundle.js'
     },
+    devtool: "source-map",
     module: {
         rules: [
             {
@@ -22,21 +28,43 @@ module.exports = {
                   {
                     loader: "style-loader" // creates style nodes from JS strings
                   },
+/*                  {
+                    loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                  }, */
                   {
-                    loader: "css-loader" // translates CSS into CommonJS
+                    loader: "css-loader?url=false" // translates CSS into CommonJS
                   },
+/*                  {
+                    loader: 'postcss-loader'
+                  }, */
                   {
                     loader: "sass-loader", // compiles Sass to CSS
                     options: {
-                        includePaths: ["src/scss"]
+                        includePath: ['src/scss'],
+                        sourceMap : true
                     }
                   }
                 ]
               },
               {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader?url=false'],
+              },
+              {
                  test: /\.(png|svg|jpg|gif)$/,
                  use: [
-                   'file-loader'
+                   {
+                      loader: 'file-loader',
+                      options: {
+                         name(file) {
+                           if (process.env.NODE_ENV === 'dev') {
+                             return '[path][name].[ext]';
+                           }
+
+                           return '[hash].[ext]';
+                         }
+                       }
+                   }
                  ]
                }
         ]
@@ -45,10 +73,15 @@ module.exports = {
         extensions: ['.js', '.jsx', '.sass', '.scss']
     },
     plugins: [
-//        new webpack.EnvironmentPlugin({
-//            NODE_ENV: 'dev'
-//        }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
+        new HtmlWebpackPlugin({
+          title: 'Sammie Amna Khalil Taylor',
+          inject: true,
+          hash: true,
+          template: './src/index.html',
+          filename: 'index.html',
+          favicon: './src/images/logo.png'
+        })
     ]
 };

@@ -2,48 +2,44 @@ var path = require('path');
 var webpack = require('webpack');
 var merge = require('webpack-merge');
 var common = require('./webpack.common.js');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = merge(common, {
-    output: {
-        sourceMapFilename: '[name].map'
+    mode:'production',
+    optimization: {
+      minimize: true
     },
+    /*
     module: {
-        rules: [{
-            test: /\.(scss|sass)$/,
-            use: ExtractTextPlugin.extract({
-                fallback: 'style-loader',
-                use: [{
-                    loader: 'css-loader',
-                }, {
-                    loader: 'resolve-url-loader'
-                }, {
-                    loader: 'sass-loader'
-                }]
-            })
-        }]
+        rules: [
+          {
+              test: /\.(png|jp(e*)g|svg)$/,
+              use: [{
+                  loader: 'url-loader',
+                  options: {
+                      limit: 8000, // Convert images < 8kb to base64 strings
+                      name: 'images/[hash]-[name].[ext]'
+                  }
+              }]
+          }
+
+      ]
     },
+    */
     plugins: [
-        new webpack.LoaderOptionsPlugin({
+/*        new webpack.LoaderOptionsPlugin({
             minimize: true,
             debug: false
         }),
         new webpack.optimize.OccurrenceOrderPlugin(),
-        new webpack.DefinePlugin({
-            'process.env': {
-                'NODE_ENV': JSON.stringify('prod')
-            }
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            beautify: false,
-            mangle: {
-                screw_ie8: true,
-                keep_fnames: true
-            },
-            compress: {
-                screw_ie8: true
-            },
-            comments: false
+        */
+        new webpack.EnvironmentPlugin({
+            NODE_ENV: 'prod'
         })
+        /* ,
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css"
+        }) */
     ]
 });
