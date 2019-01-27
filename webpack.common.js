@@ -29,11 +29,22 @@ module.exports = {
                     loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                   },
                   {
-                    loader: "css-loader?url=false" // translates CSS into CommonJS
+                    loader: "css-loader", // translates CSS into CommonJS
+                    options: {
+                      importLoaders: 1,
+                    }
                   },
-/*                  {
-                    loader: 'postcss-loader'
-                  }, */
+                  {
+                      loader: "postcss-loader",
+                      options: {
+                          autoprefixer: {
+                              browsers: ["last 2 versions"]
+                          },
+                          plugins: () => [
+                              require('autoprefixer')
+                          ]
+                      },
+                  },
                   {
                     loader: "sass-loader", // compiles Sass to CSS
                     options: {
@@ -42,17 +53,6 @@ module.exports = {
                     }
                   }
                 ]
-              },
-              {
-                test: /\.css$/,
-                use: [
-                  {
-                    loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-                  },
-                  {
-                    loader: "css-loader?url=false" // translates CSS into CommonJS
-                  }
-                ],
               },
               {
                  test: /\.(png|svg|jpg|gif)$/,

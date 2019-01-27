@@ -9,6 +9,16 @@ module.exports = merge(common, {
     mode:'production',
     optimization: {
 //      minimize: true,
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.css$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      },
       minimizer: [
         new OptimizeCSSAssetsPlugin({})
       ]

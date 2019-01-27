@@ -3,6 +3,8 @@ import Modal from './components/modal';
 import Cta from './components/cta';
 
 import '../scss/master.scss';
+//import '../css/style.css';
+
 
 import Data from '../data/project-desc.json';
 
