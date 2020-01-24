@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap');
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+// Override default variables before the import
+$body-bg: #fff;
+
+$primary:       #ED7F13;
+$secondary:       #ED7F13;
+$light:         #fff;
+$dark:          #000;
+$blue:          #2465D9;
+$info:          #2465D9;
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+// Import Bootstrap and its default variables
+#root { display:flex; min-height:100vh; flex-direction:column; justify-content:space-between; }
+footer { background-color:#202020; }
+
+.navbar-brand, .nav-item {
+  font-size: 1rem!important;
+  font-weight:600!important;
+}
+
+header .navbar-light .navbar-nav .nav-link { color:#000; }
+
+h1 {
+  font-size: 1.7rem!important;
+  font-weight:600!important;
+}
+
+h4 {
+  font-size: 1.2rem!important;
+  font-weight: 700!important;
+}
+
+h5 {
+  font-size: 1.1rem!important;
+  font-weight:800!important;
+}
+
+.fontLight {
+  font-size: .95rem!important;
+  font-weight:400!important;
+}
+
+.jumbotron {
+  min-height:40vh;
+  background-position:'center center';
+  background-size:cover;
+  background-repeat:no-repeat;
+  color:#fff;
+}
+.jumbotron a, footer a, .jumbotron a, footer a.nav-link {
+  color:#fff;
+}
+.nav-link.active { color:#ED7F13!important; }
+
+.cvBlock { background:#fff; box-shadow:0 0 7px 2px rgba(25, 25, 25, 0.55); align-self:flex-start; margin-top:-35px }
+.cvHeader { margin:-30px 0 0 -45px; background-color:#ED7F13; color:#fff; padding:15px 30px; font-size:120%;
+  box-shadow:0 0 2px 1px rgba(25, 25, 25, 0.55);
+}
+.cvList { margin:10px 0; color:#000;  }
+.cvItem { margin:10px 0; padding:20px; }
+
+.leftIcon { width:40px; margin-right:20px; }
+.leftIcon img { width:20px;  }
+
+.timeBar { position:relative; background-color:#ED7F13; height:2px; width:100%; margin:34px 0 8px 0; }
+.timeBar:before, .timeBar:after {
+  content:'';
+  background-color:#ED7F13;
+  display: inline-block;
+  position: absolute;
+  top:-7px;
+  width: 15px;
+  height: 15px;
+  border-radius:15px;
+ }
+.timeBar:before {
+  left:-4px;
+}
+.timeBar:after {
+  right:-4px;
+}
+
+
+.card-header { background-color: #fff; border-bottom:1px; }
