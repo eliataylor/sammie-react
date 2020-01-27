@@ -8,15 +8,47 @@ $body-bg: #fff;
 $primary:       #ED7F13;
 $secondary:       #ED7F13;
 $light:         #fff;
-$dark:          #000;
+$dark:          #202020;
 $blue:          #2465D9;
 $info:          #2465D9;
 
 @import '~bootstrap/scss/bootstrap.scss';
 
+
+@media (min-width: 0px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 70%;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
-    width: 960px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  #santaCaseStudy > .container {
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 
@@ -29,16 +61,28 @@ footer { background-color:#202020; }
   font-weight:600!important;
 }
 
+.btn-outline-light {
+  border-width: 3px;
+}
+
 header .navbar-light .navbar-nav .nav-link { color:#000; }
 
 h1 {
   font-size: 1.7rem!important;
-  font-weight:600!important;
+  font-weight:700!important;
+}
+
+h2 { 
+  font-weight:700!important;
 }
 
 h4 {
   font-size: 1.2rem!important;
   font-weight: 700!important;
+}
+
+h3 { 
+  font-weight:700!important;
 }
 
 h5 {
@@ -52,12 +96,23 @@ h5 {
 }
 
 .jumbotron {
-  min-height:40vh;
-  background-position:'center center';
+  min-height:60vh;
+  background-position:center center;
   background-size:cover;
   background-repeat:no-repeat;
   color:#fff;
 }
+
+@media (max-width: 576px) {
+  .jumbotron {
+    min-height:40vh;
+  }
+}
+
+/* blockquote::before {
+  /assets/farmfresh/quote.png;
+} */
+
 .jumbotron a, footer a, .jumbotron a, footer a.nav-link {
   color:#fff;
 }

@@ -15,11 +15,11 @@ class Home extends Component {
               <div>
                 <h3>Farm Fresh</h3>
                 <p className="fontLight mb-4 mt-4">Buying produce directly from<br /> farmers has never been easier</p>
-                <Link to="/case-studies/farm-fresh" style={{fontSize:15, fontWeight:600, padding:'7px 70px'}} className="btn btn-outline-light btn-lg">VIEW CASE STUDY</Link>
+                <Link to="/case-studies/farm-fresh" style={{fontSize:15, fontWeight:600, padding:'15px 44px'}} className="btn btn-outline-light btn-lg">VIEW CASE STUDY</Link>
               </div>
             </div>
 
-            <p className="text-center"><Link to="/case-studies" style={{padding:'5px 90px'}} className="btn btn-dark mt-5 mb-5">VIEW ALL</Link></p>
+            <p className="text-center"><Link to="/case-studies" style={{padding:'14px 90px'}} className="btn btn-dark mt-5 mb-5">VIEW ALL</Link></p>
 
           </div>
         );

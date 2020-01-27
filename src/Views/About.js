@@ -32,8 +32,8 @@ class About extends Component {
                             <h6>Marketing</h6>
                             <div className="timeBar">&nbsp;</div>
                             <div className='row fontLight'>
-                              <span className='col-6'>Aug 2018</span>
-                              <span className='col-6 text-right'>Aug 2016</span>
+                              <span className='col-6'>Apr 2014</span>
+                              <span className='col-6 text-right'>Aug 2018</span>
                             </div>
                           </div>
                         </div>
