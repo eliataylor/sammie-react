@@ -5,11 +5,11 @@ class FarmFresh extends Component {
 
     render() {
         return (
-          <div id="santaCaseStudy" className="row mt-3">
+          <div id="santaCaseStudy" className="mt-3">
             <div className="container mb-5 mt-5">
               <h1>Farm fresh</h1>
               <p className="mb-5">
-                Farm Fresh is a mobile and desktop app that is bridging the gap between consumers and local farms. 
+                Farm Fresh is a mobile and desktop app that is bridging the gap between consumers and local farms.
                 <b> It provides a platform for consumers to connect with farmers</b> and purchase locally grown, organic produce. It allows farmers to supplement their income by posting their produce surplus online. This leads to less food waste and happier consumers.</p>
               <div className="row flex-wrap-reverse">
                 <div className="col-12 col-md-6">
@@ -40,9 +40,9 @@ class FarmFresh extends Component {
                 </div>
               </div>
             </div>
-            <div className="container-fluid bg-info text-white p-5 mt-5" >
+            <div className="container-fluid bg-info text-white mt-5" >
               <div className="row">
-                <div className="container mt-4 mb-4" style={{minHeight:'80vh', justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
+                <div className="p-5 mt-4 mb-4" style={{minHeight:'80vh', justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
                   <div>
                     <h2 style={{fontSize: 60, textIndent:-5}}>Research</h2>
                     <h4 className='mt-2 mb-4' style={{opacity:.6}}>THE DISCOVERY</h4>
@@ -57,11 +57,11 @@ class FarmFresh extends Component {
               <p>Right from the start I knew that we would have <b>two very different users</b> for this app. There are the <b>shoppers</b>, who would be searching for local farms, browsing inventory, and making purchases. Then the <b>farmers</b> that would be adding or editing inventory, and processing orders.</p>
               <p>Given the 8-week timeline for the MVP, I focused on the most critical actions and made them as efficient and functional as possible for both users.</p>
               <p>Prior to diving into user interviews I used mindmapping, assumptions, and affinity mapping exercises to help gain clarity on some of the features that could be built into Farm Fresh.</p>
-                          
+
               <div className="row mt-5">
                   <div className="col-4">
                     <img className="img-fluid" src="/assets/farmfresh/Shoppersneeds.png"/></div>
-                  <div className="col-8 align-self-center"> 
+                  <div className="col-8 align-self-center">
                     <h4><strong>SHOPPERS NEEDS</strong></h4>
                     <p>These were some needs expressed by some users during interviews. I rated them based on necessity for the MVP. When it came to prioritizing features, I found that searching farms and placing orders would be most important for a functional app. </p></div>
                 </div>
@@ -93,7 +93,7 @@ class FarmFresh extends Component {
                 <div className="col-4">
                       <img className="img-fluid" src="/assets/farmfresh/Farmersneeds.png"/>
                 </div>
-                <div className="col-8 align-self-center"> 
+                <div className="col-8 align-self-center">
                   <h4><strong>FARMERS NEEDS</strong></h4>
                   <p>These are the prioritized features for farmers. I believed messaging to be a useful feature as a future update, so it was placed lower on my priorities. For the MVP I focused on building FarmFresh as a seamless inventory and order management app. </p>
                 </div>
@@ -105,9 +105,9 @@ class FarmFresh extends Component {
             </div>
 
 
-            <div className="container-fluid bg-primary text-white p-5 mt-5" >
+            <div className="container-fluid bg-primary text-white mt-5" >
               <div className="row">
-                <div className="container mt-4 mb-4" style={{minHeight:'80vh', justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
+                <div className="p-5 mt-4 mb-4" style={{minHeight:'80vh', justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
                   <div>
                     <h2 style={{fontSize: 60, textIndent:-5}}>MVP</h2>
                     <h4 className='mt-2 mb-4' style={{opacity:.6}}>Visual Identify &amp; Prototyping</h4>
@@ -148,9 +148,9 @@ class FarmFresh extends Component {
             </div>
 
 
-            <div className="container-fluid bg-info text-white p-5 mt-5" >
+            <div className="container-fluid bg-info text-white mt-5" >
               <div className="row">
-                <div className="container mt-4 mb-4" style={{minHeight:'80vh', justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
+                <div className="p-5 mt-4 mb-4" style={{minHeight:'80vh', justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
                   <div>
                     <h2 style={{fontSize: 60, textIndent:-5}}>Final Designs</h2>
                     <p className="mt-5">After a series of usability tests I produced twenty iterations before finalizing on these designs. The final shopper checkout flow and the final farmer order management flows are featured in this section.</p>

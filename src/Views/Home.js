@@ -7,7 +7,7 @@ class Home extends Component {
         return (
           <div className="container">
             <blockquote className="blockquote">
-              <p className="mt-5 mb-5" style={{fontSize:21}}>I am a <span style={{color:'blue', fontWeight:700}}>UX Designer</span> passionate about solving problems and using my skills ot improve the lives of others. Check out my most recent project featured below.</p>
+              <p className="mt-5 mb-5" style={{fontSize:21}}>I am a <span style={{color:'blue', fontWeight:700}}>UX Designer</span> passionate about solving problems and using my skills to improve the lives of others. Check out my most recent project featured below.</p>
             </blockquote>
 
             <div className="jumbotron d-flex flex-column" style={{backgroundImage:'url(/assets/Desktop-Img.png)'}}>

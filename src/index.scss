@@ -15,11 +15,11 @@ $info:          #2465D9;
 @import '~bootstrap/scss/bootstrap.scss';
 
 
-@media (min-width: 0px) {
+/* @media (min-width: 0px) {
   .container {
     width: 95%;
   }
-}
+} */
 
 @media (min-width: 576px) {
   .container {
@@ -45,15 +45,13 @@ $info:          #2465D9;
   }
 }
 
-@media (max-width: 576px) {
-  #santaCaseStudy > .container {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-}
-
 // Import Bootstrap and its default variables
-#root { display:flex; min-height:100vh; flex-direction:column; justify-content:space-between; }
+#root { display:flex; min-height:100vh; flex-direction:column; justify-content:space-between;
+    width: 100%;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+  }
 footer { background-color:#202020; }
 
 .navbar-brand, .nav-item {
@@ -72,7 +70,7 @@ h1 {
   font-weight:700!important;
 }
 
-h2 { 
+h2 {
   font-weight:700!important;
 }
 
@@ -81,7 +79,7 @@ h4 {
   font-weight: 700!important;
 }
 
-h3 { 
+h3 {
   font-weight:700!important;
 }
 
@@ -146,5 +144,18 @@ h5 {
   right:-4px;
 }
 
+.accordion > .card {
+  border:0 none;
+}
 
-.card-header { background-color: #fff; border-bottom:1px; }
+.card-header {
+  background-color:$primary;
+  margin-top:12px;
+}
+
+
+.card-header .btn.btn-link {
+  color:$white;
+  font-weight:700;
+  text-align:left;
+}

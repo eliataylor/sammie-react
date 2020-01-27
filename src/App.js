@@ -60,11 +60,11 @@ class App extends React.Component {
           <footer className="p-5">
             <div className="container">
               <nav className="navbar navbar-expand-lg">
-                <Link style={{color:'#434343'}} className="navbar-brand" to="/">&copy; 2020, Sammie Khalil</Link>
+                <Link style={{color:'#434343'}} className="navbar-brand" to="/">&copy; 2020, Sammie Khalil-Taylor</Link>
                 <ul className="navbar-nav ml-auto">
-                  <li className="nav-item"><Link className="nav-link" to="/case-studies">Contact</Link></li>
-                  <li className="nav-item"><Link className="nav-link" to="/design">Twitter</Link></li>
-                  <li className="nav-item"><Link className="nav-link" to="/about">Dribble</Link></li>
+                  <li className="nav-item"><a className="nav-link" target="_blank" href="mailto:get@sammietaylor.com">Contact</a></li>
+                  <li className="nav-item"><a className="nav-link" target="_blank" href="https://twitter.com/sammxdesign">Twitter</a></li>
+                  <li className="nav-item"><a className="nav-link" target="_blank" href="https://dribbble.com/sammxdesign">Dribble</a></li>
                 </ul>
               </nav>
             </div>

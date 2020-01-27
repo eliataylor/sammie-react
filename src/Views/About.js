@@ -5,8 +5,8 @@ class About extends Component {
     render() {
         return (
 			       <div className="container mt-5 pb-5">
-               <div className="row mb-4" style={{width:'100%', marginTop:60, backgroundImage:'url(/assets/img-sam.png)', backgroundSize:'cover', backgroundPosition:'left 50%', minHeight:'60vh'}}>
-                    <div className="cvBlock col-xs-9 col-5 ml-auto mr-3 bg-white rounded">
+               <div className="d-flex" style={{marginTop:60, backgroundImage:'url(/assets/img-sam.png)', backgroundSize:'cover', backgroundPosition:'left 50%', minHeight:'60vh'}}>
+                    <div className="cvBlock col-10 col-sm-9 col-md-6 ml-auto mr-3 bg-white rounded">
                         <h3 className="cvHeader rounded">WORK EXPERIENCE</h3>
                         <div className="cvList">
                           <div className="cvItem">
@@ -39,7 +39,7 @@ class About extends Component {
                         </div>
                     </div>
                </div>
-                <h1 className="text-primary mb-5">Marketing professional turned designer</h1>
+                <h1 className="text-primary mt-5 mb-5">Marketing professional turned designer</h1>
                 <p>The essence of effective marketing starts with Design.</p>
                 <p>Regardless of your strategy, Visual impressions are the first, and often best, opportunity to communicate a message and win your response. While a piece of art can be criticized or acclaimed depending who you ask, effective marketing design is based on impulse and a universal order of how information is absorbed by the eye.</p>
                 <p>Aesthetics are a matter of taste up to the artist and target demographic. As important as those are, the organization of text and information is based on the consistent objective to send their message as clearly and quickly as possible.</p>
