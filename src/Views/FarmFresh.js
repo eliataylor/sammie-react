@@ -52,7 +52,7 @@ class FarmFresh extends Component {
               </div>
             </div>
             <div className="container mt-5 mb-2">
-              <p className="text-center"><img src="/assets/farmfresh/farmershoppericon.png" style={{maxWidth:'100%'}} /></p>
+              <p className="text-center"><img src="/assets/farmfresh/Farmershoppericon.png" style={{maxWidth:'100%'}} /></p>
               <h4 className="mt-5 mb-4">BRIDGING A GAP</h4>
               <p>Right from the start I knew that we would have <b>two very different users</b> for this app. There are the <b>shoppers</b>, who would be searching for local farms, browsing inventory, and making purchases. Then the <b>farmers</b> that would be adding or editing inventory, and processing orders.</p>
               <p>Given the 8-week timeline for the MVP, I focused on the most critical actions and made them as efficient and functional as possible for both users.</p>
