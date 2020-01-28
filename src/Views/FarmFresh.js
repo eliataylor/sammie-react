@@ -119,10 +119,13 @@ class FarmFresh extends Component {
 
             <div className="container p-5">
               <div className="row">
-                  <p>Before beginning any design I wanted to create the structure of the site by building a site map and then sketched out the flows for each action that the MVP would allow each user type to take. Below I have two user flows, one for the shopper check out, and one for the farmer to view orders.</p>
-                  <p className="text-center mt-4"><img src="/assets/farmfresh/ordersFlow.png" className="img-fluid" /></p>
+                  <p>Before beginning any design I wanted to create the structure of the site by building a site map and then sketched out the flows for each action that the MVP would allow each user type to take. Below I have the key that was created for all user flows and two flows for each user type, one for the shoppers check out experience, and one for the farmer to view orders.</p>
+                 <p className="text-left mt-4">User Flow Key</p>
+                  <p className="text-left mt-4"><img src="/assets/farmfresh/userflowkey.png" className="img-fluid" /></p>
+                  <p className="text-left mt-4">Shopper Checkout Flow</p>
                   <p className="text-center mt-4 mb-4"><img src="/assets/farmfresh/checkoutFlow.png" className="img-fluid" /></p>
-                  <p className="text-center"><img src="/assets/farmfresh/SiteMapInitial.png" className="img-fluid" /></p>
+                  <p className="text-center mt-4">Farmer 'View Order' Flow</p>
+                  <p className="text-center mt-4"><img src="/assets/farmfresh/farmervieworder.png" className="img-fluid" /></p>
               </div>
             </div>
 
@@ -139,7 +142,7 @@ class FarmFresh extends Component {
               <h4>VISUAL IDENTITY</h4>
               <p className="fontLight">One of my favorite ways to start protoyping is with an exercise called crazy 8's to help flush out ideas quickly. Below, you can see some of my early sketches for Farm Fresh.</p>
               <p className="text-center mt-5 mb-5"><img src="/assets/farmfresh/colors.png" className="img-fluid" /></p>
-              <p className="fontLight">I initially wanted to establish a lighter color palette as reflected in my initial wireframes. However, with the guidance of my mentors at Lambda School I was encouraged to go towards a darker color scheme for contrast and design accessibility. I decided to keep green as the brand color and focused on muted colors for most text, then kept whites and greys for backgrounds. Here's a look at the final style guide with some of the apps main components.</p>
+              <p className="fontLight">I initially wanted to establish a lighter color palette as reflected in my initial wireframes. However, I chose to go towards a darker color scheme for contrast and design accessibility. I decided to keep green as the brand color and chose muted colors for most text. I kept whites and greys for backgrounds. Here's a look at the final style guide with a look at some of the apps main components and patterns.</p>
               <div className="d-flex justify-content-between flex-nowrap">
                   <div className="col-4"><img src="/assets/farmfresh/Typography1.png" className="img-fluid" /></div>
                   <div className="col-4"><img src="/assets/farmfresh/Components.png" className="img-fluid" /></div>
