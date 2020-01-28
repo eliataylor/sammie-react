@@ -3,6 +3,8 @@
 - `npm start`
 
 ### TO RELEASE
+- `git status`
+- `git add *`
 - `git commit -am 'my latest changes'`
 - `git push origin master`
 - `npm run build`
