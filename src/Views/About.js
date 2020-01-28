@@ -40,11 +40,11 @@ class About extends Component {
                     </div>
                </div>
                 <h1 className="text-primary mt-5 mb-5">Marketing professional turned designer</h1>
-                <p>The essence of effective marketing starts with Design.</p>
-                <p>Regardless of your strategy, Visual impressions are the first, and often best, opportunity to communicate a message and win your response. While a piece of art can be criticized or acclaimed depending who you ask, effective marketing design is based on impulse and a universal order of how information is absorbed by the eye.</p>
-                <p>Aesthetics are a matter of taste up to the artist and target demographic. As important as those are, the organization of text and information is based on the consistent objective to send their message as clearly and quickly as possible.</p>
+                <p>The essence of effective marketing starts with design.</p>
+                <p>Regardless of your strategy, visual impressions are the first, and often best, opportunity to communicate a message and win your response. While a piece of art can be criticized or acclaimed depending on who you ask, effective marketing design is based on impulse and universal order of how information is absorbed by the eye.</p>
+                <p>Aesthetics are a matter of taste, up to the artist and target demographic. As important as those are, the organization of text and information is based on the consistent objective to send their message as clearly and quickly as possible.</p>
                 <p>Meanwhile, to begin the process of design, style is woven in to capture a particular audience and transmit the message to match their identity with yours.</p>
-                <p>All this is done through simplicity and balance.</p>
+                <p>All of this is done through simplicity and balance.</p>
             </div>
         );
     }

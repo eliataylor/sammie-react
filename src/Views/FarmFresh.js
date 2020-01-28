@@ -5,7 +5,7 @@ class FarmFresh extends Component {
 
     render() {
         return (
-          <div id="santaCaseStudy" className="mt-3">
+          <div id="farmCaseStudy" className="mt-3 mb-3">
             <div className="container mb-5 mt-5">
               <h1>Farm fresh</h1>
               <p className="mb-5">
@@ -67,9 +67,9 @@ class FarmFresh extends Component {
                 </div>
             </div>
 
-            <div className="container p-5 mt-5">
-              <div className="row mb-3">
-                  <blockquote className="blockquote mt-5 mb-5">
+            <div className="container p-5">
+              <div className="row">
+                  <blockquote className="blockquote">
                     <p className="mb-0" style={{fontStyle:'italic'}}><img height="40" style={{marginTop:-50, marginRight:20}} src="/assets/farmfresh/quote.png"/>I love buying produce from my local farmers markets, but timings are restrictive, parking is a pain, and if you arrive late the inventory runs out quickly. It takes time out of my weekend that could have been spent with family</p>
                     <p className="text-right blockquote-footer text-dark" style={{fontWeight:700}}>USER RESEARCH PARTICIPANT</p>
                   </blockquote>
@@ -80,15 +80,17 @@ class FarmFresh extends Component {
               </div>
             </div>
 
-            <div className="container p-5 mt-5" >
+            <div className="container" >
+            <h5>Shopper Persona</h5>
             <p className="text-center"><img src="/assets/farmfresh/persona.png" className="img-fluid" /></p>
             </div>
 
-            <div className="container p-5 mt-5" >
+            <div className="container" >
+            <h5>Shopper Journey Map</h5>
             <p className="text-center"><img src="/assets/farmfresh/journeymap.png" className="img-fluid" /></p>
             </div>
 
-            <div className="container p-5 mt-5" >
+            <div className="container" >
               <div className="row">
                 <div className="col-4">
                       <img className="img-fluid" src="/assets/farmfresh/Farmersneeds.png"/>
@@ -100,7 +102,7 @@ class FarmFresh extends Component {
                 </div>
             </div>
 
-            <div className="container p-5 mt-5" >
+            <div className="container" >
             <p className="text-center"><img src="/assets/farmfresh/shopperpersona.png" className="img-fluid" /></p>
             </div>
 
@@ -118,15 +120,18 @@ class FarmFresh extends Component {
             </div>
 
             <div className="container p-5">
-              <div className="row">
-                  <p>Before beginning any design I wanted to create the structure of the site by building a site map and then sketched out the flows for each action that the MVP would allow each user type to take. Below I have the key that was created for all user flows and two flows for each user type, one for the shoppers check out experience, and one for the farmer to view orders.</p>
-                 <p className="text-left mt-4">User Flow Key</p>
-                  <p className="text-left mt-4"><img src="/assets/farmfresh/userflowkey.png" className="img-fluid" /></p>
-                  <p className="text-left mt-4">Shopper Checkout Flow</p>
-                  <p className="text-center mt-4 mb-4"><img src="/assets/farmfresh/checkoutFlow.png" className="img-fluid" /></p>
-                  <p className="text-center mt-4">Farmer 'View Order' Flow</p>
-                  <p className="text-center mt-4"><img src="/assets/farmfresh/farmervieworder.png" className="img-fluid" /></p>
-              </div>
+                <p>Before beginning any design I wanted to create the structure of the site by building a site map and then sketched out the flows for each action that the MVP would allow each user type to take. Below I have the key that was created for all user flows and two flows for each user type, one for the shoppers check out experience, and one for the farmer to view orders.</p>
+                <div className="">
+                  <p className="mt-4"><img src="/assets/farmfresh/userflowkey.png" className="img-fluid" /></p>
+                </div>
+                <div className="">
+                  <h5 className="mt-4">Shopper Checkout Flow</h5>
+                  <p className="mt-4 mb-4"><img src="/assets/farmfresh/checkoutFlow.png" className="img-fluid" /></p>
+                </div>
+                <div className="">
+                  <h5 className="mt-4">Farmer 'View Order' Flow</h5>
+                  <p className="mt-4"><img src="/assets/farmfresh/farmervieworder.png" className="img-fluid" /></p>
+                </div>
             </div>
 
             <div className="container">
@@ -138,7 +143,7 @@ class FarmFresh extends Component {
               <p className="text-center"><img src="/assets/farmfresh/wireframes1.png" className="img-fluid" /></p>
             </div>
 
-            <div className="container mt-5">
+            <div className="container">
               <h4>VISUAL IDENTITY</h4>
               <p className="fontLight">One of my favorite ways to start protoyping is with an exercise called crazy 8's to help flush out ideas quickly. Below, you can see some of my early sketches for Farm Fresh.</p>
               <p className="text-center mt-5 mb-5"><img src="/assets/farmfresh/colors.png" className="img-fluid" /></p>
@@ -151,7 +156,7 @@ class FarmFresh extends Component {
             </div>
 
 
-            <div className="container-fluid bg-info text-white mt-5" >
+            <div className="container-fluid bg-info text-white" >
               <div className="row">
                 <div className="p-5 mt-4 mb-4" style={{minHeight:'80vh', justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
                   <div>
@@ -162,10 +167,10 @@ class FarmFresh extends Component {
               </div>
             </div>
 
-            <div className="container mt-4 mb-4">
+            <div className="container">
               <h4>Shopper Checkout Flow</h4>
               <p className="fontLight">This flow features the main sign in page, the shoppers sign in page, the shoppers homepage, the farm search page, the farm search results page, the inventory page,  cart overview page, payment details page, and the final order confirmation page. </p>
-              <div className="d-flex justify-content-between flex-wrap ">
+              <div className="d-flex justify-content-between flex-wrap mt-4">
                   <div className="col-4"><img src="/assets/farmfresh/iphone11pro/landingpage.png" className="img-fluid" /></div>
                   <div className="col-4"><img src="/assets/farmfresh/iphone11pro/signin.png" className="img-fluid" /></div>
                   <div className="col-4"><img src="/assets/farmfresh/iphone11pro/chooseProduce.png" className="img-fluid" /></div>
@@ -178,10 +183,10 @@ class FarmFresh extends Component {
               </div>
             </div>
 
-            <div className="container mt-4 mb-4">
+            <div className="container">
               <h4>Farmer &lsquo;View Orders&rsquo; Flow</h4>
               <p className="fontLight">This flow features the farmer sign-in page, the farmer homepage, the main orders screen, and an order overview page for an order that is processing.</p>
-              <div className="d-flex justify-content-between flex-wrap ">
+              <div className="d-flex justify-content-between flex-wrap mt-4">
                   <div className="col-6"><img src="/assets/farmfresh/iphone11pro/SigningIn.png" className="img-fluid" /></div>
                   <div className="col-6"><img src="/assets/farmfresh/iphone11pro/FarmerOptions.png" className="img-fluid" /></div>
                   <div className="col-6"><img src="/assets/farmfresh/iphone11pro/searchFarms.png" className="img-fluid" /></div>
@@ -189,7 +194,7 @@ class FarmFresh extends Component {
               </div>
             </div>
 
-            <div className="container mt-4 mb-4">
+            <div className="container">
               <h4>Reflections and Takeaways</h4>
               <p className="fontLight">With more time I would have enjoyed adding a ‘message’ feature for shopper to feel more connected to their farmers. On the farmers flow I believe it would’ve been useful to add fields for details on inventory for the farmers. I would have also loved to build on top of the ‘future harvests’ idea. Aside from the additions I would like to add, I am confident with the final outcome for the MVP.</p>
             </div>

@@ -57,7 +57,7 @@ class App extends React.Component {
             </Route>
           </Switch>
 
-          <footer className="p-5">
+          <footer className="p-5 mt-5">
             <div className="container">
               <nav className="navbar navbar-expand-lg">
                 <Link style={{color:'#434343'}} className="navbar-brand" to="/">&copy; 2020, Sammie Khalil-Taylor</Link>
