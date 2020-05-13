@@ -52,7 +52,7 @@ class FarmFresh extends Component {
               </div>
             </div>
             <div className="container mt-5 mb-2">
-              <p className="text-center"><img src="/assets/farmfresh/farmershoppericon.png" style={{maxWidth:'100%'}} /></p>
+              <p className="text-center"><img src="/assets/farmfresh/Farmershoppericon.png" style={{maxWidth:'100%'}} /></p>
               <h4 className="mt-5 mb-4">BRIDGING A GAP</h4>
               <p>Right from the start I knew that we would have <b>two very different users</b> for this app. There are the <b>shoppers</b>, who would be searching for local farms, browsing inventory, and making purchases. Then the <b>farmers</b> that would be adding or editing inventory, and processing orders.</p>
               <p>Given the 8-week timeline for the MVP, I focused on the most critical actions and made them as efficient and functional as possible for both users.</p>
@@ -145,9 +145,8 @@ class FarmFresh extends Component {
 
             <div className="container">
               <h4>VISUAL IDENTITY</h4>
-              <p className="fontLight">One of my favorite ways to start protoyping is with an exercise called crazy 8's to help flush out ideas quickly. Below, you can see some of my early sketches for Farm Fresh.</p>
-              <p className="text-center mt-5 mb-5"><img src="/assets/farmfresh/colors.png" className="img-fluid" /></p>
               <p className="fontLight">I initially wanted to establish a lighter color palette as reflected in my initial wireframes. However, I chose to go towards a darker color scheme for contrast and design accessibility. I decided to keep green as the brand color and chose muted colors for most text. I kept whites and greys for backgrounds. Here's a look at the final style guide with a look at some of the apps main components and patterns.</p>
+              <p className="text-center mt-5 mb-5"><img src="/assets/farmfresh/colors.png" className="img-fluid" /></p>
               <div className="d-flex justify-content-between flex-nowrap">
                   <div className="col-4"><img src="/assets/farmfresh/Typography1.png" className="img-fluid" /></div>
                   <div className="col-4"><img src="/assets/farmfresh/Components.png" className="img-fluid" /></div>
@@ -196,7 +195,7 @@ class FarmFresh extends Component {
 
             <div className="container">
               <h4>Reflections and Takeaways</h4>
-              <p className="fontLight">With more time I would have enjoyed adding a ‘message’ feature for shopper to feel more connected to their farmers. On the farmers flow I believe it would’ve been useful to add fields for details on inventory for the farmers. I would have also loved to build on top of the ‘future harvests’ idea. Aside from the additions I would like to add, I am confident with the final outcome for the MVP.</p>
+              <p className="fontLight">With more time I would have enjoyed adding a ‘message’ feature for shoppers to feel more connected to their farmers. On the farmers flow I believe it would’ve been useful to add fields for descriptions on their inventory. I would have also loved to build on top of the ‘future harvests’ idea. </p>
             </div>
 
           </div>

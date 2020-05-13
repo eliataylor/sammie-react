@@ -23,11 +23,10 @@ class CaseStudies extends Component {
                   </div>
                   {this.state.expanded === sec ?
                     <div id={'acc'+sec} className='card-body collapse show' >
-                        <p>{section.subheading}</p>
                         <div className="row">
                         {section.images.map((image, idx2) => {
-                        return (<div className="col-3">
-                                  <img src={image.src} srcSet={image.srcset} className="img-fluid"  />
+                        return (<div className="col-6 col-md-3 p-2">
+                                  <img src={image.src} alt={image.alt} className="img-fluid"  />
                                 </div>)
                           })
                         }

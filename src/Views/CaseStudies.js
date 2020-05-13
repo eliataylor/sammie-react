@@ -6,7 +6,7 @@ class CaseStudies extends Component {
     render() {
         return (
           <div className="container">
-            <div className="jumbotron d-flex flex-column" style={{backgroundImage:'url(/assets/Desktop-Img.png)', marginTop:50}}>
+            <div className="jumbotron d-flex flex-column" style={{backgroundImage:'url(/assets/Desktop-Img.jpg)', marginTop:50}}>
               <div className="flex-grow-1"></div>
               <div>
                 <h3>Farm Fresh</h3>
@@ -15,7 +15,7 @@ class CaseStudies extends Component {
               </div>
             </div>
 
-            <div className="jumbotron d-flex flex-column" style={{backgroundImage:'url(/assets/santa-photo.png)', marginBottom:75}}>
+            <div className="jumbotron d-flex flex-column" style={{backgroundImage:'url(/assets/santa-photo.jpg)', marginBottom:75}}>
               <div className="flex-grow-1"></div>
               <div>
                 <h3>Santa App</h3>

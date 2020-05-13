@@ -5,7 +5,16 @@
     "subheading": "",
     "tabindex": -1,
     "icon": "/assets/archives/Design-Icon.png",
-    "images": [{
+    "images": [
+      {
+        "alt": "flower box outside",
+        "src": "/assets/archives/design/boxfront.png"
+      },
+      {
+        "alt": "flower box inside",
+        "src": "/assets/archives/design/boxinside.png"
+      },
+      {
         "useForDemo": true,
         "srcset": [
           "/assets/archives/design/a__design-vendingmachine.png 900w",
@@ -420,23 +429,7 @@
     "subheading": "I approach design through three key elements, Typography, Color, and Space. I combine these elements to create a rich, attractive message in as little space as possible.",
     "tabindex": 2,
     "icon": "/assets/archives/footer-branding.png",
-    "images": [{
-        "useForDemo": true,
-        "srcset": [
-          "/assets/archives/branding/0-1-Brand-Mood-Board_900h.jpg 900w",
-          "/assets/archives/branding/0-1-Brand-Mood-Board_900h.jpg 600w",
-          "/assets/archives/branding/0-1-Brand-Mood-Board_900h.jpg 300w",
-          "/assets/archives/branding/0-1-Brand-Mood-Board_900h.jpg 70w"
-        ],
-        "alt": "branding",
-        "sizes": [
-          "90vw"
-        ],
-        "src": "/assets/archives/branding/0-1-Brand-Mood-Board_900h.jpg",
-        "width": 261,
-        "height": 899,
-        "thumbnail": "/assets/archives/branding/0-1-Brand-Mood-Board_900h.jpg"
-      },
+    "images": [      
       {
         "useForDemo": true,
         "srcset": [
@@ -636,6 +629,10 @@
         "width": 840,
         "height": 334,
         "thumbnail": "/assets/archives/branding/k__Logo-Design.jpg"
+      },
+      {
+        "alt": "mood board",
+        "src": "/assets/archives/branding/moodboard.png"
       }
     ]
   },
@@ -645,43 +642,8 @@
     "subheading": "Playing with words is a hobby of mine. I believe that understanding which acronyms and industry jargons are popular among the target demographics is key to creating quality copy. In the english language alone, I can speak to an older mature audience in industry jargon, while also relating to the teeny bopper crowd, with the right emoticons, of course.",
     "tabindex": 3,
     "icon": "/assets/archives/footer-copywriting.png",
-    "images": [{
-        "useForDemo": true,
-        "srcset": [
-          "/assets/archives/contentcopy/0-2-Ruhral-Email-Campaign_900h.jpg 900w",
-          "/assets/archives/contentcopy/0-2-Ruhral-Email-Campaign_900h.jpg 600w",
-          "/assets/archives/contentcopy/0-2-Ruhral-Email-Campaign_900h.jpg 300w",
-          "/assets/archives/contentcopy/0-2-Ruhral-Email-Campaign_900h.jpg 70w"
-        ],
-        "alt": "contentcopy",
-        "sizes": [
-          "90vw"
-        ],
-        "src": "/assets/archives/contentcopy/0-2-Ruhral-Email-Campaign_900h.jpg",
-        "width": 299,
-        "height": 900,
-        "thumbnail": "/assets/archives/contentcopy/0-2-Ruhral-Email-Campaign_900h.jpg"
-      },
-      {
-        "useForDemo": true,
-        "srcset": [
-          "/assets/archives/contentcopy/0-3-Email-Campaign-Design_900h.jpg 900w",
-          "/assets/archives/contentcopy/0-3-Email-Campaign-Design_900h.jpg 600w",
-          "/assets/archives/contentcopy/0-3-Email-Campaign-Design_900h.jpg 300w",
-          "/assets/archives/contentcopy/0-3-Email-Campaign-Design_900h.jpg 70w"
-        ],
-        "alt": "contentcopy",
-        "sizes": [
-          "(max-width: 400px) 50vw",
-          "(max-width: 600px) 33.3vw",
-          "(max-width: 900px) 25vw",
-          "18vw"
-        ],
-        "src": "/assets/archives/contentcopy/0-3-Email-Campaign-Design_900h.jpg",
-        "width": 457,
-        "height": 900,
-        "thumbnail": "/assets/archives/contentcopy/0-3-Email-Campaign-Design_900h.jpg"
-      },
+    "images": [
+      
       {
         "useForDemo": true,
         "srcset": [

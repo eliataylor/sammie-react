@@ -54,7 +54,9 @@ class Santa extends Component {
                 <li><b>2.</b> Santa Fullfillment</li>
                 <li><b>3.</b> Elf wish intake</li>
               </ul>
-              <p className="text-center"><img height='250' src='/assets/santa/santalogo.png' /></p>
+              <h5>Brand Image</h5>
+              <p>The client wanted the style for the app to be centered around Christmas and these two characters that represent the user roles. Below you will see a preview of the style guide and components that I created based on the clients needs.</p>
+              <p><img height='250' src='/assets/santa/santalogo.png' /></p>
               <div className="row">
                 <div className="col-6 text-center"><img height='350' className="img-fluid" src='/assets/santa/santa-bootstrap-colors.png' /></div>
                 <div className="col-6 text-center"><img height='350' className="img-fluid" src='/assets/santa/santa-bootstrap-components.png' /></div>
@@ -66,7 +68,7 @@ class Santa extends Component {
                 <div className="p-5 mt-4 mb-4" style={{minHeight:'80vh', justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
                   <div>
                     <h2 style={{fontSize: 60, textIndent:-5}}>Final Designs</h2>
-                    <p className="mt-5">Below are a few before and after photos of the screens</p>
+                    <p className="mt-5">Below are a few before and after photos of the screens I revamped.</p>
                   </div>
                 </div>
               </div>

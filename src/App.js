@@ -64,7 +64,7 @@ class App extends React.Component {
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item"><a className="nav-link" target="_blank" href="mailto:get@sammietaylor.com">Contact</a></li>
                   <li className="nav-item"><a className="nav-link" target="_blank" href="https://twitter.com/sammxdesign">Twitter</a></li>
-                  <li className="nav-item"><a className="nav-link" target="_blank" href="https://dribbble.com/sammxdesign">Dribble</a></li>
+                  <li className="nav-item"><a className="nav-link" target="_blank" href="https://dribbble.com/sammxdesign">Dribbble</a></li>
                 </ul>
               </nav>
             </div>

@@ -5,7 +5,7 @@ class About extends Component {
     render() {
         return (
 			       <div className="container mt-5 pb-5">
-               <div className="d-flex" style={{marginTop:60, backgroundImage:'url(/assets/img-sam.png)', backgroundSize:'cover', backgroundPosition:'left 50%', minHeight:'60vh'}}>
+               <div className="d-flex" style={{marginTop:60, backgroundImage:'url(/assets/img-sam.jpg)', backgroundSize:'cover', backgroundPosition:'left 50%', minHeight:'60vh'}}>
                     <div className="cvBlock col-10 col-sm-9 col-md-6 ml-auto mr-3 bg-white rounded">
                         <h3 className="cvHeader rounded">WORK EXPERIENCE</h3>
                         <div className="cvList">
