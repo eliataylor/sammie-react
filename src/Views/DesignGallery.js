@@ -34,7 +34,7 @@ class CaseStudies extends Component {
                         </div>
                     </div>
                     :
-                    <div id={'acc'+sec} className='card-body collapse' >Loading arhives</div>
+                    <div id={'acc'+sec} className='card-body collapse' >Loading archives</div>
                   }
 
                 </div>)
