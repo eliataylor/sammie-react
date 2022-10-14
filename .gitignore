@@ -9,6 +9,8 @@ private.md
 /.pnp
 .pnp.js
 
+private.txt
+
 # testing
 /coverage
 

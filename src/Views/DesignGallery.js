@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 //import {Link} from "react-router-dom";
 
 const projects = require('../projects.json');

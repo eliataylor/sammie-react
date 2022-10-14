@@ -1,74 +1,21 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link, NavLink
-} from "react-router-dom";
-import About from './Views/About';
-import Home from './Views/Home';
-import DesignGallery from './Views/DesignGallery';
-import CaseStudies from './Views/CaseStudies';
-import Santa from './Views/Santa';
-import FarmFresh from './Views/FarmFresh';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Landing from "./Views/Landing";
+import Portfolio from "./Views/Portfolio";
 
 class App extends React.Component {
-
-  state = { expanded: false };
 
   render() {
     return (
       <Router>
-          <header className="container">
-            <nav className="p-0 mt-4 mb-4 navbar navbar-expand-lg navbar-light bg-light">
-              <button onClick={e => this.setState({expanded:!this.state.expanded})} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <Link className="navbar-brand" to="/">SAMMIE KHALIL-TAYLOR</Link>
-
-              <div className={this.state.expanded ? 'collapse show navbar-collapse' : 'collapse navbar-collapse'} id="mainMenu">
-                <ul className="navbar-nav ml-auto">
-                  <li className="nav-item"><NavLink className="nav-link" to="/case-studies">CASE STUDIES</NavLink></li>
-                  <li className="nav-item"><NavLink className="nav-link" to="/design">DESIGN</NavLink></li>
-                  <li className="nav-item"><NavLink className="nav-link" to="/about">ABOUT</NavLink></li>
-                </ul>
-              </div>
-            </nav>
-          </header>
-
           <Switch>
-            <Route exact path="/">
-              <Home />
+            <Route path="/old-portfolio">
+              <Portfolio />
             </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/design">
-              <DesignGallery />
-            </Route>
-            <Route path="/case-studies/farm-fresh">
-              <FarmFresh />
-            </Route>
-            <Route path="/case-studies/santa">
-              <Santa />
-            </Route>
-            <Route path="/case-studies">
-              <CaseStudies />
+            <Route path="/">
+              <Landing />
             </Route>
           </Switch>
-
-          <footer className="p-5 mt-5">
-            <div className="container">
-              <nav className="navbar navbar-expand-lg">
-                <Link style={{color:'#434343'}} className="navbar-brand" to="/">&copy; 2020, Sammie Khalil-Taylor</Link>
-                <ul className="navbar-nav ml-auto">
-                  <li className="nav-item"><a className="nav-link" target="_blank" href="mailto:get@sammietaylor.com">Contact</a></li>
-                  <li className="nav-item"><a className="nav-link" target="_blank" href="https://twitter.com/sammxdesign">Twitter</a></li>
-                  <li className="nav-item"><a className="nav-link" target="_blank" href="https://dribbble.com/sammxdesign">Dribbble</a></li>
-                </ul>
-              </nav>
-            </div>
-          </footer>
       </Router>
     );
   }
