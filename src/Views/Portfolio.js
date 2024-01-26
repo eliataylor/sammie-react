@@ -57,7 +57,7 @@ class Portfolio extends React.Component {
                         <nav className="navbar navbar-expand-lg">
                             <Link style={{color:'#434343'}} className="navbar-brand" to="/old-portfolio">&copy; 2020, Sammie Khalil</Link>
                             <ul className="navbar-nav ml-auto">
-                                <li className="nav-item"><a className="nav-link" target="_blank" href="mailto:get@sammietaylor.com">Contact</a></li>
+                                <li className="nav-item"><a className="nav-link" target="_blank" href="mailto:samanta.amna@gmail.com">Contact</a></li>
                                 <li className="nav-item"><a className="nav-link" target="_blank" href="https://twitter.com/sammxdesign">Twitter</a></li>
                                 <li className="nav-item"><a className="nav-link" target="_blank" href="https://dribbble.com/sammxdesign">Dribbble</a></li>
                             </ul>
