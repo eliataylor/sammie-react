@@ -3,9 +3,8 @@ import React, {Component} from 'react';
 
 const projects = require('../projects.json');
 
-class CaseStudies extends Component {
+class DesignGallery extends Component {
     state = { expanded: false };
-
 
     render() {
         return (
@@ -44,4 +43,4 @@ class CaseStudies extends Component {
     }
 }
 
-export default CaseStudies;
+export default DesignGallery;

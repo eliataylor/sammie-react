@@ -19,7 +19,7 @@ class Portfolio extends React.Component {
                         <button onClick={e => this.setState({expanded:!this.state.expanded})} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <Link className="navbar-brand" to="/old-portfolio">SAMMIE KHALIL-TAYLOR</Link>
+                        <Link className="navbar-brand" to="/old-portfolio">SAMMIE KHALIL</Link>
 
                         <div className={this.state.expanded ? 'collapse show navbar-collapse' : 'collapse navbar-collapse'} id="mainMenu">
                             <ul className="navbar-nav ml-auto">
@@ -55,7 +55,7 @@ class Portfolio extends React.Component {
                 <footer className="p-5 mt-5">
                     <div className="container">
                         <nav className="navbar navbar-expand-lg">
-                            <Link style={{color:'#434343'}} className="navbar-brand" to="/old-portfolio">&copy; 2020, Sammie Khalil-Taylor</Link>
+                            <Link style={{color:'#434343'}} className="navbar-brand" to="/old-portfolio">&copy; 2020, Sammie Khalil</Link>
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item"><a className="nav-link" target="_blank" href="mailto:get@sammietaylor.com">Contact</a></li>
                                 <li className="nav-item"><a className="nav-link" target="_blank" href="https://twitter.com/sammxdesign">Twitter</a></li>

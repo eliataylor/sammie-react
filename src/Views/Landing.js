@@ -6,8 +6,8 @@ class Landing extends Component {
         return (
             <div id={'landing'}>
                 <div className={'inner'}>
-                <h4>For all inquiries please email:</h4>
-                <h1 className="h1">get@sammietaylor.com</h1>
+                <h4>For all inquiries please</h4>
+                <h1 className="h1">samanta.amna@gmail.com</h1>
                 </div>
             </div>
         );
