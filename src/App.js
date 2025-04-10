@@ -9,11 +9,11 @@ class App extends React.Component {
     return (
       <Router>
           <Switch>
-            <Route path="/old-portfolio">
-              <Portfolio />
+            <Route path="/splash">
+              <Landing />
             </Route>
             <Route path="/">
-              <Landing />
+              <Portfolio />
             </Route>
           </Switch>
       </Router>

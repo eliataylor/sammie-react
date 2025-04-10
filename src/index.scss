@@ -6,15 +6,26 @@ $font-family-sans-serif: 'Open Sans', sans-serif;
 $body-bg: #fff;
 
 $primary:       #ED7F13;
-$secondary:       #ED7F13;
+$secondary:       #2465D9;
 $light:         #fff;
 $dark:          #202020;
 $blue:          #2465D9;
 $info:          #2465D9;
 $almost-white:    #f9f9f9;
+$accordion-button-bg: #ED7F13;
 
 @import '~bootstrap/scss/bootstrap.scss';
 
+.bulletList {
+  margin:0;
+  font-size: 12px;
+  padding-left: 8px;
+}
+
+.bulletList li {
+  list-style-type: disc !important;
+  list-style-position: inside;
+}
 
 /* @media (min-width: 0px) {
   .container {
@@ -95,7 +106,8 @@ h5 {
 }
 
 .jumbotron {
-  min-height:60vh;
+  height:60vh;
+  max-height:450px;
   background-position:center center;
   background-size:cover;
   background-repeat:no-repeat;

@@ -134,7 +134,7 @@ if (module.parent == undefined) {
     // var util = require('util');
     // console.log(util.inspect(gallery, false, null));
 
-    fs.writeFileSync('/Users/elitaylor/Developer/sammie/sammie-react/src/data/assets.json', JSON.stringify(gallery), 'utf8');
+    fs.writeFileSync('/Users/elitaylor/Developer/skt/sammie-react/src/data/assets.json', JSON.stringify(gallery), 'utf8');
 }
 
 /*
