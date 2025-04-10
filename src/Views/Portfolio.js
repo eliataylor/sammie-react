@@ -21,7 +21,7 @@ class Portfolio extends React.Component {
                 <ScrollToTop/>
                 <header className="container">
                     <nav
-                        className="d-flex justify-content-between p-0 mt-4 mb-4 navbar navbar-expand-lg navbar-light bg-light">
+                        className="d-flex justify-content-between p-0 mt-4 mb-4 navbar navbar-expand-lg navbar-light">
                         <button onClick={e => this.setState({expanded: !this.state.expanded})}
                                 className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
                                 aria-controls="mainMenu"
@@ -77,7 +77,7 @@ class Portfolio extends React.Component {
 
                 <footer className="p-5 mt-5">
                     <div className="container">
-                        <nav className="navbar navbar-expand-lg">
+                        <nav className="navbar navbar-expand-lg justify-content-between">
                             <Link style={{color: '#434343'}} className="navbar-brand" to="/">&copy; 2025, Sammie
                                 Khalil-Taylor</Link>
                             <ul className="navbar-nav ml-auto">

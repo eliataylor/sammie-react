@@ -5,12 +5,12 @@ class About extends Component {
     render() {
         return (
             <div className="container d-flex gap-2">
-                <div className={'overflow-hidden'}>
-                    <img src={'/assets/img-sam.jpg'}/>
-                    <div style={{height:20}} className={'bg-secondary mt-2'} ></div>
+                <div className={'overflow-hidden col-3'}>
+                    <img src={'https://taylormadetraffic.com/wwwroot/images/saman.jpg'} style={{maxHeight:350}}/>
+                    <div style={{height:10}} className={'bg-secondary mt-2'} ></div>
                 </div>
                 <div>
-                    <h1 className="text-primary mt-5 mb-5">Effective marketing begins with design.</h1>
+                    <h1 className="text-primary">Effective marketing begins with design.</h1>
                     <p>
                         With a background in marketing and business development, I understand how crucial visual
                         impressions are for communicating messages and capturing attention. While art can be subjective,
