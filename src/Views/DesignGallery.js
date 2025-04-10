@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import florul from "../florul.json";
+import MasonryGrid from "./MasonryGrid";
 
 const projects = require('../archives.json');
 
@@ -30,14 +32,7 @@ class DesignGallery extends Component {
                                 <div id={`acc${sec}`} className="accordion-collapse collapse show"
                                      aria-labelledby={`heading${sec}`} data-bs-parent="#accordion">
                                     <div className={"accordion-body"}>
-                                        <div className="row">
-                                            {section.images.map((image, idx2) => {
-                                                return (<div className="col-6 col-md-3 p-2">
-                                                    <img src={image.src} alt={image.alt} className="img-fluid"/>
-                                                </div>)
-                                            })
-                                            }
-                                        </div>
+                                        <MasonryGrid images={section.images} columns={3}/>
                                     </div>
                                 </div>
                                 :

@@ -18,7 +18,7 @@ const updateImageDimensions = async () => {
                             height: metadata.height,
                         };
                     } catch (error) {
-                        console.error(`Error processing image: ${image.src}`, error);
+                        console.warn(`Error processing image: ${image.src}`);
                         return image; // Return the original image if there's an error
                     }
                 } else {

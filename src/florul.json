@@ -1,6 +1,21 @@
 {
   "images": [
     {
+      "width": 840,
+      "height": 334,
+      "src": "/assets/archives/branding/k__Logo-Design.jpg"
+    },
+    {
+      "width": 340,
+      "height": 968,
+      "src": "https://taylormadetraffic.com/wwwroot/images/design/florul/home_page.png"
+    },
+    {
+      "width": 680,
+      "height": 2279,
+      "src": "/assets/archives/branding/moodboard.png"
+    },
+    {
       "width": 2400,
       "height": 3600,
       "src": "/assets/archives/branding/a__Creative-Direction-for-Ruhral-Product-Shoot.jpg"
@@ -46,21 +61,14 @@
       "src": "/assets/archives/branding/j__Creative-direction-for-branding.jpg"
     },
     {
-      "width": 840,
-      "height": 334,
-      "src": "/assets/archives/branding/k__Logo-Design.jpg"
-    },
-    {
-      "src": "/assets/archives/branding/moodboard.png"
-    },
-    {
+      "width": 1222,
+      "height": 1634,
       "src": "/assets/archives/design/boxfront.png"
     },
     {
+      "width": 1222,
+      "height": 1634,
       "src": "/assets/archives/design/boxinside.png"
-    },
-    {
-      "src": "https://taylormadetraffic.com/wwwroot/images/design/florul/home_page.png"
     },
     {
       "width": 1551,
@@ -78,19 +86,9 @@
       "src": "/assets/archives/contentcopy/a__Ruhral-Tamarind-Scrub-Label-Design.jpg"
     },
     {
-      "width": 1772,
-      "height": 885,
-      "src": "/assets/archives/contentcopy/b__Ruhral-Turmeric-Scrub-Label-Design.jpg"
-    },
-    {
       "width": 4341,
       "height": 1670,
       "src": "/assets/archives/contentcopy/c__Landing-Page-Header.jpg"
-    },
-    {
-      "width": 1800,
-      "height": 1050,
-      "src": "/assets/archives/contentcopy/d__Previous-Tamarind-Label-Design.jpg"
     },
     {
       "width": 930,
@@ -131,6 +129,16 @@
       "width": 1800,
       "height": 1050,
       "src": "/assets/archives/contentcopy/m__Turmeric-Scrub-Version.jpg"
+    },
+    {
+      "width": 1800,
+      "height": 1050,
+      "src": "/assets/archives/contentcopy/d__Previous-Tamarind-Label-Design.jpg"
+    },
+    {
+      "width": 1772,
+      "height": 885,
+      "src": "/assets/archives/contentcopy/b__Ruhral-Turmeric-Scrub-Label-Design.jpg"
     }
   ]
 }

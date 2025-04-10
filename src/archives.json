@@ -6,9 +6,13 @@
     "icon": "/assets/analyticsicon.png",
     "images": [
       {
+        "width": 1222,
+        "height": 1634,
         "src": "/assets/archives/design/boxfront.png"
       },
       {
+        "width": 1222,
+        "height": 1634,
         "src": "/assets/archives/design/boxinside.png"
       },
       {
@@ -128,6 +132,21 @@
     "icon": "/assets/brandingicon.png",
     "images": [
       {
+        "width": 840,
+        "height": 334,
+        "src": "/assets/archives/branding/k__Logo-Design.jpg"
+      },
+      {
+        "width": 340,
+        "height": 968,
+        "src": "https://taylormadetraffic.com/wwwroot/images/design/florul/home_page.png"
+      },
+      {
+        "width": 680,
+        "height": 2279,
+        "src": "/assets/archives/branding/moodboard.png"
+      },
+      {
         "width": 2400,
         "height": 3600,
         "src": "/assets/archives/branding/a__Creative-Direction-for-Ruhral-Product-Shoot.jpg"
@@ -171,14 +190,6 @@
         "width": 3600,
         "height": 2400,
         "src": "/assets/archives/branding/j__Creative-direction-for-branding.jpg"
-      },
-      {
-        "width": 840,
-        "height": 334,
-        "src": "/assets/archives/branding/k__Logo-Design.jpg"
-      },
-      {
-        "src": "/assets/archives/branding/moodboard.png"
       }
     ]
   },

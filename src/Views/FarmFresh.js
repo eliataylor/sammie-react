@@ -69,7 +69,7 @@ class FarmFresh extends Component {
             <div className="container p-5">
               <div className="row">
                   <blockquote className="blockquote">
-                    <p className="mb-0" style={{fontStyle:'italic'}}><img height="40" style={{marginTop:-50, marginRight:20}} src="/assets/farmfresh/quote.png"/>I love buying produce from my local farmers markets, but timings are restrictive, parking is a pain, and if you arrive late the inventory runs out quickly. It takes time out of my weekend that could have been spent with family</p>
+                    <p style={{fontStyle:'italic'}}><img height="40" style={{marginTop:-50, marginRight:20}} src="/assets/farmfresh/quote.png"/>I love buying produce from my local farmers markets, but timings are restrictive, parking is a pain, and if you arrive late the inventory runs out quickly. It takes time out of my weekend that could have been spent with family</p>
                     <p className="text-right blockquote-footer text-dark" style={{fontWeight:700}}>USER RESEARCH PARTICIPANT</p>
                   </blockquote>
               </div>
