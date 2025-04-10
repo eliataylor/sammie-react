@@ -8,8 +8,8 @@ class Home extends Component {
         return (
             <div className="container">
                 <blockquote className="blockquote">
-                    <p className="mt-5 mb-5" style={{fontSize: 21}}>I am a <span
-                        style={{color: 'blue', fontWeight: 700}}>Product Designer</span> dedicated to crafting solutions that enhance everyday experiences. Check out my latest project below.</p>
+                    <p className="mt-5 mb-5" style={{fontSize: 21}}>I am a <span className={'text-secondary'}
+                        style={{fontWeight: 700}}>Product Designer</span> dedicated to crafting solutions that enhance everyday experiences. Check out my latest project below.</p>
                 </blockquote>
 
                 {renderJumbotron(CASESTUDIES[0])}

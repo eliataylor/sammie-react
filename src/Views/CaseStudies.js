@@ -12,12 +12,14 @@ export const CASESTUDIES = [
         image: "/assets/wbat/landing.png",
         link: "/case-studies/wbat",
         desc: "A robust system offering tools for compliance, risk management, report generation and management. "
-    }, {
+    },
+    /* {
         name: "Florul",
         image: "/assets/florul/landing.png",
         link: "/case-studies/florul",
         desc: "A unique virtual flower gifting and purchasing experience."
     },
+     */
     {
         name: "Farm Fresh",
         image: "/assets/Desktop-Img.jpg",
